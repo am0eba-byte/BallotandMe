@@ -13,27 +13,24 @@ h1 {
     text-align:center;
 }
 h2 {
-    color:fuchsia;
+    color:teal;
     text-align:left;
 }
 h3 {
-    color:silver;
+    color:black;
 }
 h4 {
-    color:teal;
+    color:white;
 }
 h5 {
-    color:lime;
+    color:teal;
 }
 h6 {
     color:black;
 }
 p {
     font-family:fantasy;
-    color: aqua;
-}
-img {
-    float:right;
+    color: purple;
 }
 .clearfix {
     overflow: auto;
