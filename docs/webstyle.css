@@ -8,3 +8,33 @@ ol {list-style-type: lower-alpha;
 padding: 5em;
     
 }
+h1 {
+    color:white;
+    text-align:center;
+}
+h2 {
+    color:fuchsia;
+    text-align:left;
+}
+h3 {
+    color:silver;
+}
+h4 {
+    color:teal;
+}
+h5 {
+    color:lime;
+}
+h6 {
+    color:black;
+}
+p {
+    font-family:fantasy;
+}
+img {
+    float:right;
+}
+.clearfix {
+    overflow: auto;
+}
+
