@@ -47,7 +47,14 @@ flex-direction:row;
     justify-content:stretch;
 }
 a {
-    color:black
+    color:black;
+    background-color:maroon;
+    display:block;
+    padding:8px;
+    float:inherit;
     
     
+}
+img {
+    justify-content:center;
 }
