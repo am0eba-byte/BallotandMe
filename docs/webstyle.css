@@ -11,17 +11,19 @@ padding: 5em;
 h1 {
     color:white;
     text-align:center;
-    font-family:courier, fixed, monospace
+    font-family:courier, fixed, monospace;
 }
 h2 {
-    color:teal;
+    color:black;
     text-align:left;
+    font-family: courier, fixed, monospace;
 }
 h3 {
     color:black;
 }
 h4 {
     color:white;
+    font-family: courier, fixed, monospace;
 }
 h5 {
     color:teal;
