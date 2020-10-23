@@ -51,7 +51,4 @@ a {
     color:black;
 }
 
-img {
-    justify-content:center;
-    text-align:center;
-}
+figure {margin:3em}
