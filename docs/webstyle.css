@@ -46,7 +46,6 @@ div {
 p.navbar {
 flex-direction:row;
     justify-content:stretch;
-    display:inline-block
 }
 a {
     color:black;
