@@ -50,7 +50,6 @@ flex-direction:row;
 }
 a {
     color:black;
-    display:block;
 }
 a.PSU {
     display:none;
