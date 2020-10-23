@@ -42,4 +42,12 @@ div {
     font-family:courier, fixed, monospace;
     color:black;
 }
-
+p.navbar {
+flex-direction:row;
+    justify-content:stretch;
+}
+a {
+    color:black
+    
+    
+}
