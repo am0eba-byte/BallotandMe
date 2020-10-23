@@ -34,7 +34,7 @@ h6 {
 }
 p {
     font-family: courier, fixed, monospace;
-    color:black
+    color:black;
 }
 .clearfix {
     overflow: auto;
@@ -45,6 +45,7 @@ div {
 }
 p.navbar {
     justify-content:stretch;
+    text-align:center;
 }
 a {
     color:black;
