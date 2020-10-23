@@ -11,6 +11,7 @@ padding: 5em;
 h1 {
     color:white;
     text-align:center;
+    font-family:courier, fixed, monospace
 }
 h2 {
     color:teal;
@@ -29,9 +30,14 @@ h6 {
     color:black;
 }
 p {
-    font-family:fantasy;
+    font-family: courier, fixed, monospace;
+    color:black
 }
 .clearfix {
     overflow: auto;
+}
+div {
+    font-family:courier, fixed, monospace;
+    color:black;
 }
 
