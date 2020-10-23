@@ -44,15 +44,13 @@ div {
     color:black;
 }
 p.navbar {
-flex-direction:row;
     justify-content:stretch;
 }
 a {
     color:black;
 }
-a.PSU {
-    display:none;
-}
+
 img {
     justify-content:center;
+    text-align:center;
 }
