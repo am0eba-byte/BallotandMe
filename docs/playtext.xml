@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <head>
+        <title>The Ballot and Me Semester Project</title>
+        <editor>Mia Borgia</editor>
+    </head>
+
+<body>
+    
+    <pg n="1"/>
+    
+    <titlePage>
+        
+        <copy><underline color = "red">AUTHOR'S COPY</underline></copy>
+        
+        <playtitle><underline color = "red">THE BALLOT AND ME</underline></playtitle>
+        
+        <titledesc>
+            <l n = "1">The Negro's Part in Suffrage</l>
+            <l n = "2">An</l>
+            <l n = "2">Historical Sequence</l>
+        </titledesc>
+        
+        <author>
+            <l n= "1">by</l>
+            <l n = "2">Langston Hughes</l>
+        </author>
+        
+        <published>
+            
+            <pubPlace>New York</pubPlace>
+            <pubTime when = "1956">1956</pubTime>
+            
+        </published>
+        
+        <marginalia hand="LH">
+            <l n = "1">Maynor: Au. 6-5256</l>
+            <l n = "2">St James: Au. 3-5050</l>
+            <l n = "3">Presentation:</l>
+            <l n= "4">June 29</l>
+        </marginalia>
+        
+    </titlePage>
+    
+    
+    <pg n = "2"/>
+    
+    
+    <castList>
+        <header>
+            <underline>CHARACTERS</underline>
+            (In order of appearance)
+        </header>
+        
+        <castItem>
+            <role>NARRATOR</role>
+            SAMUEL FRAUNCES**
+            SOJOURNER TRUTH**
+            <margin position = "right">
+                <l n="1">Contemporary</l>
+                <l n="2">George Washington's period</l>
+                <l n="3"><period begin = "1797" end = "1833">(1797-1883)</period></l>
+            </margin>
+        </castItem>
+        
+        <castItem>
+            FREDERICK DOUGLASS**
+            <margin position ="right">
+                <period begin = "1817" end = "1895">(1817-1895)</period>
+            </margin>
+        </castItem>
+        
+        <castgroup n = "1">
+            <castItem>
+                JEFFERSON P. LONG   )
+            </castItem>
+            <castItem>
+                JOSEPH H. RAINEY   )
+            </castItem>
+            <castItem>
+                ROBERT O. DeLARGE   )
+            </castItem>
+            <castItem>
+                ALONZO J. RAINER   )
+            </castItem>
+            <castItem>
+                ROBERT B. ELLIOT   )
+            </castItem>
+            <castItem>
+                BENJAMIN S. TURNER   )
+            </castItem>
+            <castItem>
+                JOHN R. LYNCH   )
+            </castItem>
+            <castItem>
+                JAMES T. RAFIER   )
+            </castItem>
+            <castItem>
+                JOSIAH T. WALLS   )
+            </castItem>
+            <castItem>
+                <unclear>RICHARD</unclear> H. <unclear>CAINN*</unclear>   )
+            </castItem>
+            <castItem>
+                CHARLES E. NASH   )
+            </castItem>
+            <castItem>
+                JOHN A. HYMAN   )
+            </castItem>
+            <castItem>
+                JENE HARALSON   )
+            </castItem>
+            <castItem>
+                ROBERT SMALLS   )
+            </castItem>
+            
+            <margin castGroupRole = "1" positon = "right">
+                <l n="1">Representatives in Congress</l>
+                <l n="2">during Reconstruction <period begin="1869" end="1889">1869-1889</period></l>
+            </margin>
+            
+        </castgroup>
+        
+        <castgroup n="2">
+            <castItem>
+                HIRAM R. REVELS   )
+            </castItem>
+            <castItem>
+                BLANCHE K. BRUCE   )
+            </castItem>
+            
+            <margin castGroupRole = "2" positon = "right">
+                Senators - <period begin="1870" end="1881">1870-1881 period</period>
+            </margin>
+            
+        </castgroup>
+
+        <castgroup n="3">
+            <castItem>
+                JOHN M. LANGSTON**   )
+            </castItem>
+            <castItem>
+                THOMAS E. MILLER   )
+            </castItem>
+            <castItem>
+                GEORGE W. MURRAY   )
+            </castItem>
+            <castItem>
+                JAMES E. O'HARA   )
+            </castItem>
+            <castItem>
+                HENRY P. CHEATHAM   )
+            </castItem>
+            <castItem>
+                GEORGE H. WHITE   )
+            </castItem>
+            
+            <margin castGroupRole="3" position = "right">
+                Representatives <period begin="1883" end="1897">1883-1897</period>
+            </margin>
+        </castgroup>
+        
+        <castItem>
+            BOOKER T. WASHINGTON**
+            <margin position = "right">
+                At time of 1895 Atlanta speech
+            </margin>
+        </castItem>
+        
+        <note>
+            <p>NOTE: Speaking parts are marked with asteriks**. All except
+            Sojourner Truth may read speeches from rostrum, and even
+            she may read her long sppech, but should learn rest of
+            dialogue. Faunces has only one line. <q>"And I voted."</q></p>
+        </note>
+    </castList>
+    
+    
+    <pg n="3"/>
+    
+    
+    <set>
+        
+        <header><underline>THE BALLOT AND ME</underline></header>
+        
+        <setting>
+            <ab>SETTING:</ab>
+            <setDesc>A rostrum</setDesc>
+        </setting>
+        
+        <setTime>
+            <ab>TIME:</ab>
+            <timedesc>The present, with flashbacks</timedesc>
+        </setTime>
+        
+        <action>
+            <ab>ACTION:</ab>
+            <actiondesc>
+                <l n="1">A Narrator comes to the rostrum</l>
+                <l n="2">and shouts four words very loudly</l>
+                <l n="3">as if opening a Town Meeting.</l>
+            </actiondesc>
+        </action>
+        
+    </set>
+    
+    <div1>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>Ballot!</dialogue>
+            <dialogue>Suffrage!</dialogue>
+            <dialogue>Franchise!</dialogue>
+            <dialogue>Vote!</dialogue>
+        </sp>
+        
+        <stage type="action">
+            (NARRATOR BANGS HIS GAVEL)
+        </stage>
+        
+        <sp>
+            <dialogue>
+                The dictionary says:
+                <q>"<underline>Ballot</underline>--- the method of secret voting; originally
+                by means of small balls placed in an urn or box."</q>
+                <q>"<underline>Suffrage</underline>--- a vote given by a member of a body,
+                state, or society, in assent to a proposition or
+                in favor of the election of a person."</q>
+                <q>"<underline>Franchise</underline>--- the right of voting at public elections."</q>
+                <q>"<underline>Vote</underline>--- an intimation that one approves or disapproves,
+                accepts or rejects, a proposal, motion, candidate for office, or the like."</q>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+    <pg n ="4"/>
+    
+    <scriptpg n="2">2</scriptpg>
+    
+    <div1>
+        <sp>
+            <speaker>Narrator (cont'd):</speaker>
+            <dialogue>
+                <p>The right to cast a ballot, to exercise 
+                //suffrage, to vote is one of the basic
+                //rights of citizens in a democracy --- a democracy,
+                //that form of government in which control is
+                //vested in the <unclear>people</unclear> as <unclear>a whole.</unclear> The ballot
+                //is basic.</p>
+                <p>Negro Americans---you, me--- are very much a
+                //part of this democracy. We're 15 million---
+                //and our vote counts. From the national to
+                //the local level, <underline>your</underline> vote counts. It counts
+                //in more and better jobs---<unclear>in</unclear> diplomatic posts
+                //abroad to local political patronage. It
+                //counts in education, in housing, in civil
+                //rights, in cleaner streets, in better garbage
+                //collection. The vote has value. Don't ne-
+                //glect your right to vote. Don't waste it.
+                //Dont forget it.</p>
+                <p>Maybe all of us would value the right of
+                //suffrage more if we stopped to look back a
+                //moment at what the struggle for the vote has
+                //cost. Back in the Middle Ages few people
+                //had control over their own lives, let alone
+                //over the land or the country. Kings and
+                //barons and chiefs and over-lords ran every-
+                //thing and everybody. Then came the Magna
+                //Carta in 1315 in England, and almost 400</p></dialogue>
+        </sp>
+    </div1>
+    
+    <pg n="5"/>
+    
+    <scriptpg n="3">3</scriptpg>
+    
+    <div1>
+        <sp>
+            <speaker>NARRATOR (cont'd):</speaker>
+            <dialogue>
+                <p>years later the Bill of Rights, many of 
+                    //whose provisions were incorporated into
+                //our own Constitution in 1787 and into the
+                //American Bill of Rights in 1791. Some of
+                //those rights, we, the Negro people of America,
+                //are still trying to secure in full.</p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+</body>
+</root>
