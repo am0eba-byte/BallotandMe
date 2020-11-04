@@ -1,5 +1,5 @@
 # BallotandMe
-Hello! This will be the repo our project team will use to create my Semester Project on Langston Hughes's typescript play **The Ballot and Me.**
+Hello! This will be the repo our project team will use to create our Semester Project on Langston Hughes's typescript play **The Ballot and Me.**
 
 Research goals:
 - xml:id all historical figure characters and keep track of their roles/speaking parts in the play. Make historical figures' xml:id reference their historical backgrounds
