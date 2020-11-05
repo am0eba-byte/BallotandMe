@@ -8,7 +8,6 @@
 
 <body>
     
-    <pg n="1"/>
     
     <titlePage>
         
@@ -43,8 +42,6 @@
         
     </titlePage>
     
-    
-    <pg n = "2"/>
     
     
     <castList>
@@ -115,7 +112,7 @@
                 ROBERT SMALLS   )
             </castItem>
             
-            <margin castGroupRole = "1" positon = "right">
+            <margin castGroupRole = "1" position = "right">
                 <l n="1">Representatives in Congress</l>
                 <l n="2">during Reconstruction <period begin="1869" end="1889">1869-1889</period></l>
             </margin>
@@ -130,7 +127,7 @@
                 BLANCHE K. BRUCE   )
             </castItem>
             
-            <margin castGroupRole = "2" positon = "right">
+            <margin castGroupRole = "2" position = "right">
                 Senators - <period begin="1870" end="1881">1870-1881 period</period>
             </margin>
             
@@ -176,8 +173,6 @@
         </note>
     </castList>
     
-    
-    <pg n="3"/>
     
     
     <set>
@@ -233,12 +228,7 @@
         </sp>
     </div1>
     
-    
-    <pg n ="4"/>
-    
-    <scriptpg n="2">2</scriptpg>
-    
-    <div1>
+       <div1>
         <sp>
             <speaker>Narrator (cont'd):</speaker>
             <dialogue>
@@ -246,13 +236,13 @@
                 //suffrage, to vote is one of the basic
                 //rights of citizens in a democracy --- a democracy,
                 //that form of government in which control is
-                //vested in the <unclear>people</unclear> as <unclear>a whole.</unclear> The ballot
+                //vested in the people as a whole. The ballot
                 //is basic.</p>
                 <p>Negro Americans---you, me--- are very much a
                 //part of this democracy. We're 15 million---
                 //and our vote counts. From the national to
                 //the local level, <underline>your</underline> vote counts. It counts
-                //in more and better jobs---<unclear>in</unclear> diplomatic posts
+                //in more and better jobs---in diplomatic posts
                 //abroad to local political patronage. It
                 //counts in education, in housing, in civil
                 //rights, in cleaner streets, in better garbage
@@ -271,9 +261,7 @@
         </sp>
     </div1>
     
-    <pg n="5"/>
-    
-    <scriptpg n="3">3</scriptpg>
+ 
     
     <div1>
         <sp>

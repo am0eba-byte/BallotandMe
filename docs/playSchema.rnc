@@ -9,7 +9,7 @@ head = element head {title, editor}
     editor = element editor {text}
         
         
-body = element body {((pg*), (scriptpg*),(titlePage), (castList), (set), (div1+))}
+body = element body {(titlePage), (castList), (set), (div1+)}
 
 pg = element pg {n, empty}
 
@@ -43,7 +43,7 @@ marginalia = element marginalia {hand, l*}
     hand = attribute hand {"LH"}
 
 
-castList = element castList {header, castgroup*, castItem, note}
+castList = element castList {header, ((castgroup* | castItem*), (castItem* | castgroup*), (castgroup* | castItem*)), note}
 
     header = element header {mixed{underline*}}
 
@@ -53,7 +53,7 @@ castList = element castList {header, castgroup*, castItem, note}
     
         role = element role {text}
 
-        margin = element margin {(castGroupRole?, position), mixed{l*,period*}}
+        margin = element margin {((castGroupRole?), (position)), mixed{l*,period*}}
         
             castGroupRole = attribute castGroupRole {xsd:integer}
         
@@ -85,20 +85,20 @@ set = element set {header, setting, setTime, action}
     
     action = element action {ab, actiondesc}
     
-        actiondesc = element actiondesc {l}
+        actiondesc = element actiondesc {l*}
     
 
 
 
-div1 = element div1 {sp+, stage*}
+div1 = element div1 {(sp*, stage*), (stage*, sp*)}
 
-    sp = element sp {speaker, dialogue*}
+    sp = element sp {(speaker, dialogue*) | (dialogue*)}
     
         speaker = element speaker {text}
             
          dialogue = element dialogue {mixed{p*,q*}}
          
-         p = element p {class?, mixed{unclear*, note*, metamark*, underline*, Xout*, q*}}
+         p = element p {class?, mixed{(note*), (metamark*), (underline*), (Xout*), (q*)}}
             
             class = attribute class {"navbar"}
             
