@@ -12,6 +12,9 @@ head = element head {title, editor}
 body = element body {(titlePage), (castList), (set), (div1+)}
 
 pg = element pg {n, empty}
+# ebb: I notice you removed this element from the rule for body for now...that's okay, but right now there's no place for <pg> to go yet.
+# My suggestion is maybe get a complete encoding of the play, and mark the page breaks in with XML comments. Then turn them into <pg/> elements and just notice from the angry schema errors which elements are containing them.
+# Then we can go back and work out which elements need to hold <pg> here. 
 
 scriptpg = element scriptpg {n, text}
 
@@ -97,8 +100,18 @@ div1 = element div1 {(sp*, stage*), (stage*, sp*)}
         speaker = element speaker {text}
             
          dialogue = element dialogue {mixed{p*,q*}}
+         # ebb: Hmmm. Are you SURE you want your <dialogue> element to contain mixed content? That would mean that text is flowing around the outside of the <p> and <q> elements...
+         # Think about the relationship of these elements in your code. From what I can see in the sample code so far, it looks like <dialogue> just contains <p> elements?  I think I'd just change this to:
+         # dialogue = element dialogue {p+}  
+         # Does that work?
          
          p = element p {class?, mixed{(note*), (metamark*), (underline*), (Xout*), (q*)}}
+         # ebb: Do you want your mixed content elements to appear in ANY order here? If so, you want to rephrase your mixed{} a little. The parentheses are for grouping sets of elements together:
+         # Try this: p = element p {class?, mixed{ (note | metamark | underline | Xout | q)* }
+         # That syntax basically says, you're allowed an option of ANY of those elements, zero or more times! (And that means they can appear in any order, too. 
+         # Looking at your play script, I think you're considering catching the line-beginnings--right now you're using pseudomarkup for that with the // characters. 
+         # You could try a self-closing <lb/> element for those: would you always want those to go inside <p> elements? That way you could calculate numbered lines for each character's speech! 
+        
             
             class = attribute class {"navbar"}
             
