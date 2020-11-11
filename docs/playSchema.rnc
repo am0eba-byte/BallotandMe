@@ -104,7 +104,10 @@ div1 = element div1 {(sp*, stage*), (stage*, sp*)}
     
         speaker = element speaker {text}
             
-         dialogue = element dialogue {p*,q*}
+         dialogue = element dialogue {p+}
+         
+         # mia: fix dialogue element rule to fit Dr B's suggestion
+         
          # ebb: Hmmm. Are you SURE you want your <dialogue> element to contain mixed content? That would mean that text is flowing around the outside of the <p> and <q> elements...
          # Think about the relationship of these elements in your code. From what I can see in the sample code so far, it looks like <dialogue> just contains <p> elements?  I think I'd just change this to:
          # dialogue = element dialogue {p+}  
