@@ -203,10 +203,12 @@
     <div1>
         <sp>
             <speaker>NARRATOR:</speaker>
-            <dialogue>Ballot!</dialogue>
-            <dialogue>Suffrage!</dialogue>
-            <dialogue>Franchise!</dialogue>
-            <dialogue>Vote!</dialogue>
+            <dialogue>
+                <p>
+                Ballot!
+                Suffrage!
+                Franchise!
+                Vote!</p></dialogue>
         </sp>
         
         <stage type="action">
@@ -215,6 +217,7 @@
         
         <sp>
             <dialogue>
+                <p>
                 The dictionary says:
                 <q>"<underline>Ballot</underline>--- the method of secret voting; originally
                 by means of small balls placed in an urn or box."</q>
@@ -224,6 +227,7 @@
                 <q>"<underline>Franchise</underline>--- the right of voting at public elections."</q>
                 <q>"<underline>Vote</underline>--- an intimation that one approves or disapproves,
                 accepts or rejects, a proposal, motion, candidate for office, or the like."</q>
+                </p>
             </dialogue>
         </sp>
     </div1>
