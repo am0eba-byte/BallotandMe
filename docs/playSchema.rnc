@@ -17,7 +17,6 @@ body = element body {(titlePage), (castList), (set), (div1+)}
 # My suggestion is maybe get a complete encoding of the play, and mark the page breaks in with XML comments. Then turn them into <pg/> elements and just notice from the angry schema errors which elements are containing them.
 # Then we can go back and work out which elements need to hold <pg> here. 
 
-scriptpg = element scriptpg {n, text}
 
     n = attribute n {xsd:integer}
 
@@ -98,7 +97,7 @@ set = element set {header, setting, setTime, action}
 
 
 
-div1 = element div1 {(sp*, stage*), (stage*, sp*)}
+div1 = element div1 {(sp | stage)*}
 
     sp = element sp {(speaker, dialogue*) | (dialogue*)}
     
@@ -113,7 +112,7 @@ div1 = element div1 {(sp*, stage*), (stage*, sp*)}
          # dialogue = element dialogue {p+}  
          # Does that work?
          
-         p = element p {class?, mixed{ (note | metamark | underline | Xout | q | lb)* } }
+         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb)* } }
          
          # mia: fixed element p rule to match Dr. B's suggestion
          
@@ -128,15 +127,17 @@ div1 = element div1 {(sp*, stage*), (stage*, sp*)}
             
             metamark = element metamark {type, text}
             
+            insert = element insert {hand, text}
+            
             underline = element underline {color?, text}
                 
                 color = attribute color {"red"}
             
-            Xout = element Xout {empty}
+            Xout = element Xout {text}
             
             q = element q {mixed{underline*}}
             
-     stage = element stage {type, text}
+     stage = element stage {type, mixed{lb*}}
     
         type = attribute type {"enter" | "action" }
         

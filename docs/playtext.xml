@@ -173,7 +173,7 @@
         </note>
     </castList>
     
-    
+    <!-- pg n="1" -->
     
     <set>
         
@@ -234,6 +234,8 @@
         </sp>
     </div1>
     
+    <!-- pg n="2" -->
+    
        <div1>
         <sp>
             <speaker>Narrator (cont'd):</speaker>
@@ -267,7 +269,7 @@
         </sp>
     </div1>
     
- 
+ <!-- pg n="3"  -->
     
     <div1>
         <sp>
@@ -279,9 +281,108 @@
                     <lb/>American Bill of Rights in 1791. Some of
                     <lb/>those rights, we, the Negro people of America,
                     <lb/>are still trying to secure in full.</p>
+                <p><lb/>We came to these shores first as explorers---
+                    <lb/>with Cortez, with Balboa, with Columbus. But
+                    <lb/>we did not migrate in large numbers. The
+                    <lb/>majority of our ancestors were brought to the
+                    <lb/>Americas by force as slaves, dating back from 1619.
+                    <lb/>Slaves, like serfs in Europe, could not vote.
+                    <lb/>But very early in our history, after the
+                    <lb/>colonies won their freedom from the British---
+                    <lb/>Crispus Attucks of Boston, a Negro, being
+                    <lb/>the first man killed when resistence to the
+                    <lb/>British started---free Negros in the New
+                    <lb/>England colonies voted. Some Negros in our
+                    <lb/>country have always voted from the very be-
+                    <lb/>ginning of our United States, and fought
+                    <lb/>to keep the vote and extend it to others.
+                    <lb/>But sometimes it was a hard battle. You who
+                    <lb/>have the vote here in New York, keep it, use
+                    <lb/>it, and help others to get it.
+                </p>
+                <p><lb/>After the Revolutionary War, free Negros
+                    <lb/>could vote anywhere, but in 1789 the Southern
+                    <lb/>slave-holding states sensed danger in letting
+                    <lb/>free Negroes vote, and began to disfranchise
+                    <lb/>them. By 1834 no Negroes could vote in the
+                </p>
             </dialogue>
         </sp>
+                    <!-- pg n="4" -->
+        <sp>
+            <speaker>NARRATOR (cont'd)</speaker>
+            <dialogue>
+                <p><lb/>South, and some Northern states like Penn-
+                    <lb/>sylvania and Indiana denied them the ballot,
+                    <lb/>too. But colored men in New York, could
+                    <lb/>vote if they owned property and had lived
+                    <lb/>here for three years. This man could vote.
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="enter">
+            <lb/>(SAMUEL FRAUNCES ENTERS IN COLONIAL
+            <lb/>KNICKERS)
+        </stage>
+        <sp>
+            <dialogue>
+                <p><lb/>Samuel Fraunces. He was the owner of Fraunces
+                    <lb/>Tavern at Broad and Pearl Streets in New York
+                    <lb/>City. At his tavern George Washington often
+                    <lb/>dined, and when Washington became President,
+                    <lb/>he made Samuel Fraunces his chief steward.
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>FRAUNCES:</speaker>
+            <dialogue>
+                <p>And I <insert hand="LH">could</insert> vote<Xout>d</Xout>.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                <lb/>Fraunces was a man of means, a solid citizen, interested
+                <lb/>in the affairs of the day. Free Negroes in New York
+                <lb/>then could vote.</p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(SUDDENLY THE SPOTLIGHT FOCUSES ON A 
+            <lb/>BONNETED WOMAN SITTING IN THE AUDIENCE
+            <lb/>IN THE CORNER OF A PEW WHO QUICKLY
+            <lb/>SPEAKS UP LOUDLY. SHE IS SOJOURNER
+            <lb/>TRUTH)
+        </stage>
+        <sp>
+            <speaker>SOJOURNER:</speaker>
+            <dialogue>
+                <p>Could I vote? I lived in New York.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                <lb/>No, Sojourner Truth. You were a woman, and in those
+                <lb/>days only men could vote.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>SOJOURNER:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Which were wrong! I believed everybody should vote,
+                    <lb/>black and white, men and women: And I said so.
+                </p>
+            </dialogue>
+        </sp>
+
     </div1>
+    
+    <!-- pg n="5" -->
     
     
 </body>
