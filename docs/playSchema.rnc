@@ -49,15 +49,19 @@ marginalia = element marginalia {hand, l*}
 
 castList = element castList {header, ((castgroup* | castItem*), (castItem* | castgroup*), (castgroup* | castItem*)), note}
 
-    header = element header {mixed{underline*}}
+    header = element header {mixed{ (underline | lb)*}}
 
-    castItem = element castItem {mixed{unclear*, role*, margin*}}
+    castItem = element castItem {mixed{ (unclear | role | margin | lb)* } }
     
         unclear = element unclear {text}
     
         role = element role {text}
 
         margin = element margin {((castGroupRole?), (position)), mixed{l*,period*}}
+        
+        lb = element lb {empty}
+        
+        # mia: add lb element to cast items to indicate line breaks
         
             castGroupRole = attribute castGroupRole {xsd:integer}
         
@@ -106,7 +110,7 @@ div1 = element div1 {(sp*, stage*), (stage*, sp*)}
          # dialogue = element dialogue {p+}  
          # Does that work?
          
-         p = element p {class?, mixed{ (note | metamark | underline | Xout | q)* } }
+         p = element p {class?, mixed{ (note | metamark | underline | Xout | q | lb)* } }
          
          # mia: fixed element p rule to match Dr. B's suggestion
          
