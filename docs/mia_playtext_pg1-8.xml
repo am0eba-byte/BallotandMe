@@ -2,7 +2,7 @@
 <?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
     <head>
-        <title>The Ballot and Me Semester Project</title>
+        <title>The Ballot and Me Semester Project, pages 1-8</title>
         <editor>Mia Borgia</editor>
     </head>
 
@@ -384,6 +384,41 @@
     
     <!-- pg n="5" -->
     
+    <div1>
+        
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>I know you said so. You went to the first women's
+                    <lb/>suffrage meetings, and you joined with Abby Kelley
+                    <lb/>and Lucretia Nott and Frances Gage, white women,
+                    <lb/>in speaking not only for Negro freedom, but for
+                    <lb/>the freedom of women. You were a runaway slave
+                    <lb/>who made yourself free.
+                </p>
+            </dialogue>
+        </sp>
+        
+        <sp>
+            <speaker>SOJOURNER:</speaker>
+            <dialogue>
+                <p><lb/>And I wanted to vote.
+                </p>
+            </dialogue>
+        </sp>
+        
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>When they wouldn't let you sit on the platform
+                    <lb/>because you were a Negro at the National Woman's
+                    <lb/>Suffrage Convention in Akron, Ohio, in 1852, you sat
+                    <lb/>
+                </p>
+            </dialogue>
+        </sp>
+        
+    </div1>
     
 </body>
 </root>
