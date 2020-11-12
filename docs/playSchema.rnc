@@ -9,7 +9,7 @@ head = element head {title, editor}
     editor = element editor {text}
         
         
-body = element body {(titlePage), (castList), (set), (div1+)}
+body = element body {(titlePage)?, (castList)?, (set)?, (div1+)}
 
 # mia: deleted rule for pg elements for now
 
