@@ -138,7 +138,7 @@ div1 = element div1 {(sp | stage)*}
             
             Xout = element Xout {text}
             
-            q = element q {mixed{underline*}}
+            q = element q {mixed{(lb, underline)*}}
             
      stage = element stage {type, mixed{lb*}}
     
