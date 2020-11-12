@@ -11,7 +11,10 @@ head = element head {title, editor}
         
 body = element body {(titlePage)?, (castList)?, (set)?, (div1+)}
 
-# mia: deleted rule for pg elements for now
+# mia: I put question mark repetition indicators on everything except div1 so that when Mckenna and Brett do their portions,
+# the schema won't yell at them to put in the title page, cast list and set pages!
+
+
 
 # ebb: I notice you removed this element from the rule for body for now...that's okay, but right now there's no place for <pg> to go yet.
 # My suggestion is maybe get a complete encoding of the play, and mark the page breaks in with XML comments. Then turn them into <pg/> elements and just notice from the angry schema errors which elements are containing them.
@@ -112,7 +115,7 @@ div1 = element div1 {(sp | stage)*}
          # dialogue = element dialogue {p+}  
          # Does that work?
          
-         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb)* } }
+         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb | stage)* } }
          
          # mia: fixed element p rule to match Dr. B's suggestion
          
