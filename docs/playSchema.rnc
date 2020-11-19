@@ -102,11 +102,11 @@ set = element set {header, setting, setTime, action}
 
 div1 = element div1 {(sp | stage)*}
 
-    sp = element sp {(speaker, dialogue*) | (dialogue*)}
+    sp = element sp {(speaker | dialogue | metamark)*}
     
-        speaker = element speaker {text}
+        speaker = element speaker {mixed{lb*}}
             
-         dialogue = element dialogue {p+}
+         dialogue = element dialogue {(p | stage)*}
          
          # mia: fix dialogue element rule to fit Dr B's suggestion
          
@@ -128,11 +128,11 @@ div1 = element div1 {(sp | stage)*}
             
             class = attribute class {"navbar"}
             
-            metamark = element metamark {type, text}
+            metamark = element metamark {hand, text}
             
             insert = element insert {hand, text}
             
-            underline = element underline {color?, text}
+            underline = element underline {color?, mixed{lb*}}
                 
                 color = attribute color {"red"}
             

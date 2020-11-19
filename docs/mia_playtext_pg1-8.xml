@@ -451,12 +451,155 @@
     <div1>
         
         <sp>
-            <speaker></speaker>
+            <speaker><lb/>heard
+                    <lb/>(SOJOURNER):
+            </speaker>
             <dialogue>
-                <p></p>
+                <p><lb/>heard---and ain't I a woman? They talks about
+                <lb/>this thing in the head---intellect. What's that
+                <lb/>got to do with women's rights? If my cup won't
+                <lb/>hold but a pink and yourn holds a quart, wouldn't
+                <lb/>ye men be mean not to let me have my little half-
+                <lb/>measure full? If the first woman God made was
+                <lb/>strong enough to turn the world upside down all
+                <lb/>alone, I guess all us women together ought to be
+                <lb/>able to turn it back and get it right side up
+                <lb/>again. And now that they is asking to do it, <underline>the
+                <lb/>mens better let 'em.</underline>"</p>
             </dialogue>
         </sp>
-        
+        <stage type="action">(SHE RETURNS TO HER PEW)</stage>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>But it was almost three-quarters of a century
+                <lb/>before the country got around to giving you the
+                <lb/>vote, Sojourner Truth, before the 19th Amendment
+                <lb/>granting women's suffrage was passed.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>SOJOURNER:</speaker>
+            <dialogue>
+                <p><lb/>It were finally passed---and about time, too!
+                <lb/>I took my freedom, but I didn't live long enough
+                <lb/>to vote.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>Freedom! That was the first thing most Negroes
+                <lb/>had to get. Before the Civil War most of us
+                <lb/>were slaves. But some Negroes, even in the South,
+                <lb/>had never been slaves. Some were born free, some
+                <lb/>were given their freedom, and some ran away to
+                <lb/>freedom in the North. Among the great runaways
+                <lb/>was Frederick Douglass who escaped from a Maryland</p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    <!-- pg n="7" -->
+    
+    <div1>
+        <sp>
+            <speaker>(NARRATOR:)</speaker>
+            <dialogue>
+                <p><lb/>plantation in 1838, and devoted his life to
+                <lb/>fighting for freedom for all, and for full
+                <lb/>citizenship rights for all. In his middle age!</p>
+                
+                <stage type="enter"><lb/>(DOUGLASS ENTERS, WHITE HAIRED,
+                <lb/>WHITE BEARD, DIGNIFIED, IMPOSING)</stage>
+                
+                <p><lb/>After Emancipation, after the Civil War was over,
+                <lb/>he made many speeches concerning the franchise.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <metamark hand="LH">X</metamark><speaker>DOUGLASS:</speaker>
+            <dialogue>
+                <p><lb/>I see no chance of bettering the condition of the
+                <lb/>freedman until he shall cease to be merely a freed-
+                <lb/>man and shall become a citizen. I insist that
+                <lb/>there is no safety for him or anybody else in
+                <lb/>America outside the American government; to guard,
+                <lb/>protect, and maintain his liberty the freedman
+                <lb/>should have the ballot; the liberties of the
+                <lb/>American people are dependent upon the ballot-
+                <lb/>box, the jury-box, and the cartridge-box.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>And it took the cartridge-box to protect the
+                <lb/>rights of the freed Negroes in the early days of
+                <lb/>the Reconstruction. In 1867 Congress divided
+                <lb/>the South into five military districts, proclaimed
+                <lb/>universal suffrage, and placed federal marshalls
+                <lb/>at the polls to protect the Negro's newly granted
+                <lb/>right to vote. This right was made permanent by
+                <lb/>the passage in 1870 of the 15th Amendment to the
+                <lb/>Constitution of the United States. 700,000 Negroes
+                <lb/>were added to the voting rolls of the South, and
+                <lb/>many city and state offices were filled by the
+                <lb/>freedman. With Negroes in state legislatures,</p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    <!-- pg n="8" -->
+    
+    <div1>
+        <sp>
+            <speaker>9(NARRATOR:)</speaker>
+            <dialogue>
+                <p><lb/>new state constitutions were drawn up with
+                <lb/>provisions for free public schools for all,
+                <lb/>civil rights for all, and no property qualifications
+                <lb/>for voting---the most progressive acts of laws
+                <lb/>the South had ever known, many of them remaining
+                <lb/>on the books until today.</p>
+                <p><lb/>During the Reconstruction the Southern states
+                <lb/>sent 14 Negro Representatives and 2 Senators of
+                <lb/>color to Washington. The first Representative
+                <lb/>was from Georgia, elected in 1869, Jefferson P.
+                <lb/>Long.</p>
+                
+                <stage type="enter"><lb/>(LONG ENTERS TO STAND BESIDE NARRATOR.
+                <lb/>IN TURN, AS EACH MAN'S NAME IS CALLED,
+                <lb/>EACH ENTERS, ALTERNATELY AT LEFT OR
+                <lb/>RIGHT, TO TORM TWO LINES ON EACH SIDE
+                <lb/>OF THE PLATFORM)</stage>
+                
+                <p><lb/>Then in 1871 South Carolina elected four Negro
+                <lb/>Congressmen, Joseph H. Rainey.</p>
+                
+                <stage type="enter">(ENTER RAINEY)</stage>
+                
+                <p>Robert O. DeLarge.</p>
+                
+                <stage type="enter">(ENTER DeLARGE)</stage>
+                
+                <p>Alonzo J. Rainer.</p>
+                
+                <stage type="enter">(ENTER RAINER)</stage>
+                
+                <p>And Robert B. Elliott.</p>
+                
+                <stage type="enter">(ENTER ELLIOTT)</stage>
+                
+                <p>That same year Alabama elected Benjamin S. Turner.</p>
+                
+                <stage type="enter">(ENTER TURNER)</stage>
+                
+                <p>In 1873 Mississippi elected John R. Lynch.</p>
+                
+                <stage type="enter">(ENTER LYNCH)</stage>
+            </dialogue>
+        </sp>
     </div1>
     
 </body>
