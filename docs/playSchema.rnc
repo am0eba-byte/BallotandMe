@@ -9,7 +9,9 @@ head = element head {title, editor}
     editor = element editor {text}
         
         
-body = element body {(titlePage)?, (castList)?, (set)?, (div1+)}
+body = element body {(titlePage)?, (castList)?, (set)?, (div1 | pg)*}
+
+pg = element pg {n, empty}
 
 # mia: I put question mark repetition indicators on everything except div1 so that when Mckenna and Brett do their portions,
 # the schema won't yell at them to put in the title page, cast list and set pages!

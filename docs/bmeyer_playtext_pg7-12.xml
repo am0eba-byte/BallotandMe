@@ -1,284 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
+    <!-- mia: Sup Brett, sorry to peep in your XML but I just doctored up the schema
+        errors you had. Let me know if you're wondering about something I changed -->
+    <head>
+        <title>Ballot and Me pages 8-12</title>
+        <editor>Brett Meyer</editor>
+    </head>
     <body>
-        <pg>
+        
+        <!-- Mia: I put all of the page numbers self-closing tags, so you don't
+         have to wrap the entire page in a <pg> element (:-->
+
+        <pg n="9"/>
+        
+        <div1>  <!-- I made the schema so that <div1> will wrap the whole page, just because
+        it'll be easier to change this element when we do some XSLT to get the page
+         divisions separated when we turn this into HTML for the website.-->
             <sp>
-                NARRATOR:
-            </sp> 
-            <dialogue>
-                I know you did so. You went to the first women's
-            suffrage meetings, and you joined with Abby Kelly
-            and Luoretia Mott and Frances Gage, white women, 
-            in speaking not only for Negro freedom, but for
-            the freedom of women. You were a runaway slave
-            who made yourself free.
-            </dialogue>
-            <sp>SOJOURNER: </sp>
-            <dialogue>
-                And I wanted to vote.</dialogue>
-            <sp>
-                NARRATOR:
-            </sp> 
-            <dialogue>
-                When they wouldn't let you sit on the platform
-            because you were a Negro at the National Woman's
-            Suffrage Convention in Akron, Ohio, in 1852, you
-            sat wherre you are sitting now in the audience.
-            </dialogue>
-            <sp>
-                SOJOURNER:
-            </sp> 
-            <dialogue>
-                I did---until the going got hot, (SHE RISES) and
-            the men speakers started baiting th ewomen, and
-            talking about the women is weak, not strong as
-            men nor smart as men, and they even have to be
-            helped into carriages. 
-                <action>
-                (SHE COMES TO THE ROSTRUM)
-                </action>
-            Then I just walked up on that platform, sir, and
-            told them men: "Nobody ever helped me into carriages,
-            or over mud puddles, or give me any best place.
-            Ain't I a woman? Look at me! Look at my arm!
-            I have plowed and planted and agthered into barns,
-            and no man could hear me, And ain't I a woman?
-            I could work as much and eat as much as a man---
-            when I could get it---and bear the lash as well---
-            and ain't I a woman? I have had five chillum and
-            seen 'em most all told off into slavery, and when
-            I cried out with a mother's grief, none but Jesus..."
-            </dialogue>
-        </pg>
-        <pg>
-            <sp>
-                (SOJOURNER):
-            </sp> 
-            <dialogue>
-                "...heard---ain't I a woman? Thye talk about
-            this thing in the head---intellect. What's that 
-            got to do with woman's rights? If my cup won't
-            hold but a pint and yourn holds a quart, wouldn't
-            ye men be mean not to let me have my little half-
-            measure full? If the first woman God made was
-            strong enough to turn the world upside down all
-            alone, I guess all us women together ought to be
-            able to turn it back and get it right side up
-            again. And now that they is asking to do it, the
-            mens better let 'em."
-            </dialogue>
-            <action>
-                (SHE RETURNS TO HER PEW)
-            </action>
-            <sp>
-                NARRATOR:
-            </sp>
+                <speaker>(NARRATOR:)</speaker>  <!-- I think you might've accidentally
+                                                   confused the <sp> element with the <speaker>
+                                                    element, and I understand! The <sp> element
+                                                  is written in the schema to wrap around the
+                                                    entire section until the next speaker appears-->
                 <dialogue>
-                    But it was alsmot three-quarters of a century
-                before the country got around to giving you the
-                vote, Sojourner Truth, before the 19th Amendment
-                granting women's suffrage was passed.
-                </dialogue>
-                <sp>
-                    SOJOURNER: 
-                </sp>
-                <dialogue>
-                    It were finally passed---and about time, too!
-                I took my freedom, but I didn't live long enough
-                to vote.
-                </dialogue>
-                <dialogue>
-                    Freedom! That was the first thing most Negroes
-                were slaves. But some Negroes, even in the South,
-                had never been slaves. Some were born free, some
-                were given their freedo, and some ran away to
-                freedom in the North. Among the great runaways
-                was Frederick Douglas who escaped from a Maryland...
-                </dialogue>
-            
-            
-        </pg>
-        <pg>
-            <dialogue>
-            ...plantaion in 1838, and devotes his life to
-            fighting for freedom for all, and for full
-            citizenship rights for all. IN his middle age:
-            </dialogue>
-                        <action>
-                        (DOGULAS ENTERS, WHITE HAIREED,
-                        WHITE BEARD, DIGNIFIED, IMPOSING)
-                        </action>
-            After Emancipation, after the Civil War was over,
-            he made many speeches concerning the franchise.
-            <sp>
-                DOUGLASS:
-            </sp>
-            I see no chance of bettering the condition of the
-            freedman until he shall cease to be merely a freed-
-            man and shall become a citizen. I insist that
-            there is no safety for him or anybody else in
-            America outside the American government; to guard,
-            protec, and maintain his liberty the freedmn
-            should have the ballot; the liberties of the
-            American people are dependent upon the abllot-
-            box, the jury-box, and the cartridge-box.
-            <sp>
-                NARRATOR:
-            </sp>
-            <dialogue>
-                And it took the cartridge-box to protect the
-            rights of the freed Negroes in the early days of
-            the Reconstruction. In 1867 Congress divided
-            the South into five military districts, proclaimed
-            universal suffrage, and placed federal marshalls
-            at the polls to protect the Negroe's newly granted
-            right to vote. This right was made pemanent by
-            the passage in 1870 of the 15th Amendment to the
-            Consitution of the United States. 700,000 Negroes
-            were added to the voting rolls of the South, and
-            many city and state offices were filled by the
-            freedom. With Negroes in state legislatures,
-            </dialogue>
-        </pg>
-        <pg>
-            <sp>
-                (NARRATOR):
-            </sp>
-            <dialogue>
-                9 new state constitutions were drawn up with
-                provisions for free public schools for all,
-                civil rights for all, and no property qualifications
-                for voting---the most progressive acts of laws
-                the South had ever known, many of them remaining
-                on the books until today.
-                During the Reconstruction the Southern states
-                sent 14 Negro Representatives and2 Senators of
-                color to Washington. The first Repersentative
-                was from Georgia, elected in 1869, Jefferson P.
-                Long.
-            </dialogue>
-            <action>
-               (LONG ENTERS TO STAND BESIDE NARRATOR.
-                IN TURN, AS EACH MAN'S NAME IS CALLED,
-                EACH ENTERS, ALTERNATIVELY AT LEFT OR
-                RIGHT, TO FORM TWO LINE ON EACH SIDE 
-                OF THE PLATFORM)
-            </action>
-            <dialogue>
-            Then in 1871 South Carolina elected four Negro
-            Congressman, Josepf H. Rainey.
-            </dialogue>
-            <action>
-                (ENTER RAINEY)
-            </action>
-            <dialogue>
-                Roberto O. DeLarge.
-            </dialogue>
-            <action>
-                (ENTER DeLARGE)
-            </action>
-            <dialogue>
-                Alonzo J. Rainer.
-            </dialogue>
-            <action>
-                (ENTER RAINER)
-            </action>
-            <dialogue>
-                And Robert B. Elliott.
-            </dialogue>
-            <action>
-                (ENTER ELLIOTT)
-            </action>
-            <dialogue>
-                That same year Alabama elected Benjamin S. Turner.
-            </dialogue>
-            <action>
-                (ENTER TURNER)
-            </action>
-            <dialogue>
-                iN 1873 Mississippi elected John R. Lynch.
-            </dialogue>
-            <action>
-                (ENTER LYNCH)
-            </action>
-        </pg>
-        <pg>
-            <sp>
-                (NARRATOR)
-            </sp>
-            <dialogue>
-            Alabama elected James T Rapier.
-            </dialogue>
-            <action>
+                    
+                    <p>Alabama elected James T Rapier.</p> <!-- the <dialogue> needs <p> elements
+                                                            to wrap around "paragraphs" of the dialogue
+                                                            text, even if it's just one line of text
+                                                        like these lines.-->
+
+                <stage type="enter">
                 (ENTER RAPIER)
-            </action>
-            <dialogue>
-            Florida elected Josiah T. Walls.
-            </dialogue>
-            <action>
+                </stage>
+            
+                <p>
+                Florida elected Josiah T. Walls.
+                </p>
+                    
+                <stage type="enter"> 
                 (ENTER WALLS)
-            </action>
-            <dialogue>
+                </stage>        <!-- you were putting <action> elements around the stage parts,
+                             but instead, wherever theres little bits indicating action like
+                            this, just wrap it in a <stage> element - and if the action involves
+                            someone entering the scene, make it <stage type="enter">, but if
+                            it involves anything other than someone entering (just general
+                            actions), then make it <stage type="action">-->
+                    
+                <p>
                 And South Carolina elected Richard H. Cain.
-            </dialogue>
-            <action>
+                </p>
+                    
+                <stage type="enter">
                 (ENTER CAIN)
-            </action>
-            <dialogue>
-            That same year to the House of Representatives
-            North Carolina elected John A. Hyman.
-            </dialogue>
-            <action>
-            (ENTER NASH)
-            </action>
-            <dialogue>
-                That same year to the House of Representatives
-                North Carolina elected John A. Hyman.
-            </dialogue>
-            <action>
+                </stage>
+                    
+                <p>
+                <lb/>That same year to the House of Representatives
+                <lb/>North Carolina elected John A. Hyman.
+                </p>   <!-- Wherever there's more than one line of dialogue, mark the 
+                        beginnings of the lines with the self-closing attribute <lb/>
+                        This way, when we make the website, we can make it look
+                    accurate to the way the actual document looks, by indicating
+                    where lines of text start inside <p> elements.-->
+                    
+                <stage type="enter">
                 (ENTER HYMAN)
-            </action>
-            <dialogue>
+                </stage>
+                    
+                <p>
                 Alabama elected Jene Haralson.
-            </dialogue>
-            <action>(ENTER HARALSON)</action>
-            <dialogue>
+                </p>
+                    
+                <stage type="enter">
+                (ENTER HARALSON)
+                </stage>
+                <p>
                 And South Carolina elected Rovert Smalls.
-            </dialogue>
-            <action>(ENTER SMALLS)</action>
-            <dialogue>
-                The only Negro Senators in American history came
-                at the very end of the Reconstruction period. The
-                first, elected in 1870, was Hiram R. Revels.
-            </dialogue>
-            <action>(ENTER REVELS)</action>
-            <dialogue>
+                </p>
+                    
+                <stage type="enter">
+                (ENTER SMALLS)
+                </stage>
+                    
+                <p>
+                <lb/>The only Negro Senators in American history came
+                <lb/>at the very end of the Reconstruction period. The
+                <lb/>first, elected in 1870, was Hiram R. Revels.
+                </p>
+                    
+            <stage type="enter">(ENTER REVELS)</stage>
+                    
+            <p>
                 And the second in 1876 was Blanche K. Bruce.
+            </p>
+                    
+            <stage type="enter">(ENTER BRUCE)</stage>
+                    
+            <p>
+                <lb/>Most of these men were as well qualified and as
+                <lb/>well educated as white officials of the times,
+                <lb/>and some better. Some were graduates of Oberlin
+                <lb/>or other leading Northern colleges. Elliot had
+                <lb/>studied abroad. Of those who served in Congress,
+            </p>
             </dialogue>
-            <action>(ENTER BRUCE)</action>
+       </sp>
+  </div1>
+        
+        
+        <pg n="10"/>
+        
+        
+        <div1>
+            <sp>
+                <speaker>(NARRATOR:)</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>the Republican leader, James G. Blaine, said,
+                        <lb/><q>"They were as a rule studious, earnest, ambitious
+                        <lb/>men, whose public conduct would be honorable to
+                        <lb/>any race."</q> Typical of the Negroes who serves in
+                        <lb/>the House of Representatives at Washington was
+                        <lb/>Richard H. Cain, A.M.E. minister of South Carolina.
+                        <lb/>Cain made a stirring speech in Congress regarding
+                        <lb/>Civil Rights.
+                    </p>
+                </dialogue>
+            </sp>
+        
+            <stage type="action">(CAIN STEPS FORWARD AND SPEAKS)</stage>
+        
+            <sp>
+                <speaker>CAIN:</speaker>
             <dialogue>
-                Most of these men were as well qualified and as
-                well educated as white officials of the times,
-                and some better. Some were graduates of Oberlin
-                or other leading Northern colleges. Elliot had
-                studied abroad. Of those who served in Congress,
+                <p>
+                <lb/>I do not ask any legislation for the colored people
+                <lb/>of this country that is not applied to white people.
+                <lb/>All that we aks is equal laws, not equal legislation,
+                <lb/>and equal rights throughout the length and breadth
+                <lb/>of this land. We do not come here begging for our
+                <lb/>rights. We come here clothed in the garb of
+                <lb/>American citizenship. We come <underline>demanding</underline> our rights
+                <lb/>in the name of our children, in the name of our country.
+                </p>
             </dialogue>
-        </pg>
-        <pg>
-            <sp></sp>
-            <dialogue></dialogue>
-            <action></action>
-            <sp>CAIN:</sp>
-            <dialogue>
-                I do not ask any legislation for the colored people
-                of this country that is not applied to white people.
-                All that we aks is equal laws, not equal legislation,
-                and equal rights throughout the length and breadth
-                of this land. We do not come here begging for our
-                rights. We come here clothed in the garb of
-                American citizenship. We come demanding our rights
-                in the name of our children, in the name of our country.</dialogue>
-        </pg>
+            </sp>
+        </div1>
+        
+        
+        <pg n="11"/> <!-- so here's were you left off, it would be "13 of 17" on
+        the top left of the website, but it's page 11 on the actual typescript-->
+        
+        <!-- I started you off with an outline, hope that helps! Don't be afraid to
+            message me for some help if you get stuck-->
+        <div1>
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER LANGSTON)</stage>
+                    
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER MILLER AND MURRAY)</stage>
+                    
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER O'HARA AND CHEATHAM)</stage>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    
+                    <stage type="enter">(ENTER WHITE)</stage>
+                </dialogue>
+            </sp>
+        </div1>
+        
+        
+        <pg n="12"/>
+        
+        
+        <div1>
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                    </p>
+                </dialogue>
+            </sp>
+            
+            <stage type="action">(LANGSTON COMES FORWARD)</stage>
+            
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                    </p>
+                </dialogue>
+            </sp>
+        </div1>
     </body>
 </root>
