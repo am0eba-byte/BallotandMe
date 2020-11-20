@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <!-- mia: Sup Brett, sorry to peep in your XML but I just doctored up the schema
+        errors you had. Let me know if you're wondering about something I changed -->
+    <head>
+        <title>Ballot and Me pages 8-12</title>
+        <editor>Brett Meyer</editor>
+    </head>
+    <body>
+        
+        <!-- Mia: I put all of the page numbers self-closing tags, so you don't
+         have to wrap the entire page in a <pg> element (:-->
+
+        <pg n="9"/>
+        
+        <div1>  <!-- I made the schema so that <div1> will wrap the whole page, just because
+        it'll be easier to change this element when we do some XSLT to get the page
+         divisions separated when we turn this into HTML for the website.-->
+            <sp>
+                <speaker>(NARRATOR:)</speaker>  <!-- I think you might've accidentally
+                                                   confused the <sp> element with the <speaker>
+                                                    element, and I understand! The <sp> element
+                                                  is written in the schema to wrap around the
+                                                    entire section until the next speaker appears-->
+                <dialogue>
+                    
+                    <p><location>Alabama</location> elected <person>James T Rapier</person>.</p> <!-- the <dialogue> needs <p> elements
+                                                            to wrap around "paragraphs" of the dialogue
+                                                            text, even if it's just one line of text
+                                                        like these lines.-->
+
+                <stage type="enter">
+                (ENTER RAPIER)
+                </stage>
+            
+                <p>
+                <location>Florida</location> elected <person>Josiah T. Walls</person>.
+                </p>
+                    
+                <stage type="enter"> 
+                (ENTER WALLS)
+                </stage>        <!-- you were putting <action> elements around the stage parts,
+                             but instead, wherever theres little bits indicating action like
+                            this, just wrap it in a <stage> element - and if the action involves
+                            someone entering the scene, make it <stage type="enter">, but if
+                            it involves anything other than someone entering (just general
+                            actions), then make it <stage type="action">-->
+                    
+                <p>
+                And <location>South Carolina</location> elected <person>Richard H. Cain</person>.
+                </p>
+                    
+                <stage type="enter">
+                (ENTER CAIN)
+                </stage>
+                    
+                <p>
+                <lb/>That same year to the House of Representatives
+                <lb/><location>North Carolina</location> elected <person>John A. Hyman</person>.
+                </p>   <!-- Wherever there's more than one line of dialogue, mark the 
+                        beginnings of the lines with the self-closing attribute <lb/>
+                        This way, when we make the website, we can make it look
+                    accurate to the way the actual document looks, by indicating
+                    where lines of text start inside <p> elements.-->
+                    
+                <stage type="enter">
+                (ENTER HYMAN)
+                </stage>
+                    
+                <p>
+                <location>Alabama</location> elected <person>Jene Haralson</person>.
+                </p>
+                    
+                <stage type="enter">
+                (ENTER HARALSON)
+                </stage>
+                    
+                <p>
+                And <location>South Carolina</location> elected <person>Rovert Smalls</person>.
+                </p>
+                    
+                <stage type="enter">
+                (ENTER SMALLS)
+                </stage>
+                    
+                <p>
+                <lb/>The only Negro Senators in American history came
+                <lb/>at the very end of the Reconstruction period. The
+                <lb/>first, elected in <date when="1870">1870</date>, was <person>Hiram R. Revels</person>.
+                </p>
+                    
+            <stage type="enter">(ENTER REVELS)</stage>
+                    
+            <p>
+                And the second in <date when="1876">1876</date> was <person>Blanche K. Bruce</person>.
+            </p>
+                    
+            <stage type="enter">(ENTER BRUCE)</stage>
+                    
+            <p>
+                <lb/>Most of these men were as well qualified and as
+                <lb/>well educated as white officials of the times,
+                <lb/>and some better. Some were graduates of Oberlin
+                <lb/>or other leading Northern colleges. <person>Elliott</person> had
+                <lb/>studied abroad. Of those who served in Congress,
+            </p>
+            </dialogue>
+       </sp>
+  </div1>
+        
+        
+        <pg n="10"/>
+        
+        
+        <div1>
+            <sp>
+                <speaker>(NARRATOR:)</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>the Republican leader, James G. Blaine, said,
+                        <lb/><q>"They were as a rule studious, earnest, ambitious
+                        <lb/>men, whose public conduct would be honorable to
+                        <lb/>any race."</q> Typical of the Negroes who serves in
+                        <lb/>the House of Representatives at Washington was
+                        <lb/><person>Richard H. Cain</person>, A.M.E. minister of <location>South Carolina</location>.
+                        <lb/>Cain made a stirring speech in Congress regarding
+                        <lb/>Civil Rights.
+                    </p>
+                </dialogue>
+            </sp>
+        
+            <stage type="action">(CAIN STEPS FORWARD AND SPEAKS)</stage>
+        
+            <sp>
+                <speaker>CAIN:</speaker>
+            <dialogue>
+                <p>
+                <lb/>I do not ask any legislation for the colored people
+                <lb/>of this country that is not applied to white people.
+                <lb/>All that we aks is equal laws, not equal legislation,
+                <lb/>and equal rights throughout the length and breadth
+                <lb/>of this land. We do not come here begging for our
+                <lb/>rights. We come here clothed in the garb of
+                <lb/>American citizenship. We come <underline>demanding</underline> our rights
+                <lb/>in the name of our children, in the name of our country.
+                </p>
+            </dialogue>
+            </sp>
+        </div1>
+        
+        
+        <pg n="11"/> <!-- so here's were you left off, it would be "13 of 17" on
+        the top left of the website, but it's page 11 on the actual typescript-->
+        
+        <!-- I started you off with an outline, hope that helps! Don't be afraid to
+            message me for some help if you get stuck-->
+        <div1>
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER LANGSTON)</stage>
+                    
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER MILLER AND MURRAY)</stage>
+                    
+                    <p></p>
+                    
+                    <stage type="enter">(ENTER O'HARA AND CHEATHAM)</stage>
+                    <p>
+                        <lb/>
+                        <lb/>
+                    </p>
+                    
+                    <stage type="enter">(ENTER WHITE)</stage>
+                </dialogue>
+            </sp>
+        </div1>
+        
+        
+        <pg n="12"/>
+        
+        
+        <div1>
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                    </p>
+                </dialogue>
+            </sp>
+            
+            <stage type="action">(LANGSTON COMES FORWARD)</stage>
+            
+            <sp>
+                <speaker></speaker>
+                <dialogue>
+                    <p>
+                        <lb/>
+                    </p>
+                </dialogue>
+            </sp>
+        </div1>
+    </body>
+</root>

@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <head>
+        <title>The Ballot and Me Semester Project, pages 1-8</title>
+        <editor>Mia Borgia</editor>
+    </head>
+
+<body>
+    
+    
+    <titlePage>
+        
+        <copy><underline color = "red">AUTHOR'S COPY</underline></copy>
+        
+        <playtitle><underline color = "red">THE BALLOT AND ME</underline></playtitle>
+        
+        <titledesc>
+            <lb/>The Negro's Part in Suffrage
+            <lb/>An
+            <lb/>Historical Sequence
+        </titledesc>
+        
+        <author>
+            <lb/>by
+            <lb/>Langston Hughes
+        </author>
+        
+        <published>
+            
+            <lb/><pubPlace>New York</pubPlace>
+            <lb/><date when = "1956">1956</date>
+            
+        </published>
+        
+        <marginalia hand="LH">
+            <lb/>Maynor: Au. 6-5256
+            <lb/>St James: Au. 3-5050
+            <lb/>Presentation:
+            <lb/>June 29
+        </marginalia>
+        
+    </titlePage>
+    
+    
+    
+    <castList>
+        <header>
+            <lb/><underline>CHARACTERS</underline>
+            <lb/>(In order of appearance)
+        </header>
+        
+        <castItem>
+            <role>NARRATOR</role><lb/>
+            <lb/><person xml:id="FRAUNCES">SAMUEL FRAUNCES</person>**
+            <lb/><person xml:id="SOJOURNER">SOJOURNER TRUTH</person>**
+            <margin position = "right">
+                <lb/>Contemporary
+                <lb/>George Washington's period
+                <lb/><period begin = "1797" end = "1833">(1797-1883)</period>
+            </margin>
+        </castItem>
+        
+        <castItem>
+            <lb/><person xml:id="DOUGLASS">FREDERICK DOUGLASS</person>**
+            <margin position ="right">
+                <period begin = "1817" end = "1895">(1817-1895)</period>
+            </margin>
+        </castItem>
+        
+        <castgroup n = "1">
+            <castItem>
+                <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="RAINEY">JOSEPH H. RAINEY</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="DELARGE">ROBERT O. DeLARGE</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="RAINER">ALONZO J. RAINER</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="ELLIOTT">ROBERT B. ELLIOTT</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="TURNER">BENJAMIN S. TURNER</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="LYNCH">JOHN R. LYNCH</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="RAFIER">JAMES T. RAFIER</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="WALLS">JOSIAH T. WALLS</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="CAIN">RICHARD H. CAIN</person>*  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="NASH">CHARLES E. NASH</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="HYMAN">JOHN A. HYMAN</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="HARALSON">JENE HARALSON</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  )
+            </castItem>
+            
+            <margin castGroupRole = "1" position = "right">
+                <lb/>Representatives in Congress
+                <lb/>during Reconstruction <period begin="1869" end="1889">1869-1889</period>
+            </margin>
+            
+        </castgroup>
+        
+        <castgroup n="2">
+            <castItem>
+                <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  )
+            </castItem>
+            
+            <margin castGroupRole = "2" position = "right">
+                Senators - <period begin="1870" end="1881">1870-1881 period</period>
+            </margin>
+            
+        </castgroup>
+
+        <castgroup n="3">
+            <castItem>
+                <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="MILLER">THOMAS E. MILLER</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="MURRAY">GEORGE W. MURRAY</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="OHARA">JAMES E. O'HARA</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="CHEATHAM">HENRY P. CHEATHAM</person>  )
+            </castItem>
+            <castItem>
+                <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  )
+            </castItem>
+            
+            <margin castGroupRole="3" position = "right">
+                Representatives <period begin="1883" end="1897">1883-1897</period>
+            </margin>
+        </castgroup>
+        
+        <castItem>
+            <person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** <lb/>
+            <margin position = "right">
+                At time of <date when="1895">1895</date> Atlanta speech
+            </margin>
+        </castItem>
+        
+        <note>
+            <p><lb/>NOTE: Speaking parts are marked with asteriks**. All except
+            <lb/><person idref="SOJOURNER">Sojourner Truth</person> may read speeches from rostrum, and even
+            <lb/>she may read her long sppech, but should learn rest of
+            <lb/>dialogue. Faunces has only one line. <q>"And I voted."</q></p>
+        </note>
+    </castList>
+    
+    <!-- <pg n="1"/> -->
+    
+    <set>
+        
+        <header><underline>THE BALLOT AND ME</underline></header>
+        
+        <setting>
+            <ab>SETTING:</ab>
+            <setDesc>A rostrum</setDesc>
+        </setting>
+        
+        <setTime>
+            <ab>TIME:</ab>
+            <timedesc>The present, with flashbacks</timedesc>
+        </setTime>
+        
+        <action>
+            <ab>ACTION:</ab>
+            <actiondesc>
+                <lb/>A Narrator comes to the rostrum
+                <lb/>and shouts four words very loudly
+                <lb/>as if opening a Town Meeting.
+            </actiondesc>
+        </action>
+        
+    </set>
+    
+    <div1>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Ballot!
+                    <lb/>Suffrage!
+                    <lb/>Franchise!
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        
+        <stage type="action">
+            (NARRATOR BANGS HIS GAVEL)
+        </stage>
+        
+        <sp>
+            <dialogue>
+                <p>
+                    <lb/>The dictionary says:
+                <q>"<underline>Ballot</underline>--- the method of secret voting; originally
+                by means of small balls placed in an urn or box."</q>
+                <q>"<underline>Suffrage</underline>--- a vote given by a member of a body,
+                state, or society, in assent to a proposition or
+                in favor of the election of a person."</q>
+                <q>"<underline>Franchise</underline>--- the right of voting at public elections."</q>
+                <q>"<underline>Vote</underline>--- an intimation that one approves or disapproves,
+                accepts or rejects, a proposal, motion, candidate for office, or the like."</q>
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+                 <pg n="2"/> 
+    
+    
+       <div1>
+        <sp>
+            <speaker>Narrator (cont'd):</speaker>
+            <dialogue>
+                <p><lb/>The right to cast a ballot, to exercise 
+                    <lb/>suffrage, to vote is one of the basic
+                    <lb/>rights of citizens in a democracy --- a democracy,
+                    <lb/>that form of government in which control is
+                    <lb/>vested in the people as a whole. The ballot
+                    <lb/>is basic.</p>
+                <p><lb/>Negro Americans---you, me--- are very much a
+                    <lb/>part of this democracy. We're 15 million---
+                    <lb/>and our vote counts. From the national to
+                    <lb/>the local level, <underline>your</underline> vote counts. It counts
+                    <lb/>in more and better jobs---in diplomatic posts
+                    <lb/>abroad to local political patronage. It
+                    <lb/>counts in education, in housing, in civil
+                    <lb/>rights, in cleaner streets, in better garbage
+                    <lb/>collection. The vote has value. Don't ne-
+                    <lb/>glect your right to vote. Don't waste it.
+                    <lb/>Dont forget it.</p>
+                <p><lb/>Maybe all of us would value the right of
+                    <lb/>suffrage more if we stopped to look back a
+                    <lb/>moment at what the struggle for the vote has
+                    <lb/>cost. Back in the Middle Ages few people
+                    <lb/>had control over their own lives, let alone
+                    <lb/>over the land or the country. Kings and
+                    <lb/>barons and chiefs and over-lords ran every-
+                    <lb/>thing and everybody. Then came the Magna
+                    <lb/>Carta in <date when="1315">1315</date> in <location>England</location>, and almost 400</p></dialogue>
+        </sp>
+    </div1>
+    
+ 
+              <pg n="3"/>
+    
+    
+    <div1>
+        <sp>
+            <speaker>NARRATOR (cont'd):</speaker>
+            <dialogue>
+                <p><lb/>years later the Bill of Rights, many of 
+                    <lb/>whose provisions were incorporated into
+                    <lb/>our own Constitution in <date when="1787">1787</date> and into the
+                    <lb/>American Bill of Rights in <date when="1791">1791</date>. Some of
+                    <lb/>those rights, we, the Negro people of America,
+                    <lb/>are still trying to secure in full.</p>
+                <p><lb/>We came to these shores first as explorers---
+                    <lb/>with Cortez, with Balboa, with Columbus. But
+                    <lb/>we did not migrate in large numbers. The
+                    <lb/>majority of our ancestors were brought to the
+                    <lb/>Americas by force as slaves, dating back from <date when="1619">1619</date>.
+                    <lb/>Slaves, like serfs in <location>Europe</location>, could not vote.
+                    <lb/>But very early in our history, after the
+                    <lb/>colonies won their freedom from the British---
+                    <lb/>Crispus Attucks of <location>Boston</location>, a Negro, being
+                    <lb/>the first man killed when resistence to the
+                    <lb/>British started---free Negros in the New
+                    <lb/>England colonies voted. Some Negros in our
+                    <lb/>country have always voted from the very be-
+                    <lb/>ginning of our United States, and fought
+                    <lb/>to keep the vote and extend it to others.
+                    <lb/>But sometimes it was a hard battle. You who
+                    <lb/>have the vote here in New York, keep it, use
+                    <lb/>it, and help others to get it.
+                </p>
+                <p><lb/>After the Revolutionary War, free Negros
+                    <lb/>could vote anywhere, but in <date when="1789">1789</date> the Southern
+                    <lb/>slave-holding states sensed danger in letting
+                    <lb/>free Negroes vote, and began to disfranchise
+                    <lb/>them. By <date when="1834">1834</date> no Negroes could vote in the
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+                     <pg n="4"/> 
+    
+    
+        <div1>
+        <sp>
+            <speaker>NARRATOR (cont'd):</speaker>
+            <dialogue>
+                <p><lb/>South, and some Northern states like <location>Penn-
+                    <lb/>sylvania</location> and <location>Indiana</location> denied them the ballot,
+                    <lb/>too. But colored men in <location>New York</location>, could
+                    <lb/>vote if they owned property and had lived
+                    <lb/>here for three years. This man could vote.
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="enter" idref="FRAUNCES">
+            <lb/>(SAMUEL FRAUNCES ENTERS IN COLONIAL
+            <lb/>KNICKERS)
+        </stage>
+        <sp>
+            <dialogue>
+                <p><lb/><person idref="FRAUNCES">Samuel Fraunces</person>. He was the owner of Fraunces
+                    <lb/>Tavern at Broad and Pearl Streets in <location>New York
+                    <lb/>City</location>. At his tavern George Washington often
+                    <lb/>dined, and when Washington became President,
+                    <lb/>he made Samuel Fraunces his chief steward.
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="FRAUNCES">FRAUNCES:</speaker>
+            <dialogue>
+                <p>And I <insert hand="LH">could</insert> vote<Xout>d</Xout>.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                <lb/>Fraunces was a man of means, a solid citizen, interested
+                <lb/>in the affairs of the day. Free Negroes in New York
+                <lb/>then could vote.</p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(SUDDENLY THE SPOTLIGHT FOCUSES ON A 
+            <lb/>BONNETED WOMAN SITTING IN THE AUDIENCE
+            <lb/>IN THE CORNER OF A PEW WHO QUICKLY
+            <lb/>SPEAKS UP LOUDLY. SHE IS SOJOURNER
+            <lb/>TRUTH)
+        </stage>
+        <sp>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
+            <dialogue>
+                <p>Could I vote? I lived in New York.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                <lb/>No, Sojourner Truth. You were a woman, and in those
+                <lb/>days only men could vote.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Which were wrong! I believed everybody should vote,
+                    <lb/>black and white, men and women: And I said so.
+                </p>
+            </dialogue>
+        </sp>
+
+    </div1>
+    
+    
+     <pg n="5"/>
+    
+    
+    <div1>
+        
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>I know you said so. You went to the first women's
+                    <lb/>suffrage meetings, and you joined with Abby Kelley
+                    <lb/>and Lucretia Nott and Frances Gage, white women,
+                    <lb/>in speaking not only for Negro freedom, but for
+                    <lb/>the freedom of women. You were a runaway slave
+                    <lb/>who made yourself free.
+                </p>
+            </dialogue>
+        </sp>
+        
+        <sp>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
+            <dialogue>
+                <p><lb/>And I wanted to vote.
+                </p>
+            </dialogue>
+        </sp>
+        
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>When they wouldn't let you sit on the platform
+                    <lb/>because you were a Negro at the National Woman's
+                    <lb/>Suffrage Convention in <location>Akron, Ohio</location>, in <date when="1852">1852</date>, you
+                    <lb/>sat where you are sitting now <insert hand="LH">in the audience.</insert>
+                </p>
+            </dialogue>
+        </sp>
+        
+        <sp>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
+            <dialogue>
+                <p><lb/>I did---until the going got hot, <stage type="action">(SHE RISES)</stage> and
+                    <lb/>the men speakers started baiting the women, and
+                    <lb/>talking about the women is weak, not strong as
+                    <lb/>men nor smart as men, and they even have to be
+                    <lb/>helped into carriages. <stage type="action">(SHE COMES TO THE ROSTRUM)</stage>
+                </p>
+                <p>
+                    <lb/>Then I just walked up on that platform, sir, and
+                    <lb/>told them men: <q>'Nobody ever helped me into carriages,
+                    <lb/>or over mud puddles, or give me any best place.
+                    <lb/>Ain't I a woman? Look at me! Look at my arm!
+                    <lb/>I have plowed and planted and gathered into barns,
+                    <lb/>and no man could head me. And ain't I a woman?
+                    <lb/>I could work as much and eat as much as a man---
+                    <lb/>when I could get it---and bear the lash as well---
+                    <lb/>and ain't I a woman? I has had five chillun and
+                    <lb/>seen 'em most all sold off to slavery, and when
+                    <lb/>I cried out with a mother's grief, none but Jesus
+                    </q>
+                </p>
+            </dialogue>
+        </sp>
+        
+    </div1>
+    
+    
+     <pg n="6"/>
+    
+    
+    <div1>
+        
+        <sp>
+            <speaker idref="SOJOURNER"><lb/>heard
+                    <lb/>(SOJOURNER):
+            </speaker>
+            <dialogue>
+                <p><lb/>heard---and ain't I a woman? They talks about
+                <lb/>this thing in the head---intellect. What's that
+                <lb/>got to do with women's rights? If my cup won't
+                <lb/>hold but a pink and yourn holds a quart, wouldn't
+                <lb/>ye men be mean not to let me have my little half-
+                <lb/>measure full? If the first woman God made was
+                <lb/>strong enough to turn the world upside down all
+                <lb/>alone, I guess all us women together ought to be
+                <lb/>able to turn it back and get it right side up
+                <lb/>again. And now that they is asking to do it, <underline>the
+                <lb/>mens better let 'em.</underline>"</p>
+            </dialogue>
+        </sp>
+        <stage type="action">(SHE RETURNS TO HER PEW)</stage>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>But it was almost three-quarters of a century
+                <lb/>before the country got around to giving you the
+                <lb/>vote, Sojourner Truth, before the 19th Amendment
+                <lb/>granting women's suffrage was passed.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
+            <dialogue>
+                <p><lb/>It were finally passed---and about time, too!
+                <lb/>I took my freedom, but I didn't live long enough
+                <lb/>to vote.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>Freedom! That was the first thing most Negroes
+                <lb/>had to get. Before the Civil War most of us
+                <lb/>were slaves. But some Negroes, even in the South,
+                <lb/>had never been slaves. Some were born free, some
+                <lb/>were given their freedom, and some ran away to
+                <lb/>freedom in the North. Among the great runaways
+                <lb/>was <person idref="DOUGLASS">Frederick Douglass</person> who escaped from a <location>Maryland</location></p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+     <pg n="7"/>
+    
+    
+    <div1>
+        <sp>
+            <speaker>(NARRATOR:)</speaker>
+            <dialogue>
+                <p><lb/>plantation in <date when="1838">1838</date>, and devoted his life to
+                <lb/>fighting for freedom for all, and for full
+                <lb/>citizenship rights for all. In his middle age!</p>
+                
+                <stage type="enter" idref="DOUGLASS"><lb/>(DOUGLASS ENTERS, WHITE HAIRED,
+                <lb/>WHITE BEARD, DIGNIFIED, IMPOSING)</stage>
+                
+                <p><lb/>After Emancipation, after the Civil War was over,
+                <lb/>he made many speeches concerning the franchise.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <metamark hand="LH">X</metamark><speaker idref="DOUGLASS">DOUGLASS:</speaker>
+            <dialogue>
+                <p><lb/>I see no chance of bettering the condition of the
+                <lb/>freedman until he shall cease to be merely a freed-
+                <lb/>man and shall become a citizen. I insist that
+                <lb/>there is no safety for him or anybody else in
+                <lb/>America outside the American government; to guard,
+                <lb/>protect, and maintain his liberty the freedman
+                <lb/>should have the ballot; the liberties of the
+                <lb/>American people are dependent upon the ballot-
+                <lb/>box, the jury-box, and the cartridge-box.</p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p><lb/>And it took the cartridge-box to protect the
+                <lb/>rights of the freed Negroes in the early days of
+                <lb/>the Reconstruction. In <date when="1867">1867</date> Congress divided
+                <lb/>the South into five military districts, proclaimed
+                <lb/>universal suffrage, and placed federal marshalls
+                <lb/>at the polls to protect the Negro's newly granted
+                <lb/>right to vote. This right was made permanent by
+                <lb/>the passage in <date when="1867">1870</date> of the 15th Amendment to the
+                <lb/>Constitution of the United States. 700,000 Negroes
+                <lb/>were added to the voting rolls of the South, and
+                <lb/>many city and state offices were filled by the
+                <lb/>freedman. With Negroes in state legislatures,</p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+     <pg n="8"/>
+    
+    
+    <div1>
+        <sp>
+            <speaker>9(NARRATOR:)</speaker>
+            <dialogue>
+                <p><lb/>new state constitutions were drawn up with
+                <lb/>provisions for free public schools for all,
+                <lb/>civil rights for all, and no property qualifications
+                <lb/>for voting---the most progressive acts of laws
+                <lb/>the South had ever known, many of them remaining
+                <lb/>on the books until today.</p>
+                <p><lb/>During the Reconstruction the Southern states
+                <lb/>sent 14 Negro Representatives and 2 Senators of
+                <lb/>color to Washington. The first Representative
+                <lb/>was from Georgia, elected in <date when="1869">1869</date>, <person idref="LONG">Jefferson P.
+                <lb/>Long</person>.</p>
+                
+                <stage type="enter" idref="LONG"><lb/>(LONG ENTERS TO STAND BESIDE NARRATOR.
+                <lb/>IN TURN, AS EACH MAN'S NAME IS CALLED,
+                <lb/>EACH ENTERS, ALTERNATELY AT LEFT OR
+                <lb/>RIGHT, TO TORM TWO LINES ON EACH SIDE
+                <lb/>OF THE PLATFORM)</stage>
+                
+                <p><lb/>Then in <date when="1871">1871</date> <location>South Carolina</location> elected four Negro
+                <lb/>Congressmen, <person idref="RAINEY">Joseph H. Rainey</person>.</p>
+                
+                <stage type="enter" idref="RAINEY">(ENTER RAINEY)</stage>
+                
+                <p><person idref="DELARGE">Robert O. DeLarge</person>.</p>
+                
+                <stage type="enter" idref="DELARGE">(ENTER DeLARGE)</stage>
+                
+                <p><person idref="RAINER">Alonzo J. Rainer</person>.</p>
+                
+                <stage type="enter" idref="RAINER">(ENTER RAINER)</stage>
+                
+                <p>And <person idref="ELLIOTT">Robert B. Elliott</person>.</p>
+                
+                <stage type="enter" idref="ELLIOTT">(ENTER ELLIOTT)</stage>
+                
+                <p>That same year <location>Alabama</location> elected <person idref="TURNER">Benjamin S. Turner</person>.</p>
+                
+                <stage type="enter" idref="TURNER">(ENTER TURNER)</stage>
+                
+                <p>In <date when="1873">1873</date> <location>Mississippi</location> elected <person idref="LYNCH">John R. Lynch</person>.</p>
+                
+                <stage type="enter" idref="LYNCH">(ENTER LYNCH)</stage>
+            </dialogue>
+        </sp>
+    </div1>
+    
+</body>
+</root>

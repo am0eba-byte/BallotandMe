@@ -9,9 +9,14 @@ head = element head {title, editor}
     editor = element editor {text}
         
         
-body = element body {(titlePage)?, (castList)?, (set)?, (div1+)}
+body = element body {(titlePage)?, (castList)?, (set)?, (div1 | pg)*}
 
-# mia: deleted rule for pg elements for now
+pg = element pg {n, empty}
+
+# mia: I put question mark repetition indicators on everything except div1 so that when Mckenna and Brett do their portions,
+# the schema won't yell at them to put in the title page, cast list and set pages!
+
+
 
 # ebb: I notice you removed this element from the rule for body for now...that's okay, but right now there's no place for <pg> to go yet.
 # My suggestion is maybe get a complete encoding of the play, and mark the page breaks in with XML comments. Then turn them into <pg/> elements and just notice from the angry schema errors which elements are containing them.
@@ -23,25 +28,23 @@ body = element body {(titlePage)?, (castList)?, (set)?, (div1+)}
 
 titlePage = element titlePage {copy, playtitle, titledesc, author, published, marginalia}
 
-    copy = element copy {underline, text}
+    copy = element copy {underline}
     
     playtitle = element playtitle {underline}
 
-    titledesc = element titledesc {l*}
+    titledesc = element titledesc {mixed{lb+}}
 
-        l = element l {n, mixed{period*}}
+author = element author {mixed{lb*}}
 
-author = element author {l*}
-
-published = element published {pubPlace, pubTime}
+published = element published {(pubPlace | date | lb)*}
 
     pubPlace = element pubPlace {text}
 
-    pubTime = element pubTime {when, text}
+    date = element date {when, text}
 
         when = attribute when {xsd:gYear}
 
-marginalia = element marginalia {hand, l*}
+marginalia = element marginalia {hand, mixed{lb*}}
 
     hand = attribute hand {"LH"}
 
@@ -50,13 +53,13 @@ castList = element castList {header, ((castgroup* | castItem*), (castItem* | cas
 
     header = element header {mixed{ (underline | lb)*}}
 
-    castItem = element castItem {mixed{ (unclear | role | margin | lb)* } }
+    castItem = element castItem {mixed{ (unclear | role | margin | lb | person)* } }
     
         unclear = element unclear {text}
     
         role = element role {text}
 
-        margin = element margin {((castGroupRole?), (position)), mixed{l*,period*}}
+        margin = element margin {(castGroupRole | position)*, mixed{(lb | period | date)*}}
         
         lb = element lb {empty}
         
@@ -92,18 +95,16 @@ set = element set {header, setting, setTime, action}
     
     action = element action {ab, actiondesc}
     
-        actiondesc = element actiondesc {l*}
+        actiondesc = element actiondesc {mixed{lb*}}
     
 
+    div1 = element div1 {(sp | stage)*}
 
-
-div1 = element div1 {(sp | stage)*}
-
-    sp = element sp {(speaker, dialogue*) | (dialogue*)}
+    sp = element sp {(speaker | dialogue | metamark)*}
     
-        speaker = element speaker {text}
+        speaker = element speaker {idref?, mixed{lb*}}
             
-         dialogue = element dialogue {p+}
+         dialogue = element dialogue {(p | stage)*}
          
          # mia: fix dialogue element rule to fit Dr B's suggestion
          
@@ -112,7 +113,7 @@ div1 = element div1 {(sp | stage)*}
          # dialogue = element dialogue {p+}  
          # Does that work?
          
-         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb)* } }
+         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb | stage | date | location | person)* } }
          
          # mia: fixed element p rule to match Dr. B's suggestion
          
@@ -122,22 +123,29 @@ div1 = element div1 {(sp | stage)*}
          # Looking at your play script, I think you're considering catching the line-beginnings--right now you're using pseudomarkup for that with the // characters. 
          # You could try a self-closing <lb/> element for those: would you always want those to go inside <p> elements? That way you could calculate numbered lines for each character's speech! 
         
+            location = element location {mixed{lb*}}
+            
+            person = element person {(id | idref)?, mixed{lb*}}
+            
+            id = attribute xml:id {xsd:ID}
+            
+            idref = attribute idref {xsd:IDREF}
             
             class = attribute class {"navbar"}
             
-            metamark = element metamark {type, text}
+            metamark = element metamark {hand, text}
             
             insert = element insert {hand, text}
             
-            underline = element underline {color?, text}
+            underline = element underline {color?, mixed{lb*}}
                 
                 color = attribute color {"red"}
             
             Xout = element Xout {text}
             
-            q = element q {mixed{underline*}}
+            q = element q {mixed{(lb | underline)*}}
             
-     stage = element stage {type, mixed{lb*}}
+     stage = element stage {(type | idref)*, mixed{lb*}}
     
         type = attribute type {"enter" | "action" }
         
