@@ -125,7 +125,7 @@ set = element set {header, setting, setTime, action}
         
             location = element location {mixed{lb*}}
             
-            person = element person {(id | idref), mixed{lb*}}
+            person = element person {(id | idref)?, mixed{lb*}}
             
             id = attribute xml:id {xsd:ID}
             
