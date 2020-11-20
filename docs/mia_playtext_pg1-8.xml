@@ -159,7 +159,7 @@
         </castgroup>
         
         <castItem>
-            <person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** <lb/>
+            <lb/><person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** 
             <margin position = "right">
                 At time of <date when="1895">1895</date> Atlanta speech
             </margin>
@@ -557,7 +557,7 @@
                 <lb/>universal suffrage, and placed federal marshalls
                 <lb/>at the polls to protect the Negro's newly granted
                 <lb/>right to vote. This right was made permanent by
-                <lb/>the passage in <date when="1867">1870</date> of the 15th Amendment to the
+                <lb/>the passage in <date when="1870">1870</date> of the 15th Amendment to the
                 <lb/>Constitution of the United States. 700,000 Negroes
                 <lb/>were added to the voting rolls of the South, and
                 <lb/>many city and state offices were filled by the
