@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../Documents/GitHub/BallotandMe/docs/playSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <head>
+        <title>Langston Hughes, pages 13-17</title>
+        <editor>McKenna Ballew</editor>
+    </head>
+    <body>
+        <!-- PAGE 14, PAGE 12 on the actual page-->
+        <div1>
+           <sp>
+               <speaker>NARRATOR(ctd)</speaker>
+            <dialogue>
+                <p>
+                  <lb/>When White completed his term in 1901, it was 27 years before 
+                  <lb/>another Negro went to Congress.  
+                  <lb/>One of the outstanding colored politicians was John M. Langston,  
+                  <lb/>Congressman from Virginia, founder of the Law School at Howard  
+                  <lb/>University, and first president of Virginia State College for  
+                  <lb/>Negroes. Widley known as a speaker, Langston, is an address at
+                  <lb/>Saratoga, New York, in 1876, concerning the use of the ballot,
+                  <lb/>said some wise things.
+                </p>
+            </dialogue>
+            </sp> 
+            <stage type="action">
+                <lb/>(LANGSTON GOES FORWARD)
+            </stage>
+            <sp>
+                <speaker>LANGSTON</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Perhaps never in the history of our country was there a time when
+                        <lb/>the duty of the American voter to consider well and wisely that 
+                        <lb/>vote to cast, what party to bring to power and support is power,
+                        <lb/>was so imperative. In discharging our duty in this regard, while
+                        <lb/>we are fearless, we should be impartial and just. Let us not 
+                        <lb/>make haste to condem unduly, not to accept without wise discrimi-
+                        <lb/>nation the claim of any candidate or party. We are called upon
+                        <lb/>an intelligent and earnest, patriotic and developed citizens, to
+                        <lb/>determine, each for himself, how votes given for the Democratic
+                        <lb/>or Republican party, will tend to sustain the dignity and power
+                        <lb/>of the Government, and conserve our free insitution under the 
+                        <lb/>Consitution. Each of us held responsible to his own
+                        <lb/>conscience, posterity and God for the wisdom, or folly dispalyed 
+                        <lb/>in exercising our sufferage -- the most sacred, as it is the
+                        <lb/>most valuable right which we possess on American soil.
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>NARRATOR:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Disfranchised in the South by state laws, trickery, or terror,
+                        <lb/>no more Negro Congressmen came from<insert hand="LH">Dixil</insert>after Langston and
+                        <lb/>White. But quietly behind the scenes, a practical-minded man
+                        <lb/>of enormous political power emerged, consulted by national
+                        <lb/>leaders North and South on all problems relationg to the Negro,
+                    </p>
+                </dialogue>
+            </sp>
+        </div1>
+    <div1>
+        <!-- PAGE 15, PAGE 13 on the actual page-->
+        <sp>
+    <speaker>NARRATOR (ctd)</speaker>
+        <dialogue>
+             <p><lb/><insert hand="LH">He was</insert>a friend of Presidents. That man was the great founder of
+                <lb/>Tuskegee Institute, Book T. Washington.</p>
+        </dialogue>
+        </sp>
+            <stage type="enter">
+                <lb/>(ENTER WASHINGTON)
+            </stage>
+        <sp>
+   <speaker>WASHINTON:</speaker>
+           <dialogue>
+            <p>
+               <lb/>Friends, the individual<insert hand="LH">or</insert> race that owns the property, pays the
+               <lb/>taxes, possesses the intelligence and substantial character, is
+               <lb/>the one which is going to exercise the greatest control in
+               <lb/>government, whether he lives in the North or whether he lives in
+               <lb/>the South. There is no defense or security for any of us except
+               <lb/>in the highest intelligence and development of all. Education must
+               <lb/>be digested and assimilated in order to make it significant. The
+               <lb/>science, the art, the literature that fails to reach down and bring
+               <lb/>the humblest . up to the enjoyment of the fullest blessings of our
+               <lb/>government is weak, no matter how costly the buildings or apparatus
+               <lb/>used, or how modern the methods of instruction employed. The study
+               <lb/>of arithmetic that does not result in making men conscientious in
+               <lb/>receiving and counting the ballots of their fellow men is faulty.
+            </p>
+           </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Unfortunately, the unreconstructed rebels of the South continued to
+                    <lb/>deny the rights to vote, or failed to count, the ballots of Negro
+                    <lb/>citizens at the turn of the century. When Charles H. White left
+                    <lb/>Congress in 1901, it was more than a quarter of a century before we
+                    <lb/>had there another national representative. In 1928 Oscar DePriest
+                    <lb/>was elected to Congress from the First Illinois District -- being
+                    <lb/>the first Northern Negro over to sit in the national legislature. 
+                    <lb/>As the great migrations from the South increased after each war,
+                    <lb/>and the black populations of our Northern industrial cities grew,
+                    <lb/>so Negro political power grew. Manicipal judges, city councilmen,
+                    <lb/>county officials,  and state legislators of color from New York to
+                    <lb/>Los Angeles became not uncommon. From Illinois, Arthur W. Michell
+                </p>
+            </dialogue>
+        </sp>
+        </div1>
+        <!-- PAGE 16, PAGE 14 on the actual page-->
+        <div1>
+        <sp>
+            <speaker>NARRATOR (ctd.)</speaker>
+            <dialogue>
+                <p>
+                    <lb/>FOLLOWED De Priest to Congress, then came William L. Dawson
+                    <lb/>serving now. From New York Adam Clayton Powell, Jr. was elected
+                    <lb/>in 1945, and most recently<insert hand="LH">Charles C</insert>Diggs of Detroit became the 27th man
+                    <lb/>of color to sit in Congresss. There should be more -- more
+                    <lb/>Powells, Dawsons, and Diggses in Washington. More <insert hand="LH">James</insert>Watsons and
+                    <lb/>Bessie Buchanans in state governments<insert hand="LH">as in New York.</insert>More Hulan Jacks in more
+                    <lb/>American city halls<insert hand="LH">as in Manhantton</insert>and more judges such as Hivers, Paige, Stevens,
+                    <lb/>Dickens and JaneBolin on the benches of municipalities across the
+                    <lb/>nation. And we all -- you, me -- must use our vote wisely and
+                    <lb/>use it well to elect to all sorts of offices, particularly the
+                    <lb/>national officies, men who will bring to bear<insert hand="LH">our democratic forces</insert>on all public officials
+                    <lb/>to not only open up -- but to <underline>protect</underline>u --
+                    <lb/>the ballow boxes of the South -- so that Negro citizens may
+                    <lb/>vote in Mississippi and Georgia and Alabama and South Carolina
+                    <lb/>again -- and again sent to Congress <underline>from the South</underline> black men --
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(A WOMAN CRIES FROM THE AUDIENCE)
+        </stage>
+            <sp>
+                <speaker>SOJOURNER:</speaker>
+                <dialogue>
+                    <p>
+                     <lb/>And black women?
+                    </p>
+                </dialogue>
+             </sp>
+            <stage type="action">
+                <lb/>(SOJURNER TRUTH RISES AND JOINS THE OTHERS ON THE
+                <lb/>PLATFORM)
+            </stage>
+            <sp>
+                <speaker>NARRATOR:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Yes, and black women -- representatives of the strength and
+                        <lb/>calibre of those who served so nobly and so well in the dark and
+                        <lb/>dangerous days of Reconstruction. Fellow citizens, your ballot
+                        <lb/>has great value. Use it! When election time comes, to paraphrase
+                        <lb/>by extension a young Negro leader in the South today, the 
+                        <lb/>Reverend Martin Luther Kind of Alabama, "If you can't . fly, run!
+                        <lb/>If you can't run, walk! If you can't walk, crawl -- to the 
+                        <lb/>polls and vote!"
+                    </p>
+                </dialogue>
+            </sp>
+            <stage type="action">
+                <lb/>(VARIOUS ONES CRY IN TURN THE WORD "VOTE!")
+            </stage>
+        </div1>
+        <!-- PAGE 17, PAGE 15 on the actual page -->
+        <div1>
+            <sp>
+                <speaker>FRAUNCES:</speaker>
+                <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>SOJURNER:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>DOUGLAS:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>CAIN:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>LANGSTON:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>WASHINGTON:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>NARRATOR:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote!
+                    </p>
+                </dialogue>
+            </sp>
+            <stage type="action">
+                <lb/>(AlLL THE CHARACTERS ON THE PLATFORM COME FORWARD,
+                <lb/>POINT THEIR FINGERS AT THE AUDIENCE, AND CRY IN
+                <lb/>UNISON SEVERAL TIMES THE WORD, "VOTE!")
+            </stage>
+            <sp>
+                <speaker>ALL TOGETHER:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Vote! ......  Vote! ...... Vote! ...... Vote! ...... Vote...VOTE!
+                    </p>
+                </dialogue>
+            </sp>
+            <stage type="action">
+                <lb/>(BLACKOUT... LIGHTS UP AGAIN FOR BOWS. THEN ALL THE
+                <lb/>CHARACTERS LEAVE THE PLATFORM EXCEPT THE NARRATOR
+                <lb/>WHO CONTINUES WITH THE CONTEMPORARY OF THE
+                <lb/>PROGRAM, INTRODUCING GUESTS FROM THE VARIOUS
+                <lb/>POLITICAL PARTIES PRESENT)
+            </stage>
+        </div1>
+    </body>
+ </root>
