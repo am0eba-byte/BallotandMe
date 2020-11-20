@@ -25,7 +25,7 @@
                                                     entire section until the next speaker appears-->
                 <dialogue>
                     
-                    <p>Alabama elected James T Rapier.</p> <!-- the <dialogue> needs <p> elements
+                    <p><location>Alabama</location> elected <person>James T Rapier</person>.</p> <!-- the <dialogue> needs <p> elements
                                                             to wrap around "paragraphs" of the dialogue
                                                             text, even if it's just one line of text
                                                         like these lines.-->
@@ -35,7 +35,7 @@
                 </stage>
             
                 <p>
-                Florida elected Josiah T. Walls.
+                <location>Florida</location> elected <person>Josiah T. Walls</person>.
                 </p>
                     
                 <stage type="enter"> 
@@ -48,7 +48,7 @@
                             actions), then make it <stage type="action">-->
                     
                 <p>
-                And South Carolina elected Richard H. Cain.
+                And <location>South Carolina</location> elected <person>Richard H. Cain</person>.
                 </p>
                     
                 <stage type="enter">
@@ -57,7 +57,7 @@
                     
                 <p>
                 <lb/>That same year to the House of Representatives
-                <lb/>North Carolina elected John A. Hyman.
+                <lb/><location>North Carolina</location> elected <person>John A. Hyman</person>.
                 </p>   <!-- Wherever there's more than one line of dialogue, mark the 
                         beginnings of the lines with the self-closing attribute <lb/>
                         This way, when we make the website, we can make it look
@@ -69,14 +69,15 @@
                 </stage>
                     
                 <p>
-                Alabama elected Jene Haralson.
+                <location>Alabama</location> elected <person>Jene Haralson</person>.
                 </p>
                     
                 <stage type="enter">
                 (ENTER HARALSON)
                 </stage>
+                    
                 <p>
-                And South Carolina elected Rovert Smalls.
+                And <location>South Carolina</location> elected <person>Rovert Smalls</person>.
                 </p>
                     
                 <stage type="enter">
@@ -86,13 +87,13 @@
                 <p>
                 <lb/>The only Negro Senators in American history came
                 <lb/>at the very end of the Reconstruction period. The
-                <lb/>first, elected in 1870, was Hiram R. Revels.
+                <lb/>first, elected in <date when="1870">1870</date>, was <person>Hiram R. Revels</person>.
                 </p>
                     
             <stage type="enter">(ENTER REVELS)</stage>
                     
             <p>
-                And the second in 1876 was Blanche K. Bruce.
+                And the second in <date when="1876">1876</date> was <person>Blanche K. Bruce</person>.
             </p>
                     
             <stage type="enter">(ENTER BRUCE)</stage>
@@ -101,7 +102,7 @@
                 <lb/>Most of these men were as well qualified and as
                 <lb/>well educated as white officials of the times,
                 <lb/>and some better. Some were graduates of Oberlin
-                <lb/>or other leading Northern colleges. Elliot had
+                <lb/>or other leading Northern colleges. <person>Elliott</person> had
                 <lb/>studied abroad. Of those who served in Congress,
             </p>
             </dialogue>
@@ -122,7 +123,7 @@
                         <lb/>men, whose public conduct would be honorable to
                         <lb/>any race."</q> Typical of the Negroes who serves in
                         <lb/>the House of Representatives at Washington was
-                        <lb/>Richard H. Cain, A.M.E. minister of South Carolina.
+                        <lb/><person>Richard H. Cain</person>, A.M.E. minister of <location>South Carolina</location>.
                         <lb/>Cain made a stirring speech in Congress regarding
                         <lb/>Civil Rights.
                     </p>
