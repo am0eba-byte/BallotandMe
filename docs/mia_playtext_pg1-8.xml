@@ -16,28 +16,28 @@
         <playtitle><underline color = "red">THE BALLOT AND ME</underline></playtitle>
         
         <titledesc>
-            <l n = "1">The Negro's Part in Suffrage</l>
-            <l n = "2">An</l>
-            <l n = "2">Historical Sequence</l>
+            <lb/>The Negro's Part in Suffrage
+            <lb/>An
+            <lb/>Historical Sequence
         </titledesc>
         
         <author>
-            <l n= "1">by</l>
-            <l n = "2">Langston Hughes</l>
+            <lb/>by
+            <lb/>Langston Hughes
         </author>
         
         <published>
             
-            <pubPlace>New York</pubPlace>
-            <pubTime when = "1956">1956</pubTime>
+            <lb/><pubPlace>New York</pubPlace>
+            <lb/><date when = "1956">1956</date>
             
         </published>
         
         <marginalia hand="LH">
-            <l n = "1">Maynor: Au. 6-5256</l>
-            <l n = "2">St James: Au. 3-5050</l>
-            <l n = "3">Presentation:</l>
-            <l n= "4">June 29</l>
+            <lb/>Maynor: Au. 6-5256
+            <lb/>St James: Au. 3-5050
+            <lb/>Presentation:
+            <lb/>June 29
         </marginalia>
         
     </titlePage>
@@ -46,23 +46,23 @@
     
     <castList>
         <header>
-            <underline>CHARACTERS</underline><lb/>
-            (In order of appearance)<lb/>
+            <lb/><underline>CHARACTERS</underline>
+            <lb/>(In order of appearance)
         </header>
         
         <castItem>
             <role>NARRATOR</role><lb/>
-            SAMUEL FRAUNCES**<lb/>
-            SOJOURNER TRUTH**<lb/>
+            <lb/><person xml:id="FRAUNCES">SAMUEL FRAUNCES</person>**
+            <lb/><person xml:id="SOJOURNER">SOJOURNER TRUTH</person>**
             <margin position = "right">
-                <l n="1">Contemporary</l>
-                <l n="2">George Washington's period</l>
-                <l n="3"><period begin = "1797" end = "1833">(1797-1883)</period></l>
+                <lb/>Contemporary
+                <lb/>George Washington's period
+                <lb/><period begin = "1797" end = "1833">(1797-1883)</period>
             </margin>
         </castItem>
         
         <castItem>
-            FREDERICK DOUGLASS**<lb/>
+            <lb/><person xml:id="DOUGLASS">FREDERICK DOUGLASS</person>**
             <margin position ="right">
                 <period begin = "1817" end = "1895">(1817-1895)</period>
             </margin>
@@ -70,61 +70,61 @@
         
         <castgroup n = "1">
             <castItem>
-                JEFFERSON P. LONG  )<lb/>
+                <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  )
             </castItem>
             <castItem>
-                JOSEPH H. RAINEY  )<lb/>
+                <lb/><person xml:id="RAINEY">JOSEPH H. RAINEY</person>  )
             </castItem>
             <castItem>
-                ROBERT O. DeLARGE  )<lb/>
+                <lb/><person xml:id="DELARGE">ROBERT O. DeLARGE</person>  )
             </castItem>
             <castItem>
-                ALONZO J. RAINER  )<lb/>
+                <lb/><person xml:id="RAINER">ALONZO J. RAINER</person>  )
             </castItem>
             <castItem>
-                ROBERT B. ELLIOT  )<lb/>
+                <lb/><person xml:id="ELLIOTT">ROBERT B. ELLIOTT</person>  )
             </castItem>
             <castItem>
-                BENJAMIN S. TURNER  )<lb/>
+                <lb/><person xml:id="TURNER">BENJAMIN S. TURNER</person>  )
             </castItem>
             <castItem>
-                JOHN R. LYNCH  )<lb/>
+                <lb/><person xml:id="LYNCH">JOHN R. LYNCH</person>  )
             </castItem>
             <castItem>
-                JAMES T. RAFIER  )<lb/>
+                <lb/><person xml:id="RAFIER">JAMES T. RAFIER</person>  )
             </castItem>
             <castItem>
-                JOSIAH T. WALLS  )<lb/>
+                <lb/><person xml:id="WALLS">JOSIAH T. WALLS</person>  )
             </castItem>
             <castItem>
-                <unclear>RICHARD</unclear> H. <unclear>CAINN*</unclear>  )<lb/>
+                <lb/><person xml:id="CAIN">RICHARD H. CAIN</person>*  )
             </castItem>
             <castItem>
-                CHARLES E. NASH  )<lb/>
+                <lb/><person xml:id="NASH">CHARLES E. NASH</person>  )
             </castItem>
             <castItem>
-                JOHN A. HYMAN  )<lb/>
+                <lb/><person xml:id="HYMAN">JOHN A. HYMAN</person>  )
             </castItem>
             <castItem>
-                JENE HARALSON  )<lb/>
+                <lb/><person xml:id="HARALSON">JENE HARALSON</person>  )
             </castItem>
             <castItem>
-                ROBERT SMALLS  )<lb/>
+                <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  )
             </castItem>
             
             <margin castGroupRole = "1" position = "right">
-                <l n="1">Representatives in Congress</l>
-                <l n="2">during Reconstruction <period begin="1869" end="1889">1869-1889</period></l>
+                <lb/>Representatives in Congress
+                <lb/>during Reconstruction <period begin="1869" end="1889">1869-1889</period>
             </margin>
             
         </castgroup>
         
         <castgroup n="2">
             <castItem>
-                HIRAM R. REVELS  )<lb/>
+                <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  )
             </castItem>
             <castItem>
-                BLANCHE K. BRUCE  )<lb/>
+                <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  )
             </castItem>
             
             <margin castGroupRole = "2" position = "right">
@@ -135,22 +135,22 @@
 
         <castgroup n="3">
             <castItem>
-                JOHN M. LANGSTON**  )<lb/>
+                <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  )
             </castItem>
             <castItem>
-                THOMAS E. MILLER  )<lb/>
+                <lb/><person xml:id="MILLER">THOMAS E. MILLER</person>  )
             </castItem>
             <castItem>
-                GEORGE W. MURRAY  )<lb/>
+                <lb/><person xml:id="MURRAY">GEORGE W. MURRAY</person>  )
             </castItem>
             <castItem>
-                JAMES E. O'HARA  )<lb/>
+                <lb/><person xml:id="OHARA">JAMES E. O'HARA</person>  )
             </castItem>
             <castItem>
-                HENRY P. CHEATHAM  )<lb/>
+                <lb/><person xml:id="CHEATHAM">HENRY P. CHEATHAM</person>  )
             </castItem>
             <castItem>
-                GEORGE H. WHITE  )<lb/>
+                <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  )
             </castItem>
             
             <margin castGroupRole="3" position = "right">
@@ -159,21 +159,21 @@
         </castgroup>
         
         <castItem>
-            BOOKER T. WASHINGTON** <lb/>
+            <person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** <lb/>
             <margin position = "right">
-                At time of 1895 Atlanta speech
+                At time of <date when="1895">1895</date> Atlanta speech
             </margin>
         </castItem>
         
         <note>
-            <p>NOTE: Speaking parts are marked with asteriks**. All except
-            Sojourner Truth may read speeches from rostrum, and even
-            she may read her long sppech, but should learn rest of
-            dialogue. Faunces has only one line. <q>"And I voted."</q></p>
+            <p><lb/>NOTE: Speaking parts are marked with asteriks**. All except
+            <lb/><person idref="SOJOURNER">Sojourner Truth</person> may read speeches from rostrum, and even
+            <lb/>she may read her long sppech, but should learn rest of
+            <lb/>dialogue. Faunces has only one line. <q>"And I voted."</q></p>
         </note>
     </castList>
     
-    <!-- pg n="1" -->
+    <!-- <pg n="1"/> -->
     
     <set>
         
@@ -192,9 +192,9 @@
         <action>
             <ab>ACTION:</ab>
             <actiondesc>
-                <l n="1">A Narrator comes to the rostrum</l>
-                <l n="2">and shouts four words very loudly</l>
-                <l n="3">as if opening a Town Meeting.</l>
+                <lb/>A Narrator comes to the rostrum
+                <lb/>and shouts four words very loudly
+                <lb/>as if opening a Town Meeting.
             </actiondesc>
         </action>
         
@@ -234,7 +234,9 @@
         </sp>
     </div1>
     
-    <!-- pg n="2" -->
+    
+                 <pg n="2"/> 
+    
     
        <div1>
         <sp>
@@ -265,11 +267,13 @@
                     <lb/>over the land or the country. Kings and
                     <lb/>barons and chiefs and over-lords ran every-
                     <lb/>thing and everybody. Then came the Magna
-                    <lb/>Carta in 1315 in England, and almost 400</p></dialogue>
+                    <lb/>Carta in <date when="1315">1315</date> in <location>England</location>, and almost 400</p></dialogue>
         </sp>
     </div1>
     
- <!-- pg n="3"  -->
+ 
+              <pg n="3"/>
+    
     
     <div1>
         <sp>
@@ -277,19 +281,19 @@
             <dialogue>
                 <p><lb/>years later the Bill of Rights, many of 
                     <lb/>whose provisions were incorporated into
-                    <lb/>our own Constitution in 1787 and into the
-                    <lb/>American Bill of Rights in 1791. Some of
+                    <lb/>our own Constitution in <date when="1787">1787</date> and into the
+                    <lb/>American Bill of Rights in <date when="1791">1791</date>. Some of
                     <lb/>those rights, we, the Negro people of America,
                     <lb/>are still trying to secure in full.</p>
                 <p><lb/>We came to these shores first as explorers---
                     <lb/>with Cortez, with Balboa, with Columbus. But
                     <lb/>we did not migrate in large numbers. The
                     <lb/>majority of our ancestors were brought to the
-                    <lb/>Americas by force as slaves, dating back from 1619.
-                    <lb/>Slaves, like serfs in Europe, could not vote.
+                    <lb/>Americas by force as slaves, dating back from <date when="1619">1619</date>.
+                    <lb/>Slaves, like serfs in <location>Europe</location>, could not vote.
                     <lb/>But very early in our history, after the
                     <lb/>colonies won their freedom from the British---
-                    <lb/>Crispus Attucks of Boston, a Negro, being
+                    <lb/>Crispus Attucks of <location>Boston</location>, a Negro, being
                     <lb/>the first man killed when resistence to the
                     <lb/>British started---free Negros in the New
                     <lb/>England colonies voted. Some Negros in our
@@ -301,41 +305,47 @@
                     <lb/>it, and help others to get it.
                 </p>
                 <p><lb/>After the Revolutionary War, free Negros
-                    <lb/>could vote anywhere, but in 1789 the Southern
+                    <lb/>could vote anywhere, but in <date when="1789">1789</date> the Southern
                     <lb/>slave-holding states sensed danger in letting
                     <lb/>free Negroes vote, and began to disfranchise
-                    <lb/>them. By 1834 no Negroes could vote in the
+                    <lb/>them. By <date when="1834">1834</date> no Negroes could vote in the
                 </p>
             </dialogue>
         </sp>
-                    <!-- pg n="4" -->
+    </div1>
+    
+    
+                     <pg n="4"/> 
+    
+    
+        <div1>
         <sp>
             <speaker>NARRATOR (cont'd):</speaker>
             <dialogue>
-                <p><lb/>South, and some Northern states like Penn-
-                    <lb/>sylvania and Indiana denied them the ballot,
-                    <lb/>too. But colored men in New York, could
+                <p><lb/>South, and some Northern states like <location>Penn-
+                    <lb/>sylvania</location> and <location>Indiana</location> denied them the ballot,
+                    <lb/>too. But colored men in <location>New York</location>, could
                     <lb/>vote if they owned property and had lived
                     <lb/>here for three years. This man could vote.
                 </p>
             </dialogue>
         </sp>
-        <stage type="enter">
+        <stage type="enter" idref="FRAUNCES">
             <lb/>(SAMUEL FRAUNCES ENTERS IN COLONIAL
             <lb/>KNICKERS)
         </stage>
         <sp>
             <dialogue>
-                <p><lb/>Samuel Fraunces. He was the owner of Fraunces
-                    <lb/>Tavern at Broad and Pearl Streets in New York
-                    <lb/>City. At his tavern George Washington often
+                <p><lb/><person idref="FRAUNCES">Samuel Fraunces</person>. He was the owner of Fraunces
+                    <lb/>Tavern at Broad and Pearl Streets in <location>New York
+                    <lb/>City</location>. At his tavern George Washington often
                     <lb/>dined, and when Washington became President,
                     <lb/>he made Samuel Fraunces his chief steward.
                 </p>
             </dialogue>
         </sp>
         <sp>
-            <speaker>FRAUNCES:</speaker>
+            <speaker idref="FRAUNCES">FRAUNCES:</speaker>
             <dialogue>
                 <p>And I <insert hand="LH">could</insert> vote<Xout>d</Xout>.</p>
             </dialogue>
@@ -357,7 +367,7 @@
             <lb/>TRUTH)
         </stage>
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p>Could I vote? I lived in New York.</p>
             </dialogue>
@@ -371,7 +381,7 @@
             </dialogue>
         </sp>
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p>
                     <lb/>Which were wrong! I believed everybody should vote,
@@ -382,7 +392,9 @@
 
     </div1>
     
-    <!-- pg n="5" -->
+    
+     <pg n="5"/>
+    
     
     <div1>
         
@@ -400,7 +412,7 @@
         </sp>
         
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p><lb/>And I wanted to vote.
                 </p>
@@ -412,14 +424,14 @@
             <dialogue>
                 <p><lb/>When they wouldn't let you sit on the platform
                     <lb/>because you were a Negro at the National Woman's
-                    <lb/>Suffrage Convention in Akron, Ohio, in 1852, you
+                    <lb/>Suffrage Convention in <location>Akron, Ohio</location>, in <date when="1852">1852</date>, you
                     <lb/>sat where you are sitting now <insert hand="LH">in the audience.</insert>
                 </p>
             </dialogue>
         </sp>
         
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p><lb/>I did---until the going got hot, <stage type="action">(SHE RISES)</stage> and
                     <lb/>the men speakers started baiting the women, and
@@ -446,12 +458,14 @@
         
     </div1>
     
-    <!-- pg n="6" -->
+    
+     <pg n="6"/>
+    
     
     <div1>
         
         <sp>
-            <speaker><lb/>heard
+            <speaker idref="SOJOURNER"><lb/>heard
                     <lb/>(SOJOURNER):
             </speaker>
             <dialogue>
@@ -479,7 +493,7 @@
             </dialogue>
         </sp>
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p><lb/>It were finally passed---and about time, too!
                 <lb/>I took my freedom, but I didn't live long enough
@@ -495,22 +509,24 @@
                 <lb/>had never been slaves. Some were born free, some
                 <lb/>were given their freedom, and some ran away to
                 <lb/>freedom in the North. Among the great runaways
-                <lb/>was Frederick Douglass who escaped from a Maryland</p>
+                <lb/>was <person idref="DOUGLASS">Frederick Douglass</person> who escaped from a <location>Maryland</location></p>
             </dialogue>
         </sp>
     </div1>
     
-    <!-- pg n="7" -->
+    
+     <pg n="7"/>
+    
     
     <div1>
         <sp>
             <speaker>(NARRATOR:)</speaker>
             <dialogue>
-                <p><lb/>plantation in 1838, and devoted his life to
+                <p><lb/>plantation in <date when="1838">1838</date>, and devoted his life to
                 <lb/>fighting for freedom for all, and for full
                 <lb/>citizenship rights for all. In his middle age!</p>
                 
-                <stage type="enter"><lb/>(DOUGLASS ENTERS, WHITE HAIRED,
+                <stage type="enter" idref="DOUGLASS"><lb/>(DOUGLASS ENTERS, WHITE HAIRED,
                 <lb/>WHITE BEARD, DIGNIFIED, IMPOSING)</stage>
                 
                 <p><lb/>After Emancipation, after the Civil War was over,
@@ -518,7 +534,7 @@
             </dialogue>
         </sp>
         <sp>
-            <metamark hand="LH">X</metamark><speaker>DOUGLASS:</speaker>
+            <metamark hand="LH">X</metamark><speaker idref="DOUGLASS">DOUGLASS:</speaker>
             <dialogue>
                 <p><lb/>I see no chance of bettering the condition of the
                 <lb/>freedman until he shall cease to be merely a freed-
@@ -536,12 +552,12 @@
             <dialogue>
                 <p><lb/>And it took the cartridge-box to protect the
                 <lb/>rights of the freed Negroes in the early days of
-                <lb/>the Reconstruction. In 1867 Congress divided
+                <lb/>the Reconstruction. In <date when="1867">1867</date> Congress divided
                 <lb/>the South into five military districts, proclaimed
                 <lb/>universal suffrage, and placed federal marshalls
                 <lb/>at the polls to protect the Negro's newly granted
                 <lb/>right to vote. This right was made permanent by
-                <lb/>the passage in 1870 of the 15th Amendment to the
+                <lb/>the passage in <date when="1867">1870</date> of the 15th Amendment to the
                 <lb/>Constitution of the United States. 700,000 Negroes
                 <lb/>were added to the voting rolls of the South, and
                 <lb/>many city and state offices were filled by the
@@ -550,7 +566,9 @@
         </sp>
     </div1>
     
-    <!-- pg n="8" -->
+    
+     <pg n="8"/>
+    
     
     <div1>
         <sp>
@@ -565,39 +583,39 @@
                 <p><lb/>During the Reconstruction the Southern states
                 <lb/>sent 14 Negro Representatives and 2 Senators of
                 <lb/>color to Washington. The first Representative
-                <lb/>was from Georgia, elected in 1869, Jefferson P.
-                <lb/>Long.</p>
+                <lb/>was from Georgia, elected in <date when="1869">1869</date>, <person idref="LONG">Jefferson P.
+                <lb/>Long</person>.</p>
                 
-                <stage type="enter"><lb/>(LONG ENTERS TO STAND BESIDE NARRATOR.
+                <stage type="enter" idref="LONG"><lb/>(LONG ENTERS TO STAND BESIDE NARRATOR.
                 <lb/>IN TURN, AS EACH MAN'S NAME IS CALLED,
                 <lb/>EACH ENTERS, ALTERNATELY AT LEFT OR
                 <lb/>RIGHT, TO TORM TWO LINES ON EACH SIDE
                 <lb/>OF THE PLATFORM)</stage>
                 
-                <p><lb/>Then in 1871 South Carolina elected four Negro
-                <lb/>Congressmen, Joseph H. Rainey.</p>
+                <p><lb/>Then in <date when="1871">1871</date> <location>South Carolina</location> elected four Negro
+                <lb/>Congressmen, <person idref="RAINEY">Joseph H. Rainey</person>.</p>
                 
-                <stage type="enter">(ENTER RAINEY)</stage>
+                <stage type="enter" idref="RAINEY">(ENTER RAINEY)</stage>
                 
-                <p>Robert O. DeLarge.</p>
+                <p><person idref="DELARGE">Robert O. DeLarge</person>.</p>
                 
-                <stage type="enter">(ENTER DeLARGE)</stage>
+                <stage type="enter" idref="DELARGE">(ENTER DeLARGE)</stage>
                 
-                <p>Alonzo J. Rainer.</p>
+                <p><person idref="RAINER">Alonzo J. Rainer</person>.</p>
                 
-                <stage type="enter">(ENTER RAINER)</stage>
+                <stage type="enter" idref="RAINER">(ENTER RAINER)</stage>
                 
-                <p>And Robert B. Elliott.</p>
+                <p>And <person idref="ELLIOTT">Robert B. Elliott</person>.</p>
                 
-                <stage type="enter">(ENTER ELLIOTT)</stage>
+                <stage type="enter" idref="ELLIOTT">(ENTER ELLIOTT)</stage>
                 
-                <p>That same year Alabama elected Benjamin S. Turner.</p>
+                <p>That same year <location>Alabama</location> elected <person idref="TURNER">Benjamin S. Turner</person>.</p>
                 
-                <stage type="enter">(ENTER TURNER)</stage>
+                <stage type="enter" idref="TURNER">(ENTER TURNER)</stage>
                 
-                <p>In 1873 Mississippi elected John R. Lynch.</p>
+                <p>In <date when="1873">1873</date> <location>Mississippi</location> elected <person idref="LYNCH">John R. Lynch</person>.</p>
                 
-                <stage type="enter">(ENTER LYNCH)</stage>
+                <stage type="enter" idref="LYNCH">(ENTER LYNCH)</stage>
             </dialogue>
         </sp>
     </div1>

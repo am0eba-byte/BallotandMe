@@ -28,25 +28,23 @@ pg = element pg {n, empty}
 
 titlePage = element titlePage {copy, playtitle, titledesc, author, published, marginalia}
 
-    copy = element copy {underline, text}
+    copy = element copy {underline}
     
     playtitle = element playtitle {underline}
 
-    titledesc = element titledesc {l*}
+    titledesc = element titledesc {mixed{lb+}}
 
-        l = element l {n, mixed{period*}}
+author = element author {mixed{lb*}}
 
-author = element author {l*}
-
-published = element published {pubPlace, pubTime}
+published = element published {(pubPlace | date | lb)*}
 
     pubPlace = element pubPlace {text}
 
-    pubTime = element pubTime {when, text}
+    date = element date {when, text}
 
         when = attribute when {xsd:gYear}
 
-marginalia = element marginalia {hand, l*}
+marginalia = element marginalia {hand, mixed{lb*}}
 
     hand = attribute hand {"LH"}
 
@@ -55,13 +53,13 @@ castList = element castList {header, ((castgroup* | castItem*), (castItem* | cas
 
     header = element header {mixed{ (underline | lb)*}}
 
-    castItem = element castItem {mixed{ (unclear | role | margin | lb)* } }
+    castItem = element castItem {mixed{ (unclear | role | margin | lb | person)* } }
     
         unclear = element unclear {text}
     
         role = element role {text}
 
-        margin = element margin {((castGroupRole?), (position)), mixed{l*,period*}}
+        margin = element margin {(castGroupRole | position)*, mixed{(lb | period | date)*}}
         
         lb = element lb {empty}
         
@@ -97,16 +95,14 @@ set = element set {header, setting, setTime, action}
     
     action = element action {ab, actiondesc}
     
-        actiondesc = element actiondesc {l*}
+        actiondesc = element actiondesc {mixed{lb*}}
     
 
-
-
-div1 = element div1 {(sp | stage)*}
+    div1 = element div1 {(sp | stage)*}
 
     sp = element sp {(speaker | dialogue | metamark)*}
     
-        speaker = element speaker {mixed{lb*}}
+        speaker = element speaker {idref?, mixed{lb*}}
             
          dialogue = element dialogue {(p | stage)*}
          
@@ -117,7 +113,7 @@ div1 = element div1 {(sp | stage)*}
          # dialogue = element dialogue {p+}  
          # Does that work?
          
-         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb | stage)* } }
+         p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb | stage | date | location | person)* } }
          
          # mia: fixed element p rule to match Dr. B's suggestion
          
@@ -127,6 +123,13 @@ div1 = element div1 {(sp | stage)*}
          # Looking at your play script, I think you're considering catching the line-beginnings--right now you're using pseudomarkup for that with the // characters. 
          # You could try a self-closing <lb/> element for those: would you always want those to go inside <p> elements? That way you could calculate numbered lines for each character's speech! 
         
+            location = element location {mixed{lb*}}
+            
+            person = element person {(id | idref), mixed{lb*}}
+            
+            id = attribute xml:id {xsd:ID}
+            
+            idref = attribute idref {xsd:IDREF}
             
             class = attribute class {"navbar"}
             
@@ -142,7 +145,7 @@ div1 = element div1 {(sp | stage)*}
             
             q = element q {mixed{(lb | underline)*}}
             
-     stage = element stage {type, mixed{lb*}}
+     stage = element stage {(type | idref)*, mixed{lb*}}
     
         type = attribute type {"enter" | "action" }
         
