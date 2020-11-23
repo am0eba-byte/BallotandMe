@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="xmlidChecker.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <root>
     <!-- mia: Sup Brett, sorry to peep in your XML but I just doctored up the schema
         errors you had. Let me know if you're wondering about something I changed -->
     <head>
-        <title>Ballot and Me pages 9-12</title>
+        <title>Ballot and Me pages 8-12</title>
         <editor>Brett Meyer</editor>
     </head>
     <body>
@@ -116,7 +115,7 @@
         
         <div1>
             <sp>
-                <speaker>(NARRATOR:)</speaker>
+                <speaker who="text">(NARRATOR:)</speaker>
                 <dialogue>
                     <p>
                         <lb/>the Republican leader, James G. Blaine, said,
@@ -158,30 +157,44 @@
             message me for some help if you get stuck-->
         <div1>
             <sp>
-                <speaker></speaker>
+                <speaker>NARRATOR:</speaker>
                 <dialogue>
                     <p>
-                        <lb/>
-                        <lb/>
+                        <lb/>During the Reconstruction in lesser degrees thereafter,
+                        <lb/>many Negroes were active in state governments. For example, between 1868 and
+                        <lb/>1896 Louisiana elected 32 state senators of color and 95 representatives.
+                        <lb/>P. B. S. Pinchback was lieutenant-Governor and, in 1873, after the removal of
+                        <lb/>the white incumbent, Pinchback became Acting-Governor of Louisiana. In Florida,
+                        <lb/>Jonathan Gibbs, a Dartmouth graduate, became Secretary of State. And in South
+                        <lb/>Carolina, the London-educated Francis L. Cardoso was from 1872 to 1876 the
+                        <lb/>State Treasurer.                
                     </p>
                     <p>
-                        <lb/>
-                        <lb/>
+                        <lb/>But when federal troops were removed from the South in 1877 and
+                        <lb/>Negro voters no longer had protection at the polls, reaction set in. The Ku Klux
+                        <lb/>Klan began to ride. Voters werre intimidated, tarred and feathered, whipped,
+                        <lb/>shot down. Black Codes were passed denying civil rights, and some states originated
+                        <lb/>Grandfather Clauses which said that unless you or your parents had voted before the
+                        <lb/>Civil War, you could not vote now --- which meant freedom were not eligible. Negro
+                        <lb/>political power faded in the South. For a brief period during the rise of the
+                        <lb/>Populist Party of farmers and poor whites, both Democrats and Reublicans again
+                        <lb/>sought the Negro vote to keep The Populists from becoming powerful. then, from 1883 to
+                        <lb/>1897, six Negroes were elected as Representatives to Washington. They were:
                     </p>
-                    <p></p>
+                    <p>from Virginia, JOhn M. Langston</p>
                     
                     <stage type="enter">(ENTER LANGSTON)</stage>
                     
-                    <p></p>
+                    <p>from South Carolina, Thomas E. Miller and George W. Murray:</p>
                     
                     <stage type="enter">(ENTER MILLER AND MURRAY)</stage>
                     
-                    <p></p>
+                    <p>And from North Carolina, James E. O'Hara, Henry P. Cheatham:</p>
                     
                     <stage type="enter">(ENTER O'HARA AND CHEATHAM)</stage>
                     <p>
-                        <lb/>
-                        <lb/>
+                        <lb/>And the last of the Southern Representatives, George H. White of
+                        <lb/>North Carolina, elected in 1897.
                     </p>
                     
                     <stage type="enter">(ENTER WHITE)</stage>
@@ -195,10 +208,17 @@
         
         <div1>
             <sp>
-                <speaker></speaker>
+                <speaker>NARRATOR(Ctd.)</speaker>
                 <dialogue>
                     <p>
-                        <lb/>
+                        <lb/>When White completed his term in 1901, it was 27 years before
+                        <lb/>another Negro went to Congress.
+                        <lb/>One of the outstanding colored politicians was John M. Langston,
+                        <lb/>Congressman from Virginia, founder of the Law School at Howard
+                        <lb/>Univerity, and first presidnet of Virginia State College for
+                        <lb/>Negroes. Widely known as a speaker, Langston, in an address at
+                        <lb/>Saratoga, New York, in 1876, concerning the use of the ballot,
+                        <lb/>said some wise things.
                     </p>
                 </dialogue>
             </sp>
@@ -206,10 +226,36 @@
             <stage type="action">(LANGSTON COMES FORWARD)</stage>
             
             <sp>
-                <speaker></speaker>
+                <speaker>LANGSTON:</speaker>
                 <dialogue>
                     <p>
-                        <lb/>
+                        <lb/>Perhaps never in the history of our cuntry was there a time when
+                        <lb/>the duty of the Americn voter to consider well and wisely what
+                        <lb/>vote to cast, wht party to bring to power and support in pwer,
+                        <lb/>was so imperative. In discharging our duty in this regard, while
+                        <lb/>we are fearless, we should be impartial and just. Let us not
+                        <lb/>make haste to condemn unduly, nor to accept without wise discrimi-
+                        <lb/>nation the claim of any candidate or party. We are called upon
+                        <lb/>as intelligent and earnest, patriotic and devoted citizens, to
+                        <lb/>determine, each for himself, how votes given for the Democratic
+                        <lb/>or Republicn party, will tend to sustain the dignity and power
+                        <lb/>of the Government, and vonserve our free institutions under the
+                        <lb/>Constitution. Eahc of us is held responsible to his own
+                        <lb/>conscience, posterity and God for the wisdom, or folly displayed
+                        <lb/>in exercising our suffrage - the most sacred, as it is the
+                        <lb/>most valuable right which we possess on American soil.
+                    </p>
+                </dialogue>
+            </sp>
+            <sp>
+                <speaker>NARRATOR:</speaker>
+                <dialogue>
+                    <p>
+                        <lb/>Disfranchised in the South by state laws, trickery, or terror,
+                        <lb/>no more Negro Congressman came from <Xout>there</Xout> <insert hand="LH">Dixie</insert> after Langston and
+                        <lb/>White. But quietly behind the scenes, a practical-minded man
+                        <lb/>of enormous political power emerged, consulted by national
+                        <lb/>leaders North and South on all problems relating to the Negro,
                     </p>
                 </dialogue>
             </sp>
