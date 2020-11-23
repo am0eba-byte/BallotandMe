@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../Documents/GitHub/BallotandMe/docs/playSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="xmlidChecker.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="playSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
     <head>
         <title>Langston Hughes, pages 13-17</title>
@@ -12,13 +13,13 @@
                <speaker>NARRATOR(ctd)</speaker>
             <dialogue>
                 <p>
-                  <lb/>When White completed his term in 1901, it was 27 years before 
+                  <lb/>When White completed his term in <date when="1901">1901</date>, it was 27 years before 
                   <lb/>another Negro went to Congress.  
-                  <lb/>One of the outstanding colored politicians was John M. Langston,  
-                  <lb/>Congressman from Virginia, founder of the Law School at Howard  
+                    <lb/>One of the outstanding colored politicians was <person>John M. Langston</person>,  
+                    <lb/>Congressman from <location>Virginia</location>, founder of the Law School at Howard  
                   <lb/>University, and first president of Virginia State College for  
                   <lb/>Negroes. Widley known as a speaker, Langston, is an address at
-                  <lb/>Saratoga, New York, in 1876, concerning the use of the ballot,
+                  <lb/>Saratoga, New York, in <date when="1876">1876</date>, concerning the use of the ballot,
                   <lb/>said some wise things.
                 </p>
             </dialogue>
@@ -67,14 +68,14 @@
     <speaker>NARRATOR (ctd)</speaker>
         <dialogue>
              <p><lb/><insert hand="LH">He was</insert>a friend of Presidents. That man was the great founder of
-                <lb/>Tuskegee Institute, Book T. Washington.</p>
+                <lb/>Tuskegee Institute, <person>Book T. Washington</person>.</p>
         </dialogue>
         </sp>
             <stage type="enter">
                 <lb/>(ENTER WASHINGTON)
             </stage>
         <sp>
-   <speaker>WASHINTON:</speaker>
+   <speaker>WASHINGTON:</speaker>
            <dialogue>
             <p>
                <lb/>Friends, the individual<insert hand="LH">or</insert> race that owns the property, pays the

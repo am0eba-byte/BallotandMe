@@ -3,12 +3,14 @@
 <?xml-model href="xmlidChecker.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <root>
     <head>
-        <title>The Ballot and Me Semester Project, pages 1-8</title>
+        <title>The Ballot and Me Semester Project</title>
         <editor>Mia Borgia</editor>
+        <editor>Brett Meyer</editor>
+        <editor>McKenna Ballew</editor>
     </head>
 
 <body>
-    
+                                     <!-- MIA'S PORTION -->
     
     <titlePage>
         
@@ -621,5 +623,469 @@
         </sp>
     </div1>
     
+    
+    
+    
+    
+                                                               <!-- BRETT'S PORTION - PAGES 9-12 -->
+    
+    
+    
+    
+    
+    <pg n="9"/>
+    
+    <div1>  <!-- I made the schema so that <div1> will wrap the whole page, just because
+        it'll be easier to change this element when we do some XSLT to get the page
+         divisions separated when we turn this into HTML for the website.-->
+        <sp>
+            <speaker>(NARRATOR:)</speaker>  <!-- I think you might've accidentally
+                                                   confused the <sp> element with the <speaker>
+                                                    element, and I understand! The <sp> element
+                                                  is written in the schema to wrap around the
+                                                    entire section until the next speaker appears-->
+            <dialogue>
+                
+                <p><location>Alabama</location> elected <person idref="RAPIER">James T Rapier</person>.</p> <!-- the <dialogue> needs <p> elements
+                                                            to wrap around "paragraphs" of the dialogue
+                                                            text, even if it's just one line of text
+                                                        like these lines.-->
+                
+                <stage type="enter" idref="RAPIER">
+                    (ENTER RAPIER)
+                </stage>
+                
+                <p>
+                    <location>Florida</location> elected <person idref="WALLS">Josiah T. Walls</person>.
+                </p>
+                
+                <stage type="enter" idref="WALLS"> 
+                    (ENTER WALLS)
+                </stage>        <!-- you were putting <action> elements around the stage parts,
+                             but instead, wherever theres little bits indicating action like
+                            this, just wrap it in a <stage> element - and if the action involves
+                            someone entering the scene, make it <stage type="enter">, but if
+                            it involves anything other than someone entering (just general
+                            actions), then make it <stage type="action">-->
+                
+                <p>
+                    And <location>South Carolina</location> elected <person idref="CAIN">Richard H. Cain</person>.
+                </p>
+                
+                <stage type="enter" idref="CAIN">
+                    (ENTER CAIN)
+                </stage>
+                
+                <p>
+                    <lb/>That same year to the House of Representatives
+                    <lb/><location>North Carolina</location> elected <person idref="HYMAN">John A. Hyman</person>.
+                </p>   <!-- Wherever there's more than one line of dialogue, mark the 
+                        beginnings of the lines with the self-closing attribute <lb/>
+                        This way, when we make the website, we can make it look
+                    accurate to the way the actual document looks, by indicating
+                    where lines of text start inside <p> elements.-->
+                
+                <stage type="enter" idref="HYMAN">
+                    (ENTER HYMAN)
+                </stage>
+                
+                <p>
+                    <location>Alabama</location> elected <person idref="HARALSON">Jene Haralson</person>.
+                </p>
+                
+                <stage type="enter" idref="HARALSON">
+                    (ENTER HARALSON)
+                </stage>
+                
+                <p>
+                    And <location>South Carolina</location> elected <person idref="SMALLS">Rovert Smalls</person>.
+                </p>
+                
+                <stage type="enter" idref="SMALLS">
+                    (ENTER SMALLS)
+                </stage>
+                
+                <p>
+                    <lb/>The only Negro Senators in American history came
+                    <lb/>at the very end of the Reconstruction period. The
+                    <lb/>first, elected in <date when="1870">1870</date>, was <person idref="REVELS">Hiram R. Revels</person>.
+                </p>
+                
+                <stage type="enter" idref="REVELS">(ENTER REVELS)</stage>
+                
+                <p>
+                    And the second in <date when="1876">1876</date> was <person idref="BRUCE">Blanche K. Bruce</person>.
+                </p>
+                
+                <stage type="enter" idref="BRUCE">(ENTER BRUCE)</stage>
+                
+                <p>
+                    <lb/>Most of these men were as well qualified and as
+                    <lb/>well educated as white officials of the times,
+                    <lb/>and some better. Some were graduates of Oberlin
+                    <lb/>or other leading Northern colleges. <person idref="ELLIOTT">Elliott</person> had
+                    <lb/>studied abroad. Of those who served in Congress,
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+    <pg n="10"/>
+    
+    
+    <div1>
+        <sp>
+            <speaker>(NARRATOR:)</speaker>
+            <dialogue>
+                <p>
+                    <lb/>the Republican leader, James G. Blaine, said,
+                    <lb/><q>"They were as a rule studious, earnest, ambitious
+                        <lb/>men, whose public conduct would be honorable to
+                        <lb/>any race."</q> Typical of the Negroes who serves in
+                    <lb/>the House of Representatives at Washington was
+                    <lb/><person idref="CAIN">Richard H. Cain</person>, A.M.E. minister of <location>South Carolina</location>.
+                    <lb/>Cain made a stirring speech in Congress regarding
+                    <lb/>Civil Rights.
+                </p>
+            </dialogue>
+        </sp>
+        
+        <stage type="action">(CAIN STEPS FORWARD AND SPEAKS)</stage>
+        
+        <sp>
+            <speaker idref="CAIN">CAIN:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>I do not ask any legislation for the colored people
+                    <lb/>of this country that is not applied to white people.
+                    <lb/>All that we aks is equal laws, not equal legislation,
+                    <lb/>and equal rights throughout the length and breadth
+                    <lb/>of this land. We do not come here begging for our
+                    <lb/>rights. We come here clothed in the garb of
+                    <lb/>American citizenship. We come <underline>demanding</underline> our rights
+                    <lb/>in the name of our children, in the name of our country.
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+    <pg n="11"/> <!-- so here's were you left off, it would be "13 of 17" on
+        the top left of the website, but it's page 11 on the actual typescript-->
+    
+    <!-- I started you off with an outline, hope that helps! Don't be afraid to
+            message me for some help if you get stuck-->
+    <div1>
+        <sp>
+            <speaker></speaker>
+            <dialogue>
+                <p>
+                    <lb/>
+                    <lb/>
+                </p>
+                <p>
+                    <lb/>
+                    <lb/>
+                </p>
+                <p></p>
+                
+                <stage type="enter" idref="LANGSTON">(ENTER LANGSTON)</stage>
+                
+                <p></p>
+                
+                <stage type="enter" idref="MILLER">(ENTER MILLER AND <person idref="MURRAY">MURRAY</person>)</stage>
+                
+                <p></p>
+                
+                <stage type="enter" idref="CHEATHAM">(ENTER O'HARA AND CHEATHAM)</stage>
+                <p>
+                    <lb/>
+                    <lb/>
+                </p>
+                
+                <stage type="enter" idref="WHITE">(ENTER WHITE)</stage>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+    <pg n="12"/>
+    
+    
+    <div1>
+        <sp>
+            <speaker></speaker>
+            <dialogue>
+                <p>
+                    <lb/>
+                </p>
+            </dialogue>
+        </sp>
+        
+        <stage type="action">(LANGSTON COMES FORWARD)</stage>
+        
+        <sp>
+            <speaker></speaker>
+            <dialogue>
+                <p>
+                    <lb/>
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    
+    
+    
+                                                <!-- McKENNA'S PORTION - PAGES 13-17 --> 
+    
+    
+    
+    <!-- PAGE 14, PAGE 12 on the actual page-->
+    <div1>
+        <sp>
+            <speaker>NARRATOR(ctd)</speaker>
+            <dialogue>
+                <p>
+                    <lb/>When White completed his term in <date when="1901">1901</date>, it was 27 years before 
+                    <lb/>another Negro went to Congress.  
+                    <lb/>One of the outstanding colored politicians was <person idref="LANGSTON">John M. Langston</person>,  
+                    <lb/>Congressman from <location>Virginia</location>, founder of the Law School at Howard  
+                    <lb/>University, and first president of Virginia State College for  
+                    <lb/>Negroes. Widley known as a speaker, Langston, is an address at
+                    <lb/>Saratoga, New York, in <date when="1876">1876</date>, concerning the use of the ballot,
+                    <lb/>said some wise things.
+                </p>
+            </dialogue>
+        </sp> 
+        <stage type="action">
+            <lb/>(LANGSTON GOES FORWARD)
+        </stage>
+        <sp>
+            <speaker idref="LANGSTON">LANGSTON</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Perhaps never in the history of our country was there a time when
+                    <lb/>the duty of the American voter to consider well and wisely that 
+                    <lb/>vote to cast, what party to bring to power and support is power,
+                    <lb/>was so imperative. In discharging our duty in this regard, while
+                    <lb/>we are fearless, we should be impartial and just. Let us not 
+                    <lb/>make haste to condem unduly, not to accept without wise discrimi-
+                    <lb/>nation the claim of any candidate or party. We are called upon
+                    <lb/>an intelligent and earnest, patriotic and developed citizens, to
+                    <lb/>determine, each for himself, how votes given for the Democratic
+                    <lb/>or Republican party, will tend to sustain the dignity and power
+                    <lb/>of the Government, and conserve our free insitution under the 
+                    <lb/>Consitution. Each of us held responsible to his own
+                    <lb/>conscience, posterity and God for the wisdom, or folly dispalyed 
+                    <lb/>in exercising our sufferage -- the most sacred, as it is the
+                    <lb/>most valuable right which we possess on American soil.
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Disfranchised in the South by state laws, trickery, or terror,
+                    <lb/>no more Negro Congressmen came from<insert hand="LH">Dixil</insert>after <person idref="LANGSTON">Langston</person> and
+                    <lb/><person idref="WHITE">White</person>. But quietly behind the scenes, a practical-minded man
+                    <lb/>of enormous political power emerged, consulted by national
+                    <lb/>leaders North and South on all problems relationg to the Negro,
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    <div1>
+        <!-- PAGE 15, PAGE 13 on the actual page-->
+        <sp>
+            <speaker>NARRATOR (ctd)</speaker>
+            <dialogue>
+                <p><lb/><insert hand="LH">He was</insert>a friend of Presidents. That man was the great founder of
+                    <lb/>Tuskegee Institute, <person idref="WASHINGTON">Book T. Washington</person>.</p>
+            </dialogue>
+        </sp>
+        <stage type="enter" idref="WASHINGTON">
+            <lb/>(ENTER WASHINGTON)
+        </stage>
+        <sp>
+            <speaker idref="WASHINGTON">WASHINGTON:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Friends, the individual<insert hand="LH">or</insert> race that owns the property, pays the
+                    <lb/>taxes, possesses the intelligence and substantial character, is
+                    <lb/>the one which is going to exercise the greatest control in
+                    <lb/>government, whether he lives in the North or whether he lives in
+                    <lb/>the South. There is no defense or security for any of us except
+                    <lb/>in the highest intelligence and development of all. Education must
+                    <lb/>be digested and assimilated in order to make it significant. The
+                    <lb/>science, the art, the literature that fails to reach down and bring
+                    <lb/>the humblest . up to the enjoyment of the fullest blessings of our
+                    <lb/>government is weak, no matter how costly the buildings or apparatus
+                    <lb/>used, or how modern the methods of instruction employed. The study
+                    <lb/>of arithmetic that does not result in making men conscientious in
+                    <lb/>receiving and counting the ballots of their fellow men is faulty.
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Unfortunately, the unreconstructed rebels of the South continued to
+                    <lb/>deny the rights to vote, or failed to count, the ballots of Negro
+                    <lb/>citizens at the turn of the century. When Charles H. White left
+                    <lb/>Congress in <date when="1901">1901</date>, it was more than a quarter of a century before we
+                    <lb/>had there another national representative. In <date when="1928">1928</date> Oscar DePriest
+                    <lb/>was elected to Congress from the First Illinois District -- being
+                    <lb/>the first Northern Negro over to sit in the national legislature. 
+                    <lb/>As the great migrations from the South increased after each war,
+                    <lb/>and the black populations of our Northern industrial cities grew,
+                    <lb/>so Negro political power grew. Manicipal judges, city councilmen,
+                    <lb/>county officials,  and state legislators of color from New York to
+                    <lb/>Los Angeles became not uncommon. From <location>Illinois</location>, Arthur W. Michell
+                </p>
+            </dialogue>
+        </sp>
+    </div1>
+    <!-- PAGE 16, PAGE 14 on the actual page-->
+    <div1>
+        <sp>
+            <speaker>NARRATOR (ctd.)</speaker>
+            <dialogue>
+                <p>
+                    <lb/>FOLLOWED De Priest to Congress, then came William L. Dawson
+                    <lb/>serving now. From New York Adam Clayton Powell, Jr. was elected
+                    <lb/>in <date when="1945">1945</date>, and most recently<insert hand="LH">Charles C</insert>Diggs of Detroit became the 27th man
+                    <lb/>of color to sit in Congresss. There should be more -- more
+                    <lb/>Powells, Dawsons, and Diggses in Washington. More <insert hand="LH">James</insert>Watsons and
+                    <lb/>Bessie Buchanans in state governments<insert hand="LH">as in New York.</insert>More Hulan Jacks in more
+                    <lb/>American city halls<insert hand="LH">as in Manhantton</insert>and more judges such as Hivers, Paige, Stevens,
+                    <lb/>Dickens and JaneBolin on the benches of municipalities across the
+                    <lb/>nation. And we all -- you, me -- must use our vote wisely and
+                    <lb/>use it well to elect to all sorts of offices, particularly the
+                    <lb/>national officies, men who will bring to bear<insert hand="LH">our democratic forces</insert>on all public officials
+                    <lb/>to not only open up -- but to <underline>protect</underline>u --
+                    <lb/>the ballow boxes of the South -- so that Negro citizens may
+                    <lb/>vote in <location>Mississippi</location> and <location>Georgia</location> and <location>Alabama</location> and <location>South Carolina</location>
+                    <lb/>again -- and again sent to Congress <underline>from the South</underline> black men --
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(A WOMAN CRIES FROM THE AUDIENCE)
+        </stage>
+        <sp>
+            <speaker>SOJOURNER:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>And black women?
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(SOJURNER TRUTH RISES AND JOINS THE OTHERS ON THE
+            <lb/>PLATFORM)
+        </stage>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Yes, and black women -- representatives of the strength and
+                    <lb/>calibre of those who served so nobly and so well in the dark and
+                    <lb/>dangerous days of Reconstruction. Fellow citizens, your ballot
+                    <lb/>has great value. Use it! When election time comes, to paraphrase
+                    <lb/>by extension a young Negro leader in the South today, the 
+                    <lb/>Reverend Martin Luther King of <location>Alabama</location>, <q>"If you can't . fly, run!
+                    <lb/>If you can't run, walk! If you can't walk, crawl -- to the 
+                    <lb/>polls and vote!"</q>
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(VARIOUS ONES CRY IN TURN THE WORD "VOTE!")
+        </stage>
+    </div1>
+    <!-- PAGE 17, PAGE 15 on the actual page -->
+    <div1>
+        <sp>
+            <speaker idref="FRAUNCES">FRAUNCES:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>SOJURNER:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="DOUGLASS">DOUGLASS:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="CAIN">CAIN:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="LANGSTON">LANGSTON:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker idref="WASHINGTON">WASHINGTON:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <sp>
+            <speaker>NARRATOR:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote!
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(AlLL THE CHARACTERS ON THE PLATFORM COME FORWARD,
+            <lb/>POINT THEIR FINGERS AT THE AUDIENCE, AND CRY IN
+            <lb/>UNISON SEVERAL TIMES THE WORD, "VOTE!")
+        </stage>
+        <sp>
+            <speaker>ALL TOGETHER:</speaker>
+            <dialogue>
+                <p>
+                    <lb/>Vote! ......  Vote! ...... Vote! ...... Vote! ...... Vote...VOTE!
+                </p>
+            </dialogue>
+        </sp>
+        <stage type="action">
+            <lb/>(BLACKOUT... LIGHTS UP AGAIN FOR BOWS. THEN ALL THE
+            <lb/>CHARACTERS LEAVE THE PLATFORM EXCEPT THE NARRATOR
+            <lb/>WHO CONTINUES WITH THE CONTEMPORARY OF THE
+            <lb/>PROGRAM, INTRODUCING GUESTS FROM THE VARIOUS
+            <lb/>POLITICAL PARTIES PRESENT)
+        </stage>
+    </div1>
 </body>
 </root>
+
+

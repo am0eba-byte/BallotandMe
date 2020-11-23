@@ -2,7 +2,7 @@ start = root
 
 root = element root {head, body}
 
-head = element head {title, editor}
+head = element head {title, editor*}
 
     title = element title {text}
         
@@ -125,7 +125,7 @@ set = element set {header, setting, setTime, action}
         
             location = element location {mixed{lb*}}
             
-            person = element person {(id | idref)?, mixed{lb*}}
+            person = element person {(id | idref)*, mixed{lb*}}
             
             id = attribute xml:id {xsd:ID}
             
@@ -145,7 +145,7 @@ set = element set {header, setting, setTime, action}
             
             q = element q {mixed{(lb | underline)*}}
             
-     stage = element stage {(type | idref)*, mixed{lb*}}
+     stage = element stage {(type | idref)*, mixed{(lb | person)*}}
     
         type = attribute type {"enter" | "action" }
         
