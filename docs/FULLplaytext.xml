@@ -372,7 +372,7 @@
         <sp>
             <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
-                <p>Could I vote? I lived in New York.</p>
+                <p>Could I vote? I lived in <location>New York</location>.</p>
             </dialogue>
         </sp>
         <sp>
@@ -440,8 +440,9 @@
                     <lb/>the men speakers started baiting the women, and
                     <lb/>talking about the women is weak, not strong as
                     <lb/>men nor smart as men, and they even have to be
-                    <lb/>helped into carriages. <stage type="action">(SHE COMES TO THE ROSTRUM)</stage>
+                    <lb/>helped into carriages. 
                 </p>
+                <stage type="action">(SHE COMES TO THE ROSTRUM)</stage>
                 <p>
                     <lb/>Then I just walked up on that platform, sir, and
                     <lb/>told them men: <q>'Nobody ever helped me into carriages,
@@ -491,7 +492,7 @@
             <dialogue>
                 <p><lb/>But it was almost three-quarters of a century
                 <lb/>before the country got around to giving you the
-                <lb/>vote, Sojourner Truth, before the 19th Amendment
+                <lb/>vote, <person idref="SOJOURNER">Sojourner Truth</person>, before the 19th Amendment
                 <lb/>granting women's suffrage was passed.</p>
             </dialogue>
         </sp>
@@ -586,7 +587,7 @@
                 <p><lb/>During the Reconstruction the Southern states
                 <lb/>sent 14 Negro Representatives and 2 Senators of
                 <lb/>color to Washington. The first Representative
-                <lb/>was from Georgia, elected in <date when="1869">1869</date>, <person idref="LONG">Jefferson P.
+                <lb/>was from <location>Georgia</location>, elected in <date when="1869">1869</date>, <person idref="LONG">Jefferson P.
                 <lb/>Long</person>.</p>
                 
                 <stage type="enter" idref="LONG"><lb/>(LONG ENTERS TO STAND BESIDE NARRATOR.
@@ -635,21 +636,12 @@
     
     <pg n="9"/>
     
-    <div1>  <!-- I made the schema so that <div1> will wrap the whole page, just because
-        it'll be easier to change this element when we do some XSLT to get the page
-         divisions separated when we turn this into HTML for the website.-->
+    <div1>  
         <sp>
-            <speaker>(NARRATOR:)</speaker>  <!-- I think you might've accidentally
-                                                   confused the <sp> element with the <speaker>
-                                                    element, and I understand! The <sp> element
-                                                  is written in the schema to wrap around the
-                                                    entire section until the next speaker appears-->
+            <speaker>(NARRATOR:)</speaker>  
             <dialogue>
                 
-                <p><location>Alabama</location> elected <person idref="RAPIER">James T Rapier</person>.</p> <!-- the <dialogue> needs <p> elements
-                                                            to wrap around "paragraphs" of the dialogue
-                                                            text, even if it's just one line of text
-                                                        like these lines.-->
+                <p><location>Alabama</location> elected <person idref="RAPIER">James T Rapier</person>.</p> 
                 
                 <stage type="enter" idref="RAPIER">
                     (ENTER RAPIER)
@@ -661,12 +653,7 @@
                 
                 <stage type="enter" idref="WALLS"> 
                     (ENTER WALLS)
-                </stage>        <!-- you were putting <action> elements around the stage parts,
-                             but instead, wherever theres little bits indicating action like
-                            this, just wrap it in a <stage> element - and if the action involves
-                            someone entering the scene, make it <stage type="enter">, but if
-                            it involves anything other than someone entering (just general
-                            actions), then make it <stage type="action">-->
+                </stage>        
                 
                 <p>
                     And <location>South Carolina</location> elected <person idref="CAIN">Richard H. Cain</person>.
@@ -679,11 +666,7 @@
                 <p>
                     <lb/>That same year to the House of Representatives
                     <lb/><location>North Carolina</location> elected <person idref="HYMAN">John A. Hyman</person>.
-                </p>   <!-- Wherever there's more than one line of dialogue, mark the 
-                        beginnings of the lines with the self-closing attribute <lb/>
-                        This way, when we make the website, we can make it look
-                    accurate to the way the actual document looks, by indicating
-                    where lines of text start inside <p> elements.-->
+                </p>   
                 
                 <stage type="enter" idref="HYMAN">
                     (ENTER HYMAN)
@@ -771,11 +754,9 @@
     </div1>
     
     
-    <pg n="11"/> <!-- so here's were you left off, it would be "13 of 17" on
-        the top left of the website, but it's page 11 on the actual typescript-->
+    <pg n="11"/> 
     
-    <!-- I started you off with an outline, hope that helps! Don't be afraid to
-            message me for some help if you get stuck-->
+    
     <div1>
         <sp>
             <speaker>NARRATOR:</speaker>
@@ -887,7 +868,7 @@
     
                                                 <!-- McKENNA'S PORTION - PAGES 13-17 --> 
     
-    
+    <pg n="13"/>
     
 
     <div1>
@@ -914,7 +895,7 @@
                     <lb/>in the highest intelligence and development of all. Education must
                     <lb/>be digested and assimilated in order to make it significant. The
                     <lb/>science, the art, the literature that fails to reach down and bring
-                    <lb/>the humblest . up to the enjoyment of the fullest blessings of our
+                    <lb/>the humblest up to the enjoyment of the fullest blessings of our
                     <lb/>government is weak, no matter how costly the buildings or apparatus
                     <lb/>used, or how modern the methods of instruction employed. The study
                     <lb/>of arithmetic that does not result in making men conscientious in
@@ -936,21 +917,25 @@
                     <lb/>As the great migrations from the South increased after each war,
                     <lb/>and the black populations of our Northern industrial cities grew,
                     <lb/>so Negro political power grew. Manicipal judges, city councilmen,
-                    <lb/>county officials,  and state legislators of color from New York to
-                    <lb/>Los Angeles became not uncommon. From <location>Illinois</location>, Arthur W. Michell
+                    <lb/>county officials,  and state legislators of color from <location>New York</location> to
+                    <lb/><location>Los Angeles</location> became not uncommon. From <location>Illinois</location>, Arthur W. Michell
                 </p>
             </dialogue>
         </sp>
     </div1>
-    <!-- PAGE 16, PAGE 14 on the actual page-->
+    
+    
+    <!-- PAGE 16, PAGE 14 on the actual page--> <pg n="14"/>
+    
+    
     <div1>
         <sp>
             <speaker>NARRATOR (ctd.)</speaker>
             <dialogue>
                 <p>
                     <lb/>FOLLOWED De Priest to Congress, then came William L. Dawson
-                    <lb/>serving now. From New York Adam Clayton Powell, Jr. was elected
-                    <lb/>in <date when="1945">1945</date>, and most recently<insert hand="LH">Charles C</insert>Diggs of Detroit became the 27th man
+                    <lb/>serving now. From <location>New York</location> Adam Clayton Powell, Jr. was elected
+                    <lb/>in <date when="1945">1945</date>, and most recently<insert hand="LH">Charles C</insert>Diggs of <location>Detroit</location> became the 27th man
                     <lb/>of color to sit in Congresss. There should be more -- more
                     <lb/>Powells, Dawsons, and Diggses in Washington. More <insert hand="LH">James</insert>Watsons and
                     <lb/>Bessie Buchanans in state governments<insert hand="LH">as in New York.</insert>More Hulan Jacks in more
@@ -959,8 +944,8 @@
                     <lb/>nation. And we all -- you, me -- must use our vote wisely and
                     <lb/>use it well to elect to all sorts of offices, particularly the
                     <lb/>national officies, men who will bring to bear<insert hand="LH">our democratic forces</insert>on all public officials
-                    <lb/>to not only open up -- but to <underline>protect</underline>u --
-                    <lb/>the ballow boxes of the South -- so that Negro citizens may
+                    <lb/>to not only open up -- but to <underline>protect</underline> --
+                    <lb/>the ballot boxes of the South -- so that Negro citizens may
                     <lb/>vote in <location>Mississippi</location> and <location>Georgia</location> and <location>Alabama</location> and <location>South Carolina</location>
                     <lb/>again -- and again sent to Congress <underline>from the South</underline> black men --
                 </p>
@@ -970,10 +955,10 @@
             <lb/>(A WOMAN CRIES FROM THE AUDIENCE)
         </stage>
         <sp>
-            <speaker>SOJOURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p>
-                    <lb/>And black women?
+                    <lb/>And black women!
                 </p>
             </dialogue>
         </sp>
@@ -1000,7 +985,11 @@
             <lb/>(VARIOUS ONES CRY IN TURN THE WORD "VOTE!")
         </stage>
     </div1>
-    <!-- PAGE 17, PAGE 15 on the actual page -->
+    
+    
+    <!-- PAGE 17, PAGE 15 on the actual page --> <pg n="15"/>
+    
+    
     <div1>
         <sp>
             <speaker idref="FRAUNCES">FRAUNCES:</speaker>
@@ -1011,7 +1000,7 @@
             </dialogue>
         </sp>
         <sp>
-            <speaker>SOJURNER:</speaker>
+            <speaker idref="SOJOURNER">SOJOURNER:</speaker>
             <dialogue>
                 <p>
                     <lb/>Vote!
