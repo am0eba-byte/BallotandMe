@@ -15,6 +15,10 @@
                 <link rel="stylesheet" type="text/css" href="webstyle.css"/>
             </head>
             <body>
+                <hr/>
+                <p class="navbar"><a href="index.html">Home</a> | <a href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a href="analysis.html">Analysis</a> | 
+                    <a href="conclusion.html">Conclusion</a></p>
+                <hr/>
                 <h1><xsl:apply-templates select="descendant::playtitle"/></h1>
                 <xsl:apply-templates select="descendant::body"/>
             </body>
@@ -130,6 +134,10 @@
     
     <xsl:template match="lb">
         <br/>
+    </xsl:template>
+    
+    <xsl:template match="underline">
+        <u><xsl:apply-templates/></u>
     </xsl:template>
     
 </xsl:stylesheet>
