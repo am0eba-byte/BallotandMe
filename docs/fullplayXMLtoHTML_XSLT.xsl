@@ -54,23 +54,29 @@
     <xsl:template match="castList">
         <h2><xsl:apply-templates select="header"/></h2>
             <ul>
-                <!-- <li><xsl:apply-templates select="castItem ! not(castItem/person[@xml:id='WASHINGTON'])"/></li> -->
-                <xsl:apply-templates select="castItem"/>
-                <xsl:apply-templates select="castgroup/castItem"/>
+                <xsl:apply-templates select="castgroup"/>
             </ul>
+        <p><xsl:apply-templates select="note"/></p>
     </xsl:template>
         
         <xsl:template match="castItem">
             <li>
-                <xsl:apply-templates></xsl:apply-templates>
+                <xsl:apply-templates/>
             </li>
         </xsl:template>
     
-    <xsl:template match="castgroup/castItem">
+    <xsl:template match="castgroup">
+        <section class="castgroup">
+        <xsl:apply-templates select="castItem"/>
+        <aside><xsl:apply-templates select="margin"/></aside>
+        </section>
+    </xsl:template>
+    
+    <!-- <xsl:template match="castgroup/castItem">
         <li>
             <xsl:apply-templates/>
         </li>
-    </xsl:template>
+    </xsl:template> -->
     
     <xsl:template match="set">
         <h1><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h1>
@@ -97,17 +103,33 @@
     <xsl:template match="sp">
         <div class="sp">
             <p><b><xsl:apply-templates select="speaker"/></b></p>
-            <xsl:apply-templates select="dialogue"/>
+            <div class="dialogue"><xsl:apply-templates select="dialogue"/></div>
             
         </div>
     </xsl:template>
     
-    <xsl:template match="dialogue">
-        <p><xsl:apply-templates select="p"/></p>
+    <xsl:template match="p">
+        <p><xsl:apply-templates/></p>
     </xsl:template>
     
     <xsl:template match="stage">
-        <div class="stage"><xsl:apply-templates/></div>
+        <div class="stage"><em><xsl:apply-templates/></em></div>
+    </xsl:template>
+    
+    <xsl:template match="location">
+        <span class="location"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="date">
+        <span class="date"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="period">
+        <span class="period"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="lb">
+        <br/>
     </xsl:template>
     
 </xsl:stylesheet>

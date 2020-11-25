@@ -53,25 +53,32 @@
             <lb/>(In order of appearance)
         </header>
         
+        <castgroup n="1">
+            <castItem>
+            <lb/><role>NARRATOR</role>
+        </castItem>
         <castItem>
-            <role>NARRATOR</role><lb/>
             <lb/><person xml:id="FRAUNCES">SAMUEL FRAUNCES</person>**
-            <lb/><person xml:id="SOJOURNER">SOJOURNER TRUTH</person>**
-            <margin position = "right">
+            </castItem>
+            <castItem>
+        <lb/><person xml:id="SOJOURNER">SOJOURNER TRUTH</person>**
+            </castItem>
+            <margin castGroupRole="1" position = "right">
                 <lb/>Contemporary
                 <lb/>George Washington's period
                 <lb/><period begin = "1797" end = "1833">(1797-1883)</period>
             </margin>
-        </castItem>
+        </castgroup>
         
-        <castItem>
+        <castgroup n="2">
+            <castItem>
             <lb/><person xml:id="DOUGLASS">FREDERICK DOUGLASS</person>**
-            <margin position ="right">
+            <margin castGroupRole="2" position ="right">
                 <period begin = "1817" end = "1895">(1817-1895)</period>
             </margin>
-        </castItem>
+        </castItem></castgroup>
         
-        <castgroup n = "1">
+        <castgroup n = "3">
             <castItem>
                 <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  )
             </castItem>
@@ -115,14 +122,14 @@
                 <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  )
             </castItem>
             
-            <margin castGroupRole = "1" position = "right">
+            <margin castGroupRole = "3" position = "right">
                 <lb/>Representatives in Congress
                 <lb/>during Reconstruction <period begin="1869" end="1889">1869-1889</period>
             </margin>
             
         </castgroup>
         
-        <castgroup n="2">
+        <castgroup n="4">
             <castItem>
                 <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  )
             </castItem>
@@ -130,13 +137,13 @@
                 <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  )
             </castItem>
             
-            <margin castGroupRole = "2" position = "right">
+            <margin castGroupRole = "4" position = "right">
                 Senators - <period begin="1870" end="1881">1870-1881 period</period>
             </margin>
             
         </castgroup>
 
-        <castgroup n="3">
+        <castgroup n="5">
             <castItem>
                 <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  )
             </castItem>
@@ -156,17 +163,19 @@
                 <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  )
             </castItem>
             
-            <margin castGroupRole="3" position = "right">
+            <margin castGroupRole="5" position = "right">
                 Representatives <period begin="1883" end="1897">1883-1897</period>
             </margin>
         </castgroup>
         
-        <castItem>
+        <castgroup n="6">
+            <castItem>
             <lb/><person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** 
-            <margin position = "right">
+            <margin castGroupRole="6" position = "right">
                 At time of <date when="1895">1895</date> Atlanta speech
             </margin>
         </castItem>
+        </castgroup>
         
         <note>
             <p><lb/>NOTE: Speaking parts are marked with asteriks**. All except
@@ -217,7 +226,7 @@
         </sp>
         
         <stage type="action">
-            (NARRATOR BANGS HIS GAVEL)
+            <lb/>(NARRATOR BANGS HIS GAVEL)
         </stage>
         
         <sp>

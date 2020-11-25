@@ -49,7 +49,7 @@ marginalia = element marginalia {hand, mixed{lb*}}
     hand = attribute hand {"LH"}
 
 
-castList = element castList {header, ((castgroup* | castItem*), (castItem* | castgroup*), (castgroup* | castItem*)), note}
+castList = element castList {header, (castgroup | castItem)*, note}
 
     header = element header {mixed{ (underline | lb)*}}
 
