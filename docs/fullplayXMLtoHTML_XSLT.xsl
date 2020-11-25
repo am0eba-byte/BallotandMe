@@ -35,6 +35,8 @@
         
         <xsl:apply-templates select="set"/>
         
+        <hr/>
+        
         <xsl:apply-templates select="div1"/>
         
     </xsl:template>
@@ -83,18 +85,18 @@
     </xsl:template> -->
     
     <xsl:template match="set">
-        <h1><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h1>
-        <h2><xsl:apply-templates select="setting/ab"/></h2>
+        <h2><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h2>
+        <h3><xsl:apply-templates select="setting/ab"/></h3>
         <p>
             <xsl:apply-templates select="setting/setDesc"/>
         </p>
         
-        <h2><xsl:apply-templates select="setTime/ab"/></h2>
+        <h3><xsl:apply-templates select="setTime/ab"/></h3>
         <p>
             <xsl:apply-templates select="setTime/timedesc"/>
         </p>
         
-        <h2><xsl:apply-templates select="action/ab"/></h2>
+        <h3><xsl:apply-templates select="action/ab"/></h3>
         <p><xsl:apply-templates select="action/actiondesc"></xsl:apply-templates></p>
     </xsl:template>
     
