@@ -142,4 +142,8 @@
         <u><xsl:apply-templates/></u>
     </xsl:template>
     
+    <xsl:template match="Xout">
+        <strike><xsl:apply-templates/></strike>
+    </xsl:template>
+    
 </xsl:stylesheet>
