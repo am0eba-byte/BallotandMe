@@ -1,5 +1,5 @@
 # BallotandMe
-Hello! This will be the repo our project team will use to create our Semester Project on Langston Hughes's typescript play **The Ballot and Me.**
+Hello! This will be the repo our project team will use to create our Semester Project on Langston Hughes's typescript play ***The Ballot and Me.***
 
 Project team: Mia Borgia, Brett Meyer, McKenna Ballew
 
