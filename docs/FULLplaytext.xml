@@ -10,7 +10,7 @@
     </head>
 
 <body>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+    
                                      <!-- MIA'S PORTION -->
     
     <titlePage>
@@ -46,7 +46,7 @@
         
     </titlePage>
     
-    
+    <pgbr/>
     
     <castList>
         <header>
@@ -186,7 +186,7 @@
         </note>
     </castList>
     
-    <!-- <pg n="1"/> -->
+     <pgbr/>
     
     <set>
         
@@ -212,6 +212,8 @@
         </action>
         
     </set>
+    
+    <playstrt/>
     
     <div1>
         <sp>
