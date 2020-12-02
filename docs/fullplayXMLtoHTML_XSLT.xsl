@@ -19,7 +19,7 @@
                 <p class="navbar"><a href="index.html">Home</a> | <a href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a href="analysis.html">Analysis</a> | 
                     <a href="conclusion.html">Conclusion</a></p>
                 <hr/>
-                <h1><xsl:apply-templates select="descendant::playtitle"/></h1>
+                
                 <xsl:apply-templates select="descendant::body"/>
             </body>
         </html>
@@ -44,17 +44,17 @@
     <xsl:template match="titlePage">
         
         <h4><xsl:apply-templates select="copy"/></h4>
-        <h2><xsl:apply-templates select="playtitle"/></h2>
+        <h1><xsl:apply-templates select="playtitle"/></h1>
         
-        <p><xsl:apply-templates select="titledesc"/></p>
+        <p class="intro"><xsl:apply-templates select="titledesc"/></p>
         
-        <p><xsl:apply-templates select="author"/></p>
+        <p class="intro"><xsl:apply-templates select="author"/></p>
         
-        <p><xsl:apply-templates select="published"/></p>
+        <p class="intro"><xsl:apply-templates select="published"/></p>
         
-        <p><xsl:apply-templates select="marginalia"/></p>
+        <aside class="marginalia"><xsl:apply-templates select="marginalia"/></aside>
         
-        
+        <hr/>
     </xsl:template>
     
     <xsl:template match="castList">
@@ -62,7 +62,7 @@
             
                 <xsl:apply-templates select="castgroup"/>
             
-        <xsl:apply-templates select="note"/>
+        <div class="note"><xsl:apply-templates select="note"/></div>
     </xsl:template>
         
         <xsl:template match="castItem">
@@ -76,7 +76,7 @@
     <xsl:template match="castgroup">
         <section class="castgroup">
         <xsl:apply-templates select="castItem"/>
-        <aside><xsl:apply-templates select="margin"/></aside>
+        <aside class="castcontext"><xsl:apply-templates select="margin"/></aside>
         </section>
     </xsl:template>
     
@@ -106,19 +106,125 @@
         <section class="page">
             <xsl:apply-templates/>
         </section>
+        <hr/>
     </xsl:template>
     
     <xsl:template match="sp">
         <div class="sp">
-            <p><b><xsl:apply-templates select="speaker"/></b></p>
+            <div class="speaker"><b><xsl:apply-templates select="speaker"/></b></div>
             <div class="dialogue"><xsl:apply-templates select="dialogue"/></div>
             
         </div>
     </xsl:template>
     
+    <xsl:template match="speaker[@idref='SOJOURNER']">
+        <span class="SOJOURNER"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='FRAUNCES']">
+        <span class="FRAUNCES"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='DOUGLASS']">
+        <span class="DOUGLASS"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='LONG']">
+        <span class="LONG"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='RAINEY']">
+        <span class="RAINEY"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='DELARGE']">
+        <span class="DELARGE"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='RAINER']">
+        <span class="RAINER"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='ELLIOTT']">
+        <span class="ELLIOTT"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='TURNER']">
+        <span class="TURNER"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='LYNCH']">
+        <span class="LYNCH"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='RAPIER']">
+        <span class="RAPIER"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='WALLS']">
+        <span class="WALLS"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='CAIN']">
+        <span class="CAIN"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='NASH']">
+        <span class="NASH"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='HYMAN']">
+        <span class="HYMAN"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='HARALSON']">
+        <span class="HARALSON"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='SMALLS']">
+        <span class="SMALLS"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='REVELS']">
+        <span class="REVELS"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='BRUCE']">
+        <span class="BRUCE"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='LANGSTON']">
+        <span class="LANGSTON"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='MILLER']">
+        <span class="MILLER"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='MURRAY']">
+        <span class="MURRAY"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='OHARA']">
+        <span class="OHARA"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='CHEATHAM']">
+        <span class="CHEATHAM"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='WHITE']">
+        <span class="WHITE"><xsl:apply-templates/></span>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref='WASHINGTON']">
+        <span class="WASHINGTON"><xsl:apply-templates/></span>
+    </xsl:template>
+    
     <xsl:template match="p">
         <p><xsl:apply-templates/></p>
     </xsl:template>
+    
     
     
     <xsl:template match="person[@idref='SOJOURNER']">
@@ -185,11 +291,11 @@
     </xsl:template>
     
     <xsl:template match="person[@idref='TURNER']">
-        <span class="ELLIOTT"><xsl:apply-templates/></span>
+        <span class="TURNER"><xsl:apply-templates/></span>
     </xsl:template>
     
     <xsl:template match="person[@xml:id='TURNER']">
-        <span class="ELLIOTT"><xsl:apply-templates/></span>
+        <span class="TURNER"><xsl:apply-templates/></span>
     </xsl:template>
     
     
@@ -321,6 +427,9 @@
     <xsl:template match="stage">
         <div class="stage"><em><xsl:apply-templates/></em></div>
     </xsl:template>
+    
+    <!-- match="stage/@idref=''"
+    what in the heck am i gonna wrap these in (.-.) -->
     
     <xsl:template match="location">
         <span class="location"><xsl:apply-templates/></span>

@@ -24,6 +24,7 @@ h3 {
 }
 h4 {
     color:white;
+    text-align:right;
     font-family: courier, fixed, monospace;
 }
 h5 {
@@ -32,17 +33,38 @@ h5 {
 h6 {
     color:black;
 }
+
+div.note {
+    text-align:center;
+}
+
 p {
     font-family: courier, fixed, monospace;
     color:black;
+   
 }
+
+p.intro {
+    text-align:center;
+}
+
 .clearfix {
     overflow: auto;
 }
-div {
+div.dialogue {
     font-family:courier, fixed, monospace;
     color:black;
+    text-align: center;
 }
+
+div.sp{
+    text-align:left;
+}
+
+div.stage {
+    text-align:center;
+}
+
 p.navbar {
     justify-content:stretch;
     text-align:center;
@@ -52,3 +74,126 @@ a {
 }
 
 figure {margin:3em}
+
+aside.marginalia {
+    text-align:right;
+}
+
+aside.castcontext {
+    text-align:center;
+}
+
+span.period {
+    text-align:center;
+}
+
+span.FRAUNCES {
+    background-color:Aquamarine;
+}
+
+span.DOUGLASS {
+    background-color:CadetBlue;
+}
+
+span.SOJOURNER {
+    background-color:Coral;
+}
+
+span.LONG {
+    background-color:DarkOliveGreen;
+    color:white;
+}
+
+span.RAINEY {
+    background-color:DarkMagenta;
+    color:white;
+}
+
+span.DELARGE {
+    background-color:DarkOrange;
+}
+
+span.RAINER {
+    background-color:DarkKhaki;
+}
+
+span.ELLIOTT {
+    background-color:FireBrick;
+    color:white;
+}
+
+span.TURNER {
+    background-color:PeachPuff;
+}
+
+span.LYNCH {
+    background-color:Lavender;
+}
+
+span.RAPIER {
+    background-color:LightPink;
+}
+
+span.WALLS {
+    background-color:DeepPink;
+}
+
+span.CAIN {
+    background-color:LightGreen;
+}
+
+span.NASH {
+    background-color:RosyBrown;
+}
+
+span.HYMAN {
+    background-color:SlateBlue;
+}
+
+span.HARALSON {
+    background-color:Silver;
+}
+
+span.SMALLS {
+    background-color:WhiteSmoke;
+}
+
+span.REVELS {
+    background-color:YellowGreen;
+}
+
+span.BRUCE {
+    background-color:Thistle;
+}
+
+span.LANGSTON {
+    background-color:LightSalmon;
+}
+
+span.MILLER {
+    background-color:MidnightBlue;
+    color:white;
+}
+
+span.MURRAY {
+    background-color:Teal;
+    color:white;
+}
+
+span.OHARA {
+    background-color:Tomato;
+}
+
+span.CHEATHAM {
+    background-color:Gray;
+    color:white;
+}
+
+span.WHITE{
+    background-color:Gold;
+}
+
+span.WASHINGTON {
+    background-color:DarkSlateGray;
+    color:white;
+}
