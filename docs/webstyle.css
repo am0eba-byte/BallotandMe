@@ -1,7 +1,7 @@
 
 body {
 background-color: BurlyWood;
-    background-image: url(images/old_paper_background.jpg) fixed center;
+    background-image: url("images/old_paper_background.jpg");
 color: black;
 font-family: courier;
 }
