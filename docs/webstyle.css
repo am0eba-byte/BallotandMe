@@ -39,6 +39,37 @@ div.note {
     text-align:center;
 }
 
+h2.setHead {
+    text-align:center;
+}
+
+h3.setting {
+    padding-left: 300px;
+}
+
+p.setdesc {
+    text-align:right;
+    padding-right: 350px;
+}
+
+h3.setTime {
+    padding-left:300px;
+}
+
+p.timedesc {
+    text-align:right;
+    padding-right: 350px;
+}
+
+h3.action {
+    padding-left:300px;
+}
+
+p.actiondesc {
+    text-align:right;
+    padding-right: 350px
+}
+
 p {
     font-family: Courier, fixed, monospace;
     color:black;
@@ -52,10 +83,17 @@ p.intro {
 .clearfix {
     overflow: auto;
 }
+
 div.dialogue {
     font-family:courier, fixed, monospace;
     color:black;
     text-align: center;
+    margin: auto;
+    
+}
+
+div.speaker {
+    padding-left: 200px;
 }
 
 span.insert {

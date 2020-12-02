@@ -33,9 +33,9 @@
         
         <xsl:apply-templates select="castList"/>
         
-        <xsl:apply-templates select="set"/>
+        <section class="set"><xsl:apply-templates select="set"/></section>
         
-        <hr/>
+        <!-- <hr/> -->
         
         <xsl:apply-templates select="div1"/>
         
@@ -87,19 +87,20 @@
     </xsl:template> -->
     
     <xsl:template match="set">
-        <h2><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h2>
-        <h3><xsl:apply-templates select="setting/ab"/></h3>
-        <p>
+        <hr/>
+        <h2 class="setHead"><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h2>
+        <h3 class="setting"><xsl:apply-templates select="setting/ab"/></h3>
+        <p class="setdesc">
             <xsl:apply-templates select="setting/setDesc"/>
         </p>
         
-        <h3><xsl:apply-templates select="setTime/ab"/></h3>
-        <p>
+        <h3 class="setTime"><xsl:apply-templates select="setTime/ab"/></h3>
+        <p class="timedesc">
             <xsl:apply-templates select="setTime/timedesc"/>
         </p>
         
-        <h3><xsl:apply-templates select="action/ab"/></h3>
-        <p><xsl:apply-templates select="action/actiondesc"></xsl:apply-templates></p>
+        <h3 class="action"><xsl:apply-templates select="action/ab"/></h3>
+        <p class="actiondesc"><xsl:apply-templates select="action/actiondesc"></xsl:apply-templates></p>
     </xsl:template>
     
     <xsl:template match="div1">
@@ -116,6 +117,7 @@
             
         </div>
     </xsl:template>
+    
     
     <xsl:template match="speaker[@idref='SOJOURNER']">
         <span class="SOJOURNER"><xsl:apply-templates/></span>
@@ -428,8 +430,7 @@
         <div class="stage"><em><xsl:apply-templates/></em></div>
     </xsl:template>
     
-    <!-- match="stage/@idref=''"
-    what in the heck am i gonna wrap these in (.-.) -->
+    
     
     <xsl:template match="location">
         <span class="location"><xsl:apply-templates/></span>
@@ -467,8 +468,8 @@
         <hr/>
     </xsl:template>
     
-    <xsl:template match="playstrt">
+    <!-- <xsl:template match="playstrt">
         <hr/>
-    </xsl:template>
+    </xsl:template> -->
     
 </xsl:stylesheet>
