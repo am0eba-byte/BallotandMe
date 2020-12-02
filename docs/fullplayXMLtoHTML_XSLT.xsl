@@ -455,6 +455,10 @@
         <s><xsl:apply-templates/></s>
     </xsl:template>
     
+    <xsl:template match="insert">
+        <span class="insert"><xsl:apply-templates/></span>
+    </xsl:template>
+    
     <xsl:template match="pg">
         <hr/>
     </xsl:template>

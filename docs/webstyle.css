@@ -25,7 +25,7 @@ h3 {
 h4 {
     color:white;
     text-align:right;
-    font-family: courier, fixed, monospace;
+    font-family: Courier, fixed, monospace;
 }
 h5 {
     color:teal;
@@ -39,7 +39,7 @@ div.note {
 }
 
 p {
-    font-family: courier, fixed, monospace;
+    font-family: Courier, fixed, monospace;
     color:black;
    
 }
@@ -55,6 +55,11 @@ div.dialogue {
     font-family:courier, fixed, monospace;
     color:black;
     text-align: center;
+}
+
+span.insert {
+    font-family:'Bradley Hand', cursive;
+    
 }
 
 div.sp{
@@ -77,6 +82,7 @@ figure {margin:3em}
 
 aside.marginalia {
     text-align:right;
+    font-family: 'Bradley Hand', cursive;
 }
 
 aside.castcontext {
@@ -85,6 +91,10 @@ aside.castcontext {
 
 span.period {
     text-align:center;
+}
+
+s {
+    text-decoration: line-through;
 }
 
 span.FRAUNCES {
