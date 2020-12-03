@@ -73,6 +73,7 @@ p.actiondesc {
 p {
     font-family: Courier, fixed, monospace;
     color:black;
+    line-height: 1.8;
    
 }
 
@@ -136,113 +137,151 @@ s {
     text-decoration: line-through;
 }
 
+section.set {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+
+
+
+
+td.spk {
+    padding-left:0px;
+}
+
+td {
+    padding-left:250px;
+}
+
+td.castcontext {
+    padding-left: 150px;
+}
+
+h2.castHead {
+    text-align:center;
+}
+
+li {
+    line-height: 1.8;
+}
+
 span.FRAUNCES {
-    background-color:Aquamarine;
+    background-color:Khaki;
 }
 
 span.DOUGLASS {
-    background-color:CadetBlue;
+    background-color:MediumOrchid;
+    
 }
 
 span.SOJOURNER {
-    background-color:Coral;
+    background-color:Gold;
 }
 
 span.LONG {
-    background-color:DarkOliveGreen;
+    background-color:CadetBlue;
     color:white;
 }
 
 span.RAINEY {
-    background-color:DarkMagenta;
+    background-color:SteelBlue;
     color:white;
 }
 
 span.DELARGE {
-    background-color:DarkOrange;
+    background-color:LightSteelBlue;
 }
 
 span.RAINER {
-    background-color:DarkKhaki;
+    background-color:PowderBlue;
 }
 
 span.ELLIOTT {
-    background-color:FireBrick;
+    background-color:SkyBlue;
     color:white;
 }
 
 span.TURNER {
-    background-color:PeachPuff;
+    background-color:CornflowerBlue;
 }
 
 span.LYNCH {
-    background-color:Lavender;
+    background-color:DeepSkyBlue;
 }
 
 span.RAPIER {
-    background-color:LightPink;
+    background-color:DodgerBlue;
 }
 
 span.WALLS {
-    background-color:DeepPink;
+    background-color:RoyalBlue;
+    color: white;
 }
 
 span.CAIN {
-    background-color:LightGreen;
+    background-color:Blue;
+    color:white;
 }
 
 span.NASH {
-    background-color:RosyBrown;
+    background-color:LightBlue;
 }
 
 span.HYMAN {
-    background-color:SlateBlue;
+    background-color:Navy;
+    color:white;
 }
 
 span.HARALSON {
-    background-color:Silver;
+    background-color:MediumBlue;
+    color:white;
 }
 
 span.SMALLS {
-    background-color:WhiteSmoke;
-}
-
-span.REVELS {
-    background-color:YellowGreen;
-}
-
-span.BRUCE {
-    background-color:Thistle;
-}
-
-span.LANGSTON {
-    background-color:LightSalmon;
-}
-
-span.MILLER {
     background-color:MidnightBlue;
     color:white;
 }
 
-span.MURRAY {
-    background-color:Teal;
+span.REVELS {
+    background-color:PaleGreen;
+}
+
+span.BRUCE {
+    background-color:OliveDrab;
     color:white;
 }
 
+span.LANGSTON {
+    background-color:BurlyWood;
+}
+
+span.MILLER {
+    background-color:SandyBrown;
+    color:black;
+}
+
+span.MURRAY {
+    background-color:Peru;
+    color:black;
+}
+
 span.OHARA {
-    background-color:Tomato;
+    background-color:Sienna;
+    color:white;
 }
 
 span.CHEATHAM {
-    background-color:Gray;
+    background-color:Brown;
     color:white;
 }
 
 span.WHITE{
-    background-color:Gold;
+    background-color:Maroon;
+    color: white;
 }
 
 span.WASHINGTON {
-    background-color:DarkSlateGray;
-    color:white;
+    background-color:RosyBrown;
+    
 }

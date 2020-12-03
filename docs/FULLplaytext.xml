@@ -56,30 +56,35 @@
         
         <castgroup n="1">
             <castItem>
-            <lb/><role>NARRATOR</role>
-        </castItem>
+                <lb/><role>NARRATOR</role>
+            </castItem>
+            <activePeriod castGroupRole="narrator">Contemporary</activePeriod>
+        </castgroup>
+        
+        <castgroup n="2">
         <castItem>
             <lb/><person xml:id="FRAUNCES">SAMUEL FRAUNCES</person>**
             </castItem>
             <castItem>
         <lb/><person xml:id="SOJOURNER">SOJOURNER TRUTH</person>**
             </castItem>
-            <margin castGroupRole="1" position = "right">
-                <lb/>Contemporary
+            <activePeriod castGroupRole="2" position = "right">
+                
                 <lb/>George Washington's period
                 <lb/><period begin = "1797" end = "1833">(1797-1883)</period>
-            </margin>
+            </activePeriod>
         </castgroup>
         
-        <castgroup n="2">
+        <castgroup n="3">
             <castItem>
             <lb/><person xml:id="DOUGLASS">FREDERICK DOUGLASS</person>**
-            <margin castGroupRole="2" position ="right">
+        </castItem>
+            <activePeriod castGroupRole="3" position ="right">
                 <period begin = "1817" end = "1895">(1817-1895)</period>
-            </margin>
-        </castItem></castgroup>
+            </activePeriod>
+        </castgroup>
         
-        <castgroup n = "3">
+        <castgroup n = "4">
             <castItem>
                 <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  )
             </castItem>
@@ -123,14 +128,14 @@
                 <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  )
             </castItem>
             
-            <margin castGroupRole = "3" position = "right">
+            <activePeriod castGroupRole = "4" position = "right">
                 <lb/>Representatives in Congress
                 <lb/>during Reconstruction <period begin="1869" end="1889">1869-1889</period>
-            </margin>
+            </activePeriod>
             
         </castgroup>
         
-        <castgroup n="4">
+        <castgroup n="5">
             <castItem>
                 <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  )
             </castItem>
@@ -138,13 +143,13 @@
                 <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  )
             </castItem>
             
-            <margin castGroupRole = "4" position = "right">
+            <activePeriod castGroupRole = "5" position = "right">
                 Senators - <period begin="1870" end="1881">1870-1881 period</period>
-            </margin>
+            </activePeriod>
             
         </castgroup>
 
-        <castgroup n="5">
+        <castgroup n="6">
             <castItem>
                 <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  )
             </castItem>
@@ -164,25 +169,25 @@
                 <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  )
             </castItem>
             
-            <margin castGroupRole="5" position = "right">
+            <activePeriod castGroupRole="6" position = "right">
                 Representatives <period begin="1883" end="1897">1883-1897</period>
-            </margin>
+            </activePeriod>
         </castgroup>
         
-        <castgroup n="6">
+        <castgroup n="7">
             <castItem>
             <lb/><person xml:id="WASHINGTON">BOOKER T. WASHINGTON</person>** 
-            <margin castGroupRole="6" position = "right">
-                At time of <date when="1895">1895</date> Atlanta speech
-            </margin>
         </castItem>
+            <activePeriod castGroupRole="7" position = "right">
+                At time of <date when="1895">1895</date> Atlanta speech
+            </activePeriod>
         </castgroup>
         
         <note>
             <p><lb/>NOTE: Speaking parts are marked with asteriks**. All except
             <lb/><person idref="SOJOURNER">Sojourner Truth</person> may read speeches from rostrum, and even
             <lb/>she may read her long sppech, but should learn rest of
-            <lb/>dialogue. Faunces has only one line. <q>"And I voted."</q></p>
+            <lb/>dialogue. <person idref="FRAUNCES">Fraunces</person> has only one line. <q>"And I voted."</q></p>
         </note>
     </castList>
     
@@ -751,7 +756,7 @@
         <sp>
             <speaker idref="CAIN">CAIN:</speaker>
             <dialogue>
-                <p>
+                <p class="cain">
                     <lb/>I do not ask any legislation for the colored people
                     <lb/>of this country that is not applied to white people.
                     <lb/>All that we aks is equal laws, not equal legislation,
@@ -899,7 +904,7 @@
             <speaker idref="WASHINGTON">WASHINGTON:</speaker>
             <dialogue>
                 <p>
-                    <lb/>Friends, the individual<insert hand="LH">or</insert> race that owns the property, pays the
+                    <lb/>Friends, the individual <insert hand="LH">or</insert> race that owns the property, pays the
                     <lb/>taxes, possesses the intelligence and substantial character, is
                     <lb/>the one which is going to exercise the greatest control in
                     <lb/>government, whether he lives in the North or whether he lives in

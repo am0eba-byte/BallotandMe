@@ -35,7 +35,7 @@
         
         <section class="set"><xsl:apply-templates select="set"/></section>
         
-        <!-- <hr/> -->
+        <!-- //castItem/text() [contains(. , "*" )] -->
         
         <xsl:apply-templates select="div1"/>
         
@@ -58,33 +58,28 @@
     </xsl:template>
     
     <xsl:template match="castList">
-        <h2><xsl:apply-templates select="header"/></h2>
+        <h2 class="castHead"><xsl:apply-templates select="header"/></h2>
             
-                <xsl:apply-templates select="castgroup"/>
+                <table>
+                    <xsl:apply-templates select="castgroup"/>
+                </table>
             
         <div class="note"><xsl:apply-templates select="note"/></div>
     </xsl:template>
         
-        <xsl:template match="castItem">
-            <ul>
-            <li>
-                <xsl:apply-templates/>
-            </li>
-            </ul>
-        </xsl:template>
     
     <xsl:template match="castgroup">
-        <section class="castgroup">
-        <xsl:apply-templates select="castItem"/>
-        <aside class="castcontext"><xsl:apply-templates select="margin"/></aside>
-        </section>
+        <tr class="castgroup">
+        <td><ul><xsl:apply-templates select="castItem"/></ul></td>
+        <td class="castcontext"><xsl:apply-templates select="activePeriod"/></td>
+        </tr>
     </xsl:template>
     
-    <!-- <xsl:template match="castgroup/castItem">
+     <xsl:template match="castItem">
         <li>
             <xsl:apply-templates/>
         </li>
-    </xsl:template> -->
+    </xsl:template>
     
     <xsl:template match="set">
         <hr/>
@@ -111,11 +106,27 @@
     </xsl:template>
     
     <xsl:template match="sp">
-        <div class="sp">
-            <div class="speaker"><b><xsl:apply-templates select="speaker"/></b></div>
-            <div class="dialogue"><xsl:apply-templates select="dialogue"/></div>
+        
+        <table>
+            <div class="sp">
+                
+          <tr class="script">
+                <td class="spk">
+                    <div class="speaker">
+                        <b><xsl:apply-templates select="speaker"/></b>
+                    </div>
+                </td>
+                
+            <td class="d">
+                <div class="dialogue">
+                    <xsl:apply-templates select="dialogue"/>
+                </div>
+            </td>
+          </tr>
             
         </div>
+        </table>
+        
     </xsl:template>
     
     
@@ -444,7 +455,7 @@
         <span class="period"><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="lb">
+    <xsl:template match="lb[not(ancestor::castgroup)]">
         <br/>
     </xsl:template>
     

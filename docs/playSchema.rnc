@@ -57,19 +57,19 @@ castList = element castList {header, (castgroup | castItem)*, note}
 
     header = element header {mixed{ (underline | lb)*}}
 
-    castItem = element castItem {mixed{ (unclear | role | margin | lb | person)* } }
+    castItem = element castItem {mixed{ (unclear | role | activePeriod | lb | person)* } }
     
         unclear = element unclear {text}
     
         role = element role {text}
 
-        margin = element margin {(castGroupRole | position)*, mixed{(lb | period | date)*}}
+        activePeriod = element activePeriod {(castGroupRole | position)*, mixed{(lb | period | date)*}}
         
         lb = element lb {empty}
         
         # mia: add lb element to cast items to indicate line breaks
         
-            castGroupRole = attribute castGroupRole {xsd:integer}
+            castGroupRole = attribute castGroupRole {(xsd:integer | "narrator")}
         
             position = attribute position {"right"}
 
@@ -79,7 +79,7 @@ castList = element castList {header, (castgroup | castItem)*, note}
                 
                 end = attribute end {xsd:gYear}
 
-    castgroup = element castgroup {n, castItem*, margin*}
+    castgroup = element castgroup {n, castItem*, activePeriod*}
     
     
     note = element note {hand?, p}
@@ -129,13 +129,15 @@ set = element set {header, setting, setTime, action}
         
             location = element location {mixed{lb*}}
             
-            person = element person {(id | idref)*, mixed{lb*}}
+            person = element person {id?, speakPart?, idref?, mixed{lb*}}
             
             id = attribute xml:id {xsd:ID}
             
             idref = attribute idref {xsd:IDREF}
             
-            class = attribute class {"navbar"}
+            speakPart = attribute speakPart {"true"}
+            
+            class = attribute class {("navbar" | "cain")}
             
             metamark = element metamark {hand, text}
             
