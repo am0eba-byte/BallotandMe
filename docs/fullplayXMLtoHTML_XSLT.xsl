@@ -107,25 +107,25 @@
     
     <xsl:template match="sp">
         
-        <table>
+        <!--<table>-->
             <div class="sp">
                 
-          <tr class="script">
-                <td class="spk">
+          <!--<tr class="script">
+                <td class="spk">-->
                     <div class="speaker">
                         <b><xsl:apply-templates select="speaker"/></b>
                     </div>
-                </td>
+                <!--</td>-->
                 
-            <td class="d">
+            <!--<td class="d">-->
                 <div class="dialogue">
                     <xsl:apply-templates select="dialogue"/>
                 </div>
-            </td>
-          </tr>
+            <!--</td>
+          </tr>-->
             
         </div>
-        </table>
+        <!--</table>-->
         
     </xsl:template>
     
