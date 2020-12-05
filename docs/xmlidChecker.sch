@@ -24,4 +24,13 @@
         </sch:rule>
         
     </sch:pattern>
+    
+    <sch:pattern>
+        <sch:title>Schematron Exercise 2 - Sanity checking dates with xsd:gYear attribute values (unsuccessfully)</sch:title>
+        <sch:rule context="date">
+            <assert test="contains(@when)">Gotta have the same goshdarn number as the wrapped year in the goshdarn attribute value ya silly goose!</assert>
+            
+            <report test="number(@when) => distinct-values() != date ! number() => distinct-values()">You SCOUNDREL, go fix the heckin' attribute value to match the date!! you clumsy oaf you.</report>
+        </sch:rule>
+    </sch:pattern>
 </sch:schema>

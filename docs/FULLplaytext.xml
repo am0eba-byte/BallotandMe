@@ -86,46 +86,46 @@
         
         <castgroup n = "4">
             <castItem>
-                <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  )
+                <lb/><person xml:id="LONG">JEFFERSON P. LONG</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="RAINEY">JOSEPH H. RAINEY</person>  )
+                <lb/><person xml:id="RAINEY">JOSEPH H. RAINEY</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="DELARGE">ROBERT O. DeLARGE</person>  )
+                <lb/><person xml:id="DELARGE">ROBERT O. DeLARGE</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="RAINER">ALONZO J. RAINER</person>  )
+                <lb/><person xml:id="RAINER">ALONZO J. RAINER</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="ELLIOTT">ROBERT B. ELLIOTT</person>  )
+                <lb/><person xml:id="ELLIOTT">ROBERT B. ELLIOTT</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="TURNER">BENJAMIN S. TURNER</person>  )
+                <lb/><person xml:id="TURNER">BENJAMIN S. TURNER</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="LYNCH">JOHN R. LYNCH</person>  )
+                <lb/><person xml:id="LYNCH">JOHN R. LYNCH</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="RAPIER">JAMES T. RAPIER</person>  )
+                <lb/><person xml:id="RAPIER">JAMES T. RAPIER</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="WALLS">JOSIAH T. WALLS</person>  )
+                <lb/><person xml:id="WALLS">JOSIAH T. WALLS</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="CAIN">RICHARD H. CAIN</person>*  )
+                <lb/><person xml:id="CAIN">RICHARD H. CAIN</person>*  
             </castItem>
             <castItem>
-                <lb/><person xml:id="NASH">CHARLES E. NASH</person>  )
+                <lb/><person xml:id="NASH">CHARLES E. NASH</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="HYMAN">JOHN A. HYMAN</person>  )
+                <lb/><person xml:id="HYMAN">JOHN A. HYMAN</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="HARALSON">JENE HARALSON</person>  )
+                <lb/><person xml:id="HARALSON">JENE HARALSON</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  )
+                <lb/><person xml:id="SMALLS">ROBERT SMALLS</person>  
             </castItem>
             
             <activePeriod castGroupRole = "4" position = "right">
@@ -137,10 +137,10 @@
         
         <castgroup n="5">
             <castItem>
-                <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  )
+                <lb/><person xml:id="REVELS">HIRAM R. REVELS</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  )
+                <lb/><person xml:id="BRUCE">BLANCHE K. BRUCE</person>  
             </castItem>
             
             <activePeriod castGroupRole = "5" position = "right">
@@ -151,22 +151,22 @@
 
         <castgroup n="6">
             <castItem>
-                <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  )
+                <lb/><person xml:id="LANGSTON">JOHN M. LANGSTON</person>**  
             </castItem>
             <castItem>
-                <lb/><person xml:id="MILLER">THOMAS E. MILLER</person>  )
+                <lb/><person xml:id="MILLER">THOMAS E. MILLER</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="MURRAY">GEORGE W. MURRAY</person>  )
+                <lb/><person xml:id="MURRAY">GEORGE W. MURRAY</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="OHARA">JAMES E. O'HARA</person>  )
+                <lb/><person xml:id="OHARA">JAMES E. O'HARA</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="CHEATHAM">HENRY P. CHEATHAM</person>  )
+                <lb/><person xml:id="CHEATHAM">HENRY P. CHEATHAM</person>  
             </castItem>
             <castItem>
-                <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  )
+                <lb/><person xml:id="WHITE">GEORGE H. WHITE</person>  
             </castItem>
             
             <activePeriod castGroupRole="6" position = "right">
@@ -186,7 +186,7 @@
         <note>
             <p><lb/>NOTE: Speaking parts are marked with asteriks**. All except
             <lb/><person idref="SOJOURNER">Sojourner Truth</person> may read speeches from rostrum, and even
-            <lb/>she may read her long sppech, but should learn rest of
+            <lb/>she may read her long speech, but should learn rest of
             <lb/>dialogue. <person idref="FRAUNCES">Fraunces</person> has only one line. <q>"And I voted."</q></p>
         </note>
     </castList>

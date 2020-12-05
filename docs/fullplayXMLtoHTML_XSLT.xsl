@@ -26,6 +26,17 @@
         
     </xsl:template>
     
+    <!-- HOW TO CAPTURE TEXT THAT ISN'T CODED IN THE XML: -->
+    <!--   <xsl:analyze-string select="." regex="dream deferred">
+                <xsl:matching-substring>
+                    <span class="motif"><xsl:value-of select="."/></span>
+                </xsl:matching-substring>
+                <xsl:non-matching-substring>
+                    <xsl:apply-templates select="."/>
+                </xsl:non-matching-substring>
+            </xsl:analyze-string>
+                -->
+    
     
     <xsl:template match="descendant::body">
         
@@ -33,7 +44,13 @@
         
         <xsl:apply-templates select="castList"/>
         
-        <section class="set"><xsl:apply-templates select="set"/></section>
+        <hr/>
+        
+        <h2 class="setHead">
+            <xsl:apply-templates select="set/header"/>
+        </h2>
+        <!-- section class="set" -->
+        <table class="set"><xsl:apply-templates select="set"/></table>
         
         <!-- //castItem/text() [contains(. , "*" )] -->
         
@@ -82,20 +99,38 @@
     </xsl:template>
     
     <xsl:template match="set">
-        <hr/>
-        <h2 class="setHead"><u><xsl:apply-templates select="descendant::header"></xsl:apply-templates></u></h2>
-        <h3 class="setting"><xsl:apply-templates select="setting/ab"/></h3>
-        <p class="setdesc">
+        
+
+        <tr>
+            <td class="set">
+                <h3 class="setting"><xsl:apply-templates select="setting/ab"/></h3>
+            </td>
+        <td class="set">
+            <p class="setdesc">
             <xsl:apply-templates select="setting/setDesc"/>
         </p>
+        </td>
+        </tr>
         
-        <h3 class="setTime"><xsl:apply-templates select="setTime/ab"/></h3>
-        <p class="timedesc">
+        <tr>
+            <td class="set">
+                <h3 class="setTime"><xsl:apply-templates select="setTime/ab"/></h3>
+            </td>
+        <td class="set">
+            <p class="timedesc">
             <xsl:apply-templates select="setTime/timedesc"/>
         </p>
+        </td>
+        </tr>
         
-        <h3 class="action"><xsl:apply-templates select="action/ab"/></h3>
-        <p class="actiondesc"><xsl:apply-templates select="action/actiondesc"></xsl:apply-templates></p>
+        <tr>
+            <td class="set">
+                <h3 class="action"><xsl:apply-templates select="action/ab"/></h3>
+            </td>
+        <td class="set">
+            <p class="actiondesc"><xsl:apply-templates select="action/actiondesc"></xsl:apply-templates></p>
+        </td>
+        </tr>
     </xsl:template>
     
     <xsl:template match="div1">
@@ -130,109 +165,10 @@
     </xsl:template>
     
     
-    <xsl:template match="speaker[@idref='SOJOURNER']">
-        <span class="SOJOURNER"><xsl:apply-templates/></span>
-    </xsl:template>
+   
     
-    <xsl:template match="speaker[@idref='FRAUNCES']">
-        <span class="FRAUNCES"><xsl:apply-templates/></span>
-    </xsl:template>
     
-    <xsl:template match="speaker[@idref='DOUGLASS']">
-        <span class="DOUGLASS"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='LONG']">
-        <span class="LONG"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='RAINEY']">
-        <span class="RAINEY"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='DELARGE']">
-        <span class="DELARGE"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='RAINER']">
-        <span class="RAINER"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='ELLIOTT']">
-        <span class="ELLIOTT"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='TURNER']">
-        <span class="TURNER"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='LYNCH']">
-        <span class="LYNCH"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='RAPIER']">
-        <span class="RAPIER"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='WALLS']">
-        <span class="WALLS"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='CAIN']">
-        <span class="CAIN"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='NASH']">
-        <span class="NASH"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='HYMAN']">
-        <span class="HYMAN"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='HARALSON']">
-        <span class="HARALSON"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='SMALLS']">
-        <span class="SMALLS"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='REVELS']">
-        <span class="REVELS"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='BRUCE']">
-        <span class="BRUCE"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='LANGSTON']">
-        <span class="LANGSTON"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='MILLER']">
-        <span class="MILLER"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='MURRAY']">
-        <span class="MURRAY"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='OHARA']">
-        <span class="OHARA"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='CHEATHAM']">
-        <span class="CHEATHAM"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='WHITE']">
-        <span class="WHITE"><xsl:apply-templates/></span>
-    </xsl:template>
-    
-    <xsl:template match="speaker[@idref='WASHINGTON']">
-        <span class="WASHINGTON"><xsl:apply-templates/></span>
-    </xsl:template>
+     
     
     <xsl:template match="p">
         <p><xsl:apply-templates/></p>
@@ -240,7 +176,37 @@
     
     
     
-    <xsl:template match="person[@idref='SOJOURNER']">
+    
+    <xsl:template match="person[@xml:id]">
+        <xsl:choose>
+            <xsl:when test="parent::castItem[contains(., '*')]"><span class="{@xml:id}">
+            <a href="#{@xml:id}-1" class="castLink"><xsl:apply-templates/></a>
+        </span>
+            </xsl:when> 
+            <xsl:otherwise>
+                <span class="{@xml:id}">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="speaker[@idref]">
+        <span class="{@idref}" id="{@idref}-{preceding::speaker[@idref = current()/@idref] => count() +1}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="person[@idref]">
+        <span class="{@idref}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    
+    
+    
+  <!--  <xsl:template match="person[@idref='SOJOURNER']">
         <span class="SOJOURNER"><xsl:apply-templates/></span>
     </xsl:template>
     
@@ -430,7 +396,7 @@
     </xsl:template>
     <xsl:template match="person[@xml:id='WASHINGTON']">
         <span class="WASHINGTON"><xsl:apply-templates/></span>
-    </xsl:template>
+    </xsl:template>-->
     
     
     <xsl:template match="p/stage">

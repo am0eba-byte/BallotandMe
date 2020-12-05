@@ -1,4 +1,53 @@
 
+                                   /*NAVIGATION BAR STYLING*/
+
+hr.topNav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p.navbar {
+    justify-content:stretch;
+    text-align:center;
+}
+
+hr.bottomNav {
+    margin-top: 0px;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/*li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*/
+
+a:hover {
+  color: MintCream;
+}
+
+
+
+
+
+
+
+                                       /*GENERAL STYLING*/
+
 body {
 background-color: BurlyWood;
     background-image: url("images/old_paper_background.jpg");
@@ -9,6 +58,9 @@ ol {list-style-type: lower-alpha;
 padding: 5em;
     
 }
+
+
+
 h1 {
     color:white;
     text-align:center;
@@ -24,7 +76,7 @@ h3 {
     color:black;
 }
 h4 {
-    color:white;
+    color:black;
     text-align:right;
     font-family: Courier, fixed, monospace;
 }
@@ -35,55 +87,111 @@ h6 {
     color:black;
 }
 
-div.note {
-    text-align:center;
-}
-
-h2.setHead {
-    text-align:center;
-}
-
-h3.setting {
-    padding-left: 300px;
-}
-
-p.setdesc {
-    text-align:right;
-    padding-right: 350px;
-}
-
-h3.setTime {
-    padding-left:300px;
-}
-
-p.timedesc {
-    text-align:right;
-    padding-right: 350px;
-}
-
-h3.action {
-    padding-left:300px;
-}
-
-p.actiondesc {
-    text-align:right;
-    padding-right: 350px
+s {
+    text-decoration: line-through;
 }
 
 p {
     font-family: Courier, fixed, monospace;
     color:black;
     line-height: 1.8;
-   
-}
-
-p.intro {
-    text-align:center;
 }
 
 .clearfix {
     overflow: auto;
 }
+
+a {
+    color:black;
+}
+
+figure {margin:3em}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+                                 /*TITLE PAGES STYLE*/
+
+div.note {
+    text-align:center;
+}
+
+p.intro {
+    text-align:center;
+    line-height: 1.8;
+}
+
+aside.marginalia {
+    text-align:right;
+    font-family: 'Bradley Hand', cursive;
+}
+
+
+
+
+
+
+                               /*SETTING SECTION STYLE*/
+
+section.set {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+h2.setHead {
+    text-align:center;
+    margin-top: 50px;
+}
+
+table.set {
+    margin-bottom: 100px;
+}
+
+h3.setting {
+    
+}
+
+p.setdesc {
+    text-align:center;
+    padding-right: 200px;
+}
+
+h3.setTime {
+    
+}
+
+p.timedesc {
+    text-align:center;
+    padding-right: 200px;
+}
+
+h3.action {
+    
+}
+
+p.actiondesc {
+    text-align:center;
+    padding-right: 200px
+}
+
+
+
+
+
+
+
+
+
+                                    /*PLAY BODY SECTION STYLING*/
 
 div.dialogue {
     font-family:courier, fixed, monospace;
@@ -110,44 +218,25 @@ div.stage {
     text-align:center;
 }
 
-p.navbar {
-    justify-content:stretch;
-    text-align:center;
-}
-a {
-    color:black;
+td.spk {
+    padding-left:0px;
 }
 
-figure {margin:3em}
 
-aside.marginalia {
-    text-align:right;
-    font-family: 'Bradley Hand', cursive;
-}
 
-aside.castcontext {
-    text-align:center;
-}
+
+
+
+
+
+
+
+
+
+                                        /*CAST LIST SECTION STYLING*/
 
 span.period {
     text-align:center;
-}
-
-s {
-    text-decoration: line-through;
-}
-
-section.set {
-    padding-top: 60px;
-    padding-bottom: 90px;
-}
-
-
-
-
-
-td.spk {
-    padding-left:0px;
 }
 
 td {
@@ -158,12 +247,20 @@ td.castcontext {
     padding-left: 150px;
 }
 
+aside.castcontext {
+    text-align:center;
+}
+
 h2.castHead {
     text-align:center;
 }
 
 li {
     line-height: 1.8;
+}
+
+a.castLink {
+    text-decoration: underline overline wavy black;
 }
 
 span.FRAUNCES {
@@ -181,12 +278,12 @@ span.SOJOURNER {
 
 span.LONG {
     background-color:CadetBlue;
-    color:white;
+    
 }
 
 span.RAINEY {
     background-color:SteelBlue;
-    color:white;
+    
 }
 
 span.DELARGE {
@@ -199,7 +296,7 @@ span.RAINER {
 
 span.ELLIOTT {
     background-color:SkyBlue;
-    color:white;
+    color:black;
 }
 
 span.TURNER {
