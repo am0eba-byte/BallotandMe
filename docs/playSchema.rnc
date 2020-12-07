@@ -8,26 +8,24 @@ head = element head {title, editor*}
         
     editor = element editor {text}
         
+        #BODY STRUCTURE: the reason for the awkward-looking <pgbr> rules in the beginning is because
+        # we needed a way to indicate a page break in the title pages, but we didn't want to number them
+        # the same way as <pg> because on the actual typescript, the title pages don't have page numbers
+        # in the upper left corner. 
         
-body = element body {(titlePage)?, (pgbr)?, (castList)?, (pgbr)?, (set)?, (playstrt)?, (div1 | pg)*}
+body = element body {(titlePage), (pgbr), (castList), (pgbr), (set), (div1 | pg)*}
 
 pg = element pg {n, empty}
 
 pgbr = element pgbr {empty}
 
-playstrt = element playstrt {empty}
-
-# mia: I put question mark repetition indicators on everything except div1 so that when Mckenna and Brett do their portions,
-# the schema won't yell at them to put in the title page, cast list and set pages!
-
-
-
-# ebb: I notice you removed this element from the rule for body for now...that's okay, but right now there's no place for <pg> to go yet.
-# My suggestion is maybe get a complete encoding of the play, and mark the page breaks in with XML comments. Then turn them into <pg/> elements and just notice from the angry schema errors which elements are containing them.
-# Then we can go back and work out which elements need to hold <pg> here. 
-
-
     n = attribute n {xsd:integer}
+    
+    
+    # TITLE PAGES STRUCTURE: These are the set of rules that dictate the pages preceding the cast list.
+    # We decided to make special rules for this section due to the differences in text formatting in
+    #these pages. We wanted to ensure that we could easily capture the elements of this section in 
+    # the .css styling so that we could make them distinguishable from the rest of the script.
 
 
 titlePage = element titlePage {copy, playtitle, titledesc, author, published, marginalia}
@@ -51,6 +49,16 @@ published = element published {(pubPlace | date | lb)*}
 marginalia = element marginalia {hand, mixed{lb*}}
 
     hand = attribute hand {"LH"}
+    
+    
+
+        #CAST LIST STRUCTURE: This section requires the most editing and brainwork of the whole document,
+        # due to the informational structure of the original document. We really wanted to effectively
+        # capture each of the cast memebers into their distinct real-world historical roles, and
+        # ensure that all of the given information was wrapped in individual identifiers to be displayed
+        # as styling or in data tools later on. The whole play sort of revolves around these real-world
+        # characters in their specific time periods, so it was important that this section have very
+        # clear and defined rules.
 
 
 castList = element castList {header, (castgroup | castItem)*, note}
@@ -67,8 +75,6 @@ castList = element castList {header, (castgroup | castItem)*, note}
         
         lb = element lb {empty}
         
-        # mia: add lb element to cast items to indicate line breaks
-        
             castGroupRole = attribute castGroupRole {(xsd:integer | "narrator")}
         
             position = attribute position {"right"}
@@ -83,6 +89,14 @@ castList = element castList {header, (castgroup | castItem)*, note}
     
     
     note = element note {hand?, p}
+    
+    
+    
+    
+    # SET SECTION STRUCTURE: This section needed distinct rules as well, in order to capture the format
+    # of the text. We used <ab> to wrap the setting, time, and action sub-headings because we didn't 
+    # really want to make them their own headings, but they also didn't really constitute as paragraphs,
+    # so <ab> was the most ambiguous and fitting element name in that case.
 
 
 set = element set {header, setting, setTime, action}
@@ -100,6 +114,18 @@ set = element set {header, setting, setTime, action}
     action = element action {ab, actiondesc}
     
         actiondesc = element actiondesc {mixed{lb*}}
+        
+        
+        
+        
+        # SCRIPT SCTRUCTURE: This section contains the bulk of the document, so there was lots to include.
+        # We wrote the schema so thateach speaker and their individual speaking parts could be wrapped
+        # in <sp> to keep them together, and made each historical character's name linkable to their 
+        #castList ID, to make future data collection easier. We also wanted to make it possible for 
+        # stage directions to appear both within dialogue parts (as sometimes they occur as a character
+        #is speaking) AND outside of <sp> elements to markup stage occurences that happen independently
+        # of dialogue. We also added rules for marking up special text decorations so that we could 
+        # implement them into our .css styling.
     
 
     div1 = element div1 {(sp | stage)*}
@@ -110,23 +136,10 @@ set = element set {header, setting, setTime, action}
             
          dialogue = element dialogue {(p | stage)*}
          
-         # mia: fix dialogue element rule to fit Dr B's suggestion
-         
-         # ebb: Hmmm. Are you SURE you want your <dialogue> element to contain mixed content? That would mean that text is flowing around the outside of the <p> and <q> elements...
-         # Think about the relationship of these elements in your code. From what I can see in the sample code so far, it looks like <dialogue> just contains <p> elements?  I think I'd just change this to:
-         # dialogue = element dialogue {p+}  
-         # Does that work?
          
          p = element p {class?, mixed{ (note | metamark | insert | underline | Xout | q | lb | stage | date | location | person)* } }
          
-         # mia: fixed element p rule to match Dr. B's suggestion
          
-         # ebb: Do you want your mixed content elements to appear in ANY order here? If so, you want to rephrase your mixed{} a little. The parentheses are for grouping sets of elements together:
-         # Try this: p = element p {class?, mixed{ (note | metamark | underline | Xout | q)* }
-         # That syntax basically says, you're allowed an option of ANY of those elements, zero or more times! (And that means they can appear in any order, too. 
-         # Looking at your play script, I think you're considering catching the line-beginnings--right now you're using pseudomarkup for that with the // characters. 
-         # You could try a self-closing <lb/> element for those: would you always want those to go inside <p> elements? That way you could calculate numbered lines for each character's speech! 
-        
             location = element location {mixed{lb*}}
             
             person = element person {id?, speakPart?, idref?, mixed{lb*}}
@@ -136,6 +149,17 @@ set = element set {header, setting, setTime, action}
             idref = attribute idref {xsd:IDREF}
             
             speakPart = attribute speakPart {"true"}
+            
+            # The reason for the special class attributes on <p> is due to our
+            # navigation menu bar at the top of the document, which is wrapped in
+            #<p>, and one particular page section which ends with a speaking part
+            # from Cain, and in the actual document, there's a nothing written on
+            # the rest of that page, leaving a large blank area. It looks a little
+            # strange to have such a tiny-looking paper in relation to the rest
+            # of the pages on our website, so we decided to wrap Cain's speaking
+            # paragraph on that page with a p.cain so that we could mess with the
+            # margin-bottom and make it look more like it does in the original
+            #typescript.
             
             class = attribute class {("navbar" | "cain")}
             
