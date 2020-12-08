@@ -24,27 +24,58 @@
         
         <h2>Historical Character References - Data of Dialogue Frequency</h2>
         
-        
-        <table id="DATA">
+        <h3>Historical Character Speaking Parts</h3>
+        <table id="spkDATA">
             <tr>
-                <th>Character Photo</th>
+                <th>Historical Character Image</th>
                 <th>Character Name</th>
                 <th>Number of Speaking Parts</th>
+                <th>Link to Longest Speaking Part</th>
             </tr>
+           <xsl:apply-templates select="//castItem" mode="speakingparts"/>
+        </table>
+        
+        <h3>Character References made by Narrator</h3>
+        <table id="refDATA">
             <tr>
-            <td></td>
-                <td><xsl:apply-templates select="//castItem => distinct-values()"/></td>
-            <td><xsl:apply-templates select="sp[speaker/@idref]"/></td>
-        </tr>
+                <th>Historical Character Image</th>
+                <th>Character Name</th>
+                <th>Number of Times Referenced by Narrator</th>
+                <th>First Reference Context</th>
+            </tr>
+            <xsl:apply-templates select="//castItem" mode="reference"/>
         </table>
         
     </body>
         </html>
     </xsl:template>
-    <!-- //div1/sp/speaker/@idref  => count(@idref =>distinct-values()) -->
-    <xsl:template match="sp[speaker/@idref]">
-        <xsl:value-of select=".//speaker/@idref => distinct-values() => count()"></xsl:value-of>
+    
+    <xsl:template match="castItem" mode="speakingparts">
+        <xsl:if test="count(//sp[speaker/@idref=current()/person/@xml:id]) gt 0"><tr>
+            <td><xsl:comment>Image of hist. character here!</xsl:comment></td>
+            <td><xsl:apply-templates select="child::person"/></td>
+            <td><xsl:value-of select="//sp[speaker/@idref=current()/person/@xml:id] =>count()"/></td>
+            <td></td>
+        </tr></xsl:if>
     </xsl:template>
+    
+    <xsl:template match="castItem" mode="reference">
+        <!--<xsl:if test="count(//sp/dialogue/p/person[@idref=current()/person/@xml:id]) lt 1">-->
+            <xsl:if test="child::person">
+             <tr>
+                <td><xsl:comment>Image of hist. character here!</xsl:comment></td>
+                <td><xsl:apply-templates select="child::person"/></td>
+                <td><xsl:value-of select="//p/person[@idref=current()/person/@xml:id] =>count()"/></td>
+                <td></td>
+            </tr>
+            </xsl:if>
+        <!--</xsl:if>-->
+    </xsl:template>
+    
+    <!-- //div1/sp/speaker/@idref  => count(@idref =>distinct-values()) -->
+   <!-- <xsl:template match="sp[speaker/@idref]">
+        <xsl:value-of select=".//speaker/@idref => distinct-values() => count()"></xsl:value-of>
+    </xsl:template>-->
     
 
     
