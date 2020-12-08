@@ -1,351 +1,300 @@
 
-                                   /*NAVIGATION BAR STYLING*/
-
-hr.topNav {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-p.navbar {
-    justify-content:stretch;
-    text-align:center;
-}
-
-hr.bottomNav {
-    margin-top: 0px;
-}
-
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-/*li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-*/
-
-a:hover {
-  color: MintCream;
-}
-
-
-
-
-
-
-
-                                       /*GENERAL STYLING*/
-
 body {
 background-color: BurlyWood;
     background-image: url("images/old_paper_background.jpg");
 color: black;
 font-family: courier;
+display: flex;
+
 }
 ol {list-style-type: lower-alpha;
 padding: 5em;
     
 }
-
-
-
 h1 {
     color:white;
     text-align:center;
     font-family:courier, fixed, monospace;
     text-shadow:2px 2px 5px black;
+    display: flex;
 }
 h2 {
     color:black;
     text-align:left;
     font-family: courier, fixed, monospace;
+    display: flex;
 }
 h3 {
-    color:black;
+    color:white;
+    display: flex;
 }
 h4 {
-    color:black;
+    color:white;
     text-align:right;
     font-family: Courier, fixed, monospace;
+    display: flex;
 }
 h5 {
     color:teal;
+    display: flex;
 }
 h6 {
     color:black;
+    display: flex;
 }
 
-s {
-    text-decoration: line-through;
+div.note {
+    text-align:center;
+    display: flex;
+}
+
+h2.setHead {
+    text-align:center;
+    display: flex;
+}
+
+h3.setting {
+    padding-left: 300px;
+    display: flex;
+}
+
+p.setdesc {
+    text-align:right;
+    padding-right: 350px;
+    display: flex;
+}
+
+h3.setTime {
+    padding-left:300px;
+    display: flex;
+}
+
+p.timedesc {
+    text-align:right;
+    padding-right: 350px;
+    display: flex;
+}
+
+h3.action {
+    padding-left:300px;
+    display: flex;
+}
+
+p.actiondesc {
+    text-align:right;
+    padding-right: 350px;
+    display: flex;
 }
 
 p {
     font-family: Courier, fixed, monospace;
     color:black;
     line-height: 1.8;
-}
-
-p.cain {
-    margin-bottom: 250px;
-}
-
-.clearfix {
-    overflow: auto;
-}
-
-a {
-    color:black;
-}
-
-figure {margin:3em}
-
-hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-                                 /*TITLE PAGES STYLE*/
-
-div.note {
-    text-align:center;
+    display: flex;
+   
 }
 
 p.intro {
     text-align:center;
-    line-height: 1.8;
+    display: flex;
 }
 
-aside.marginalia {
-    text-align:right;
-    font-family: 'Bradley Hand', cursive;
+.clearfix {
+    overflow: auto;
+    display: flex;
 }
-
-
-
-
-
-
-                               /*SETTING SECTION STYLE*/
-
-section.set {
-    padding-top: 60px;
-    padding-bottom: 90px;
-}
-
-h2.setHead {
-    text-align:center;
-    margin-top: 50px;
-}
-
-table.set {
-    margin-bottom: 100px;
-}
-
-h3.setting {
-    
-}
-
-p.setdesc {
-    text-align:center;
-    padding-right: 200px;
-}
-
-h3.setTime {
-    
-}
-
-p.timedesc {
-    text-align:center;
-    padding-right: 200px;
-}
-
-h3.action {
-    
-}
-
-p.actiondesc {
-    text-align:center;
-    padding-right: 200px
-}
-
-
-
-
-
-
-
-
-
-                                    /*PLAY BODY SECTION STYLING*/
 
 div.dialogue {
     font-family:courier, fixed, monospace;
     color:black;
     text-align: center;
     margin: auto;
+    display: flex;
     
 }
 
 div.speaker {
     padding-left: 200px;
+    display: flex;
 }
 
 span.insert {
     font-family:'Bradley Hand', cursive;
+    display: flex;
     
 }
 
 div.sp{
     text-align:left;
+    display: flex;
 }
 
 div.stage {
     text-align:center;
+    display: flex;
 }
 
-td.spk {
-    padding-left:0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-                                        /*CAST LIST SECTION STYLING*/
-
-span.period {
+p.navbar {
+    justify-content:stretch;
     text-align:center;
 }
-
-td {
-    padding-left:250px;
+a {
+    color:black;
+    display: flex;
 }
 
-td.castcontext {
-    padding-left: 150px;
+figure {margin:3em}
+
+aside.marginalia {
+    text-align:right;
+    font-family: 'Bradley Hand', cursive;
 }
 
 aside.castcontext {
     text-align:center;
+    display: flex;
+}
+
+span.period {
+    text-align:center;
+    display: flex;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+section.set {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    display: flex;
+}
+
+
+
+
+
+td.spk {
+    padding-left:0px;
+    display: flex;
+}
+
+td {
+    padding-left:250px;
+    display: flex;
+}
+
+td.castcontext {
+    padding-left: 150px;
+    display: flex;
 }
 
 h2.castHead {
     text-align:center;
+    display: flex;
 }
 
 li {
     line-height: 1.8;
 }
 
-a.castLink {
-    text-decoration: underline overline wavy black;
-}
-
 span.FRAUNCES {
     background-color:Khaki;
+    display: flex;
 }
 
 span.DOUGLASS {
     background-color:MediumOrchid;
+    display: flex;
     
 }
 
 span.SOJOURNER {
     background-color:Gold;
+    display: flex;
 }
 
 span.LONG {
     background-color:CadetBlue;
-    
+    color:white;
+    display: flex;
 }
 
 span.RAINEY {
     background-color:SteelBlue;
-    
+    color:white;
+    display: flex;
 }
 
 span.DELARGE {
     background-color:LightSteelBlue;
+    display: flex;
 }
 
 span.RAINER {
     background-color:PowderBlue;
+    display: flex;
 }
 
 span.ELLIOTT {
     background-color:SkyBlue;
-    color:black;
+    color:white;
+    display: flex;
 }
 
 span.TURNER {
     background-color:CornflowerBlue;
+    display: flex;
 }
 
 span.LYNCH {
     background-color:DeepSkyBlue;
+    display: flex;
 }
 
 span.RAPIER {
     background-color:DodgerBlue;
+    display: flex;
 }
 
 span.WALLS {
     background-color:RoyalBlue;
     color: white;
+    display: flex;
 }
 
 span.CAIN {
     background-color:Blue;
     color:white;
+    display: flex;
 }
 
 span.NASH {
     background-color:LightBlue;
+    display: flex;
 }
 
 span.HYMAN {
     background-color:Navy;
     color:white;
+    display: flex;
 }
 
 span.HARALSON {
     background-color:MediumBlue;
     color:white;
+    display: flex;
 }
 
 span.SMALLS {
     background-color:MidnightBlue;
     color:white;
+    display: flex;
 }
 
 span.REVELS {
     background-color:PaleGreen;
+    display: flex;
 }
 
 span.BRUCE {
@@ -355,50 +304,41 @@ span.BRUCE {
 
 span.LANGSTON {
     background-color:BurlyWood;
+    display: flex;
 }
 
 span.MILLER {
     background-color:SandyBrown;
     color:black;
+    display: flex;
 }
 
 span.MURRAY {
     background-color:Peru;
     color:black;
+    display: flex;
 }
 
 span.OHARA {
     background-color:Sienna;
     color:white;
+    display: flex;
 }
 
 span.CHEATHAM {
     background-color:Brown;
     color:white;
+    display: flex;
 }
 
 span.WHITE{
     background-color:Maroon;
     color: white;
+    display: flex;
 }
 
 span.WASHINGTON {
     background-color:RosyBrown;
+    display: flex;
     
 }
-
-
-
-
-
-
-
-
-                                        /*CONCLUSION STYLING*/
-p.conclusion{
-    padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-}
-
