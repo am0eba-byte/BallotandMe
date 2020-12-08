@@ -1,4 +1,59 @@
 
+<<<<<<< Updated upstream
+=======
+                                   /*NAVIGATION BAR STYLING*/
+
+hr.topNav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p.navbar {
+    justify-content:stretch;
+    text-align:center;
+}
+
+hr.bottomNav {
+    margin-top: 0px;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/*li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*/
+
+a:hover {
+  color: MintCream;
+}
+
+a.BUTTON {
+    font-size: 120%;
+}
+
+
+
+
+
+
+                                       /*GENERAL STYLING*/
+
+>>>>>>> Stashed changes
 body {
 background-color: BurlyWood;
     background-image: url("images/old_paper_background.jpg");
@@ -264,7 +319,7 @@ span.WALLS {
 }
 
 span.CAIN {
-    background-color:Blue;
+    background-color: #75abbd;
     color:white;
     display: flex;
 }

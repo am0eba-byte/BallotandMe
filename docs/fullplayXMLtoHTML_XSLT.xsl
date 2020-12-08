@@ -15,10 +15,10 @@
                 <link rel="stylesheet" type="text/css" href="webstyle.css"/>
             </head>
             <body>
-                <hr/>
-                <p class="navbar"><a href="index.html">Home</a> | <a href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a href="analysis.html">Analysis</a> | 
-                    <a href="conclusion.html">Conclusion</a></p>
-                <hr/>
+                <hr class="topNav"/>
+                <p class="navbar"><a class="BUTTON" href="index.html">Home</a> | <a class="BUTTON" href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a class="BUTTON" href="analysis.html">Analysis</a> | 
+                    <a class="BUTTON" href="conclusion.html">Conclusion</a></p>
+                <hr class="bottomNav"/>
                 
                 <xsl:apply-templates select="descendant::body"/>
             </body>
