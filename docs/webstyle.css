@@ -129,6 +129,10 @@ section.set {
     /*display: flex;*/
 }
 
+td.set {
+    padding-left: 0px;
+}
+
 h2.setHead {
     text-align:center;
     /*display: flex;*/
@@ -257,7 +261,7 @@ td.spk {
 }
 
 td {
-   /* padding-left:250px;*/
+    padding-left:250px;
     /*display: flex;*/
 }
 
@@ -300,13 +304,13 @@ span.SOJOURNER {
 
 span.LONG {
     background-color:CadetBlue;
-    color:white;
+    /*color:white;*/
     /*display: flex;*/
 }
 
 span.RAINEY {
     background-color:SteelBlue;
-    color:white;
+    /*color:white;*/
    /* display: flex;*/
 }
 
@@ -322,7 +326,7 @@ span.RAINER {
 
 span.ELLIOTT {
     background-color:SkyBlue;
-    color:white;
+    color:black;
     /*display: flex;*/
 }
 
