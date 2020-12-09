@@ -125,6 +125,13 @@ img#voteplea {
     border-radius: 18px;
 }
 
+img.character {
+    max-width: 150%;
+    margin: auto;
+    display:block;
+    padding-right: 50px;
+}
+
 h2#dialFreq {
     text-align:center;
 }
@@ -140,6 +147,11 @@ table#spkData, th, td.data, td.longData {
 td.data {
     padding-left: 100px;
     text-align: center;
+}
+
+td.dataPhoto {
+    padding-left: 0px;
+    
 }
 
 td.longData {
