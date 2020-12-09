@@ -190,7 +190,7 @@ p.intro {
    /* display: flex;*/
 }
 
-                        /* SCRIPT SECTION STYLING */
+                                   /* SCRIPT SECTION STYLING */
 
 div.dialogue {
     font-family:courier, fixed, monospace;
@@ -430,3 +430,15 @@ span.WASHINGTON {
     /*display: flex;*/
     
 }
+
+
+
+                                                 /*CONCLUSION STYLING*/
+p.conclusion{
+    padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+
