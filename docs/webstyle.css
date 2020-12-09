@@ -65,10 +65,10 @@ padding: 5em;
     
 }
 h1 {
-    color:white;
+    color:black;
     text-align:center;
     font-family:courier, fixed, monospace;
-    text-shadow:2px 2px 5px black;
+    /*text-shadow:2px 2px 5px black;*/
     /*display: flex;*/
 }
 h2 {
@@ -78,17 +78,17 @@ h2 {
     /*display: flex;*/
 }
 h3 {
-    color:white;
+    color:black;
     /*display: flex;*/
 }
 h4 {
-    color:white;
+    color:black;
     text-align:right;
     font-family: Courier, fixed, monospace;
     /*display: flex;*/
 }
 h5 {
-    color:teal;
+    color:black;
    /* display: flex;*/
 }
 h6 {
@@ -105,14 +105,29 @@ s {
     text-decoration: line-through;
 }
 
-p.cain {
-    margin-bottom: 250px;
-}
+
 
 hr {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+
+                           /* ANALYSIS PAGE DATA TABLE STYLING */
+                           
+img#voteplea {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+
+
+
 
 
 
@@ -172,13 +187,7 @@ p.actiondesc {
     /*display: flex;*/
 }
 
-p {
-    font-family: Courier, fixed, monospace;
-    color:black;
-    line-height: 1.8;
-    /*display: flex;*/
-   
-}
+
 
 p.intro {
     text-align:center;
@@ -235,30 +244,33 @@ aside.marginalia {
     font-family: 'Bradley Hand', cursive;
 }
 
-aside.castcontext {
-    text-align:center;
-    /*display: flex;*/
-}
 
-span.period {
-    text-align:center;
-    /*display: flex;*/
-}
 
 s {
     text-decoration: line-through;
 }
 
-
-
-
-
-
-
-td.spk {
-    padding-left:0px;
+p {
+    font-family: Courier, fixed, monospace;
+    color:black;
+    line-height: 1.8;
     /*display: flex;*/
+   
 }
+
+p.cain {
+    margin-bottom: 250px;
+}
+
+
+
+
+
+
+/*td.spk {
+    padding-left:0px;
+    /\*display: flex;*\/
+}*/
 
 td {
     padding-left:250px;
@@ -270,6 +282,16 @@ td {
 
 td.castcontext {
     padding-left: 150px;
+    /*display: flex;*/
+}
+
+aside.castcontext {
+    text-align:center;
+    /*display: flex;*/
+}
+
+span.period {
+    text-align:center;
     /*display: flex;*/
 }
 

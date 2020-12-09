@@ -14,13 +14,13 @@
         <link rel="stylesheet" type="text/css" href="webstyle.css" />
     </head>
     <body>
-        <hr/>
+        <hr class="topNav"/>
         <p class="navbar"><a class="BUTTON" href="index.html">Home</a> | <a class="BUTTON" href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a class="BUTTON" href="analysis.html">Analysis</a> | 
             <a class="BUTTON" href="conclusion.html">Conclusion</a></p>
-        <hr/>
+        <hr class="bottomNav"/>
         <h1>The Ballot and Me - Langston Hughes Data &amp; Metadata Analysis</h1>
         
-        <img src="images/voteplea.jpg" alt="Image of Characters' Plea to Audience"/>
+        <img id="voteplea" src="images/voteplea.jpg" alt="Image of Characters' Plea to Audience"/>
         
         <h2>Historical Character References - Data of Dialogue Frequency</h2>
         
