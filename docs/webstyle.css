@@ -125,10 +125,31 @@ img#voteplea {
     border-radius: 18px;
 }
 
+h2#dialFreq {
+    text-align:center;
+}
+
+h3#spkParts {
+    text-align: center;
+}
+
+table#spkData, th, td.data, td.longData {
+    border: 1px solid black;
+}
+
+td.data {
+    padding-left: 100px;
+    text-align: center;
+}
+
+td.longData {
+    padding-left: 200px;
+}
 
 
-
-
+span.wordCount {
+    font-weight:bold;
+}
 
 
 

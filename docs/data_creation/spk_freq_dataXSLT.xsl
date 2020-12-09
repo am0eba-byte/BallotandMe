@@ -22,9 +22,9 @@
         
         <img id="voteplea" src="images/voteplea.jpg" alt="Image of Characters' Plea to Audience"/>
         
-        <h2>Historical Character References - Data of Dialogue Frequency</h2>
+        <h2 id="dialFreq">Historical Character References - Data of Dialogue Frequency</h2>
         
-        <h3>Historical Character Speaking Parts</h3>
+        <h3 id="spkParts">Historical Character Speaking Parts</h3>
         <table id="spkDATA">
             <tr>
                 <th>Historical Character Image</th>
@@ -52,14 +52,14 @@
     
     <xsl:template match="castItem" mode="speakingparts">
         <xsl:if test="count(//sp[speaker/@idref=current()/person/@xml:id]) gt 0"><tr>
-            <td><xsl:comment>Image of hist. character here!</xsl:comment></td>
-            <td><xsl:apply-templates select="child::person"/></td>
-            <td><xsl:value-of select="//sp[speaker/@idref=current()/person/@xml:id] =>count()"/></td>
-            <td><xsl:variable name="stringlengthOfLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]//dialogue/p ! string() ! normalize-space() ! string-length() => max() "/>
+            <td class="data"><xsl:comment>Image of hist. character here!</xsl:comment></td>
+            <td class="data"><xsl:apply-templates select="child::person"/></td>
+            <td class="data"><xsl:value-of select="//sp[speaker/@idref=current()/person/@xml:id] =>count()"/></td>
+            <td class="longData"><xsl:variable name="stringlengthOfLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]//dialogue/p ! string() ! normalize-space() ! string-length() => max() "/>
                 <xsl:variable name="wordCountLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]/count(descendant::dialogue/p ! string() ! normalize-space() ! tokenize(., ' ')) => max()"/>
                 
                 <xsl:apply-templates select="//sp[speaker/@idref=current()/person/@xml:id][count(descendant::dialogue/p ! string() ! normalize-space() ! tokenize(., ' ')) = $wordCountLongestPart]//dialogue ! normalize-space()"/>
-                <span class="wordCount">Word count: <xsl:value-of select="$wordCountLongestPart"/></span>
+                <span class="wordCount"> Word count: <xsl:value-of select="$wordCountLongestPart"/></span>
                 
          <!--2020-12-09 ebb: This was fun! :-)       
                 <ul><li>Longest Speaking Part in Characters: <xsl:value-of select="$stringlengthOfLongestPart"/> </li>
@@ -77,10 +77,10 @@
         <!--<xsl:if test="count(//sp/dialogue/p/person[@idref=current()/person/@xml:id]) lt 1">-->
             <xsl:if test="child::person">
              <tr>
-                <td><xsl:comment>Image of hist. character here!</xsl:comment></td>
-                <td><xsl:apply-templates select="child::person"/></td>
-                <td><xsl:value-of select="//p/person[@idref=current()/person/@xml:id] =>count()"/></td>
-                 <td><xsl:apply-templates select="//dialogue/p[person[@idref=current()/person/@xml:id][1]][string-length() gt 20] ! normalize-space()"/></td>
+                 <td class="data"><xsl:comment>Image of hist. character here!</xsl:comment></td>
+                 <td class="data"><xsl:apply-templates select="child::person"/></td>
+                 <td class="data"><xsl:value-of select="//p/person[@idref=current()/person/@xml:id] =>count()"/></td>
+                 <td class="longData"><xsl:apply-templates select="//dialogue/p[person[@idref=current()/person/@xml:id][1]][string-length() gt 20] ! normalize-space()"/></td>
             </tr>
             </xsl:if>
         <!--</xsl:if>-->
