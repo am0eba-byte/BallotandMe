@@ -57,7 +57,7 @@ background-color: BurlyWood;
     background-image: url("images/old_paper_background.jpg");
 color: black;
 font-family: courier;
-display: flex;
+/*display: flex;*/
 
 }
 ol {list-style-type: lower-alpha;
@@ -69,131 +69,159 @@ h1 {
     text-align:center;
     font-family:courier, fixed, monospace;
     text-shadow:2px 2px 5px black;
-    display: flex;
+    /*display: flex;*/
 }
 h2 {
     color:black;
     text-align:left;
     font-family: courier, fixed, monospace;
-    display: flex;
+    /*display: flex;*/
 }
 h3 {
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 h4 {
     color:white;
     text-align:right;
     font-family: Courier, fixed, monospace;
-    display: flex;
+    /*display: flex;*/
 }
 h5 {
     color:teal;
-    display: flex;
+   /* display: flex;*/
 }
 h6 {
     color:black;
-    display: flex;
+    /*display: flex;*/
 }
 
 div.note {
     text-align:center;
-    display: flex;
+    /*display: flex;
+*/}
+
+s {
+    text-decoration: line-through;
+}
+
+p.cain {
+    margin-bottom: 250px;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+                           /* SETTING SECTION STYLING */
+                           
+table.set {
+    margin-bottom: 100px;
+}
+
+section.set {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    /*display: flex;*/
 }
 
 h2.setHead {
     text-align:center;
-    display: flex;
+    /*display: flex;*/
 }
 
 h3.setting {
     padding-left: 300px;
-    display: flex;
+    /*display: flex;*/
 }
 
 p.setdesc {
     text-align:right;
-    padding-right: 350px;
-    display: flex;
+    padding-left: 350px;
+   /* display: flex;*/
 }
 
 h3.setTime {
     padding-left:300px;
-    display: flex;
+    /*display: flex;*/
 }
 
 p.timedesc {
     text-align:right;
-    padding-right: 350px;
-    display: flex;
-}
+    /*padding-right: 350px;*/
+    /*display: flex;
+*/}
 
 h3.action {
     padding-left:300px;
-    display: flex;
+    /*display: flex;*/
 }
 
 p.actiondesc {
     text-align:right;
-    padding-right: 350px;
-    display: flex;
+    margin-bottom: 100px;
+    /*padding-right: 200px;*/
+    /*display: flex;*/
 }
 
 p {
     font-family: Courier, fixed, monospace;
     color:black;
     line-height: 1.8;
-    display: flex;
+    /*display: flex;*/
    
 }
 
 p.intro {
     text-align:center;
-    display: flex;
+    /*display: flex;*/
 }
 
 .clearfix {
     overflow: auto;
-    display: flex;
+   /* display: flex;*/
 }
+
+                        /* SCRIPT SECTION STYLING */
 
 div.dialogue {
     font-family:courier, fixed, monospace;
     color:black;
     text-align: center;
     margin: auto;
-    display: flex;
+    /*display: flex;*/
     
 }
 
 div.speaker {
     padding-left: 200px;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.insert {
     font-family:'Bradley Hand', cursive;
-    display: flex;
+    /*display: flex;*/
     
 }
 
 div.sp{
     text-align:left;
-    display: flex;
+    /*display: flex;*/
 }
 
 div.stage {
     text-align:center;
-    display: flex;
+    /*display: flex;*/
 }
 
-p.navbar {
-    justify-content:stretch;
-    text-align:center;
-}
+
 a {
     color:black;
-    display: flex;
+    /*display: flex;*/
 }
 
 figure {margin:3em}
@@ -205,23 +233,19 @@ aside.marginalia {
 
 aside.castcontext {
     text-align:center;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.period {
     text-align:center;
-    display: flex;
+    /*display: flex;*/
 }
 
 s {
     text-decoration: line-through;
 }
 
-section.set {
-    padding-top: 60px;
-    padding-bottom: 90px;
-    display: flex;
-}
+
 
 
 
@@ -229,125 +253,132 @@ section.set {
 
 td.spk {
     padding-left:0px;
-    display: flex;
+    /*display: flex;*/
 }
 
 td {
-    padding-left:250px;
-    display: flex;
+   /* padding-left:250px;*/
+    /*display: flex;*/
 }
+
+
+                                  /* CAST LIST SECTION STYLING */
 
 td.castcontext {
     padding-left: 150px;
-    display: flex;
+    /*display: flex;*/
 }
 
 h2.castHead {
     text-align:center;
-    display: flex;
+   /* display: flex;*/
 }
 
 li {
     line-height: 1.8;
 }
 
+a.castLink {
+    text-decoration: underline overline wavy black;
+}
+
 span.FRAUNCES {
     background-color:Khaki;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.DOUGLASS {
     background-color:MediumOrchid;
-    display: flex;
+    /*display: flex;*/
     
 }
 
 span.SOJOURNER {
     background-color:Gold;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.LONG {
     background-color:CadetBlue;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.RAINEY {
     background-color:SteelBlue;
     color:white;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.DELARGE {
     background-color:LightSteelBlue;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.RAINER {
     background-color:PowderBlue;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.ELLIOTT {
     background-color:SkyBlue;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.TURNER {
     background-color:CornflowerBlue;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.LYNCH {
     background-color:DeepSkyBlue;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.RAPIER {
     background-color:DodgerBlue;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.WALLS {
     background-color:RoyalBlue;
     color: white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.CAIN {
     background-color: #75abbd;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.NASH {
     background-color:LightBlue;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.HYMAN {
     background-color:Navy;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.HARALSON {
     background-color:MediumBlue;
     color:white;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.SMALLS {
     background-color:MidnightBlue;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.REVELS {
     background-color:PaleGreen;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.BRUCE {
@@ -357,41 +388,41 @@ span.BRUCE {
 
 span.LANGSTON {
     background-color:BurlyWood;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.MILLER {
     background-color:SandyBrown;
     color:black;
-    display: flex;
+   /* display: flex;*/
 }
 
 span.MURRAY {
     background-color:Peru;
     color:black;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.OHARA {
     background-color:Sienna;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.CHEATHAM {
     background-color:Brown;
     color:white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.WHITE{
     background-color:Maroon;
     color: white;
-    display: flex;
+    /*display: flex;*/
 }
 
 span.WASHINGTON {
     background-color:RosyBrown;
-    display: flex;
+    /*display: flex;*/
     
 }
