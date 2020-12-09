@@ -55,10 +55,10 @@
             <td><xsl:comment>Image of hist. character here!</xsl:comment></td>
             <td><xsl:apply-templates select="child::person"/></td>
             <td><xsl:value-of select="//sp[speaker/@idref=current()/person/@xml:id] =>count()"/></td>
-            <td><xsl:variable name="stringlengthOfLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]//dialogue ! string() ! string-length() => max() "/>
-                <xsl:variable name="wordCountLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]/count(descendant::dialogue ! string() ! tokenize(., ' ')) => max()"/>
+            <td><xsl:variable name="stringlengthOfLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]//dialogue/p ! string() ! normalize-space() ! string-length() => max() "/>
+                <xsl:variable name="wordCountLongestPart" select="//sp[speaker/@idref=current()/person/@xml:id]/count(descendant::dialogue/p ! string() ! normalize-space() ! tokenize(., ' ')) => max()"/>
                 
-                <xsl:apply-templates select="//sp[speaker/@idref=current()/person/@xml:id][.//dialogue ! string() ! string-length() = $stringlengthOfLongestPart]//dialogue ! normalize-space()"/>
+                <xsl:apply-templates select="//sp[speaker/@idref=current()/person/@xml:id][count(descendant::dialogue/p ! string() ! normalize-space() ! tokenize(., ' ')) = $wordCountLongestPart]//dialogue ! normalize-space()"/>
                 <span class="wordCount">Word count: <xsl:value-of select="$wordCountLongestPart"/></span>
                 
          <!--2020-12-09 ebb: This was fun! :-)       
