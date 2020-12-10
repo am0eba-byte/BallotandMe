@@ -126,27 +126,54 @@ img#voteplea {
 }
 
 img.character {
-    max-width: 150%;
+    max-width: 100%;
     margin: auto;
     display:block;
     padding-right: 50px;
+    border-radius: 20px;
+    height: auto;
+    max-height: 100%;
+}
+
+img.character:hover {
+    transform: scaleX(-1);
 }
 
 h2#dialFreq {
     text-align:center;
 }
 
-h3#spkParts {
+h2#spkParts {
     text-align: center;
+    margin-top: 50px;
+}
+
+h2#narref {
+    text-align: center;
+    margin-top: 100px;
+}
+
+table#refDATA {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+table#spkData {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 table#spkData, th, td.data, td.longData {
     border: 1px solid black;
+    border-style: inset;
 }
 
 td.data {
     padding-left: 100px;
     text-align: center;
+    font-weight: bold;
 }
 
 td.dataPhoto {
@@ -155,9 +182,19 @@ td.dataPhoto {
 }
 
 td.longData {
-    padding-left: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+td.data:hover {
+    background-color:HoneyDew;
+}
+
+td.longData:hover {
+    background-color:HoneyDew;
+}
 
 span.wordCount {
     font-weight:bold;
