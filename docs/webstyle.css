@@ -149,6 +149,10 @@ img.characterTruth {
     max-height: 120%;
 }
 
+img.characterTruth:hover {
+    transform: scaleX(-1);
+}
+
 h2#dialFreq {
     text-align:center;
 }
