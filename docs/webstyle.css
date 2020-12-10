@@ -139,6 +139,16 @@ img.character:hover {
     transform: scaleX(-1);
 }
 
+img.characterTruth {
+    max-width: 120%;
+    margin: auto;
+    display:block;
+    padding-right: 50px;
+    border-radius: 20px;
+    height: auto;
+    max-height: 120%;
+}
+
 h2#dialFreq {
     text-align:center;
 }
