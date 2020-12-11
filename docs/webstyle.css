@@ -114,6 +114,36 @@ hr {
 
 
 
+
+
+                          /* INDEx (HOME) PAGE STYLING */
+                          
+
+h3#projTeam {
+    text-align:center;
+}
+
+h4.team {
+    text-align: left;
+    padding-left: 250px;
+}
+
+p.bios {text-align:center;}
+
+figure.index {
+    margin-left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
                            /* ANALYSIS PAGE DATA TABLE STYLING */
                            
 img#voteplea {
