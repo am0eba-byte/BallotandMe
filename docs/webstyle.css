@@ -203,6 +203,12 @@ h2#narref {
     margin-top: 100px;
 }
 
+aside#refDataNote {
+    text-align: right;
+    margin-left:400px;
+    margin-right: 15px;
+}
+
 table#refDATA {
     margin-left: 15px;
     margin-right: 15px;
