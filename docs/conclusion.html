@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <title>Conlcusions</title>
+        <title>Code View &amp; Conlcusions</title>
         <meta charset="UTF-8" />
         <meta name="author" content="Mia Borgia and McKenna Ballew" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +11,67 @@
     <body>
         <hr class="topNav"/>
         <p class="navbar"><a class="BUTTON" href="index.html">Home</a> | <a class="BUTTON" href="fullplay_OUTPUT.html">Full Play in HTML</a> | <a class="BUTTON" href="analysis.html">Analysis</a> | 
-            <a class="BUTTON" href="conclusion.html">Conclusion</a></p>
+            <a class="BUTTON" href="conclusion.html">Conclusions &amp; Code View</a></p>
         <hr class="bottomNav"/>
-        <h1>Conclusion</h1>
-        <p class="conclusion">Our team chose to do the project on "The Ballot and Me" by Langston Huges because of what is happening all around the world today (2020). As the team dug deep into the play, we noticed how relevant it is to the minorities in today's society. People of color (POC) had to fight for their rights back in the 1800's because the southern slave-holding states sensed danger in letting POC vote. As of today (2020), Voter ID laws have underlying racial biases which prevent minorities from enganing in active participation. With the 2020 election, active participation was encouraged to lift the restrictions against minority populations. Organizations and indivduals are bringing cases of voter descrimination to court in an attempt to rewrite these wrongdoings. For this project we wanted to show how there is still a problem with discrimination against the minorites whenever it comes to voting. As the team continued working on the project we realized the importance of each historical characters presence, and how the characters who had large speaking parts typically had more prominent roles in civil rights and voting equality in real life.</p>
+        <h1>Conclusions &amp; Links to Project Code View</h1>
+        <h3>GitHub Code View Links:</h3>
+        
+        <table id="codeLinks">
+            <tr>
+                <th>Base XML Code</th>
+                <th>Full Play Reading View Code</th>
+                <th>Data Creation Code</th>
+            </tr>
+            <tr class="codeLinks">
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/FULLplaytext.xml">Full Play in XML</a>
+                </td>
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/fullplayXMLtoHTML_XSLT.xsl">Full Play XML to HTML XSLT Sheet</a>
+                </td>
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/data_creation/spk_freq_dataXSLT.xsl">Analysis Page Data Creation XSLT</a>
+                </td>
+            </tr>
+            <tr class="codeLinks">
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/playSchema.rnc">Relax-NG Schema</a>
+                </td>
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/fullplay_OUTPUT.html">Full Play HTML</a>
+                </td>
+                <td class="codeLinks"><a class="codeLink" href="https://github.com/am0eba-byte/BallotandMe/blob/main/docs/analysis.html">Analysis Page HTML</a>
+                </td>
+            </tr>
+        </table>
+        <p class="conclusion">
+            Our team chose to do our text-encoding project on "The Ballot and Me" by Langston Hughes 
+            due to the resounding relevance of its message, especially in this year's 2020 elections. 
+            As we coded this play, we began to make connections in our markup and use our code
+            to highlight important aspects of each character's part in the play, and how they correspond
+            to the importance of each historical characters' roles in real life. As we coded Hughes' work,
+            and in doing so became more intimately familiar with this script, it became unquestionably
+            clear how important the Hughes's message remains - especially to minority groups in 
+            society today. People of color (POC) had to fight for their rights back in the 1800's 
+            because the southern slave-holding states sensed danger in letting POC vote. As 
+            of today (2020), Voter ID laws have underlying racial biases which prevent 
+            minorities from enganing in active participation. With the 2020 election, active 
+            participation was encouraged to lift the restrictions against minority populations.
+            Organizations and indivduals are bringing cases of voter descrimination to court 
+            in an attempt to resolve these wrongdoings. In this project, we aimed to highlight 
+            the prominent voices in African American history and politics, and show that there
+            remains a lot of work to be done to combat racial discrimination - and, using our code,
+            underline the emphasis in Hughes's cries to the audience to exercise and defend their 
+            rights to vote.</p>
+        <p class="conclusion">As we coded the play, we made note of the connections to the 
+            prominence of each historical characters' stage presence; the characters who had
+            large speaking parts typically had more prominent roles in civil rights and voting
+            equality in real life. As such, we developed the data on our Analysis page using our mindful
+            xml:id coding of each character's speaking parts and narrator references, so that we could
+            provide viewers with a more observable look into the play and the characters in it within
+            our data table. We thought that it might help bring more life to the characters and their historical
+            importance &amp; relevance to African American voting rights if we created this table, which shows
+            their real faces alongside the statements made by them or about them in the play.
+        </p>
+        <h3>A Note on our Historical Figure Image Sources:</h3>
+        <p class="imageSources">The images we used in the data table on the Analysis page came from each character's Wikipedia page. (Thanks, Wikipedia!)</p>
 
-        <img src="images/minorityvote.jpg" alt="Image of POC, expression" width="500" height="400"></img>
-        <h3>This image shows POC protesting against the voting restrictions back in the 1800's.</h3>
+        <img id="minority" src="images/minorityvote.jpg" alt="Image of POC, expression" width="500" height="400"></img>
+        <p id="minCaption"><i>This image shows POC protesting against the voting restrictions back in the 1800's.</i></p>
     </body>
 </html>
