@@ -36,6 +36,8 @@ li a {
 }
 */
 
+
+
 a:hover {
   color: MintCream;
 }
@@ -112,6 +114,16 @@ hr {
     margin-bottom: 50px;
 }
 
+hr.foot {
+    margin:0;
+}
+
+div.foot {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
 
 
 
@@ -130,17 +142,28 @@ h4.team {
 
 p.bios {text-align:center;}
 
-figure.index {
-    margin-left: 400px;
+div.homeImg {
+    display:flex;
+    justify-content:center;
 }
 
 div.introDex {
     text-align: left;
     line-height: 1.8em;
     margin:15px;
+   
+    padding-left:20px;
+    padding-right:20px;
 }
 
+div.homeImgText {
+    display:flex;
+    justify-content:center;
+}
 
+figcaption {
+    text-align:center;
+}
 
 
 
@@ -582,25 +605,32 @@ span.WASHINGTON {
 
 
                                                  /*CONCLUSION STYLING*/
+div.conc {
+    display:flex;
+    justify-content:center;
+}
+
 p.conclusion{
-    padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  text-align:center;
+    padding-top: 10px;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  text-indent:2em;
 }
 
-p#minCaption {
-    text-align: center;
+
+div.codeTable {
+    display:flex;
+    justify-content:center;
 }
 
-img#minority {
-    margin-left: 400px;
+h3.gitLinks {
+    text-align:center;
 }
 
 table#codeLinks {
     text-align: center;
-    margin-left: 170px;
+   /* margin-left: 170px;*/
 }
 
 td.codeLinks {
@@ -610,6 +640,30 @@ td.codeLinks {
 
 a.codeLink {
     padding: 15px;
+}
+
+div.concImg {
+    display:flex;
+    justify-content:center;
+}
+
+figure.POC figcaption {
+    text-align:center;
+}
+
+figure.POC {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+img#minority {
+    width:50%;
+    align-self: center;
+}
+
+div.note {
+    /*padding:5%;*/
 }
 
 
