@@ -1,5 +1,5 @@
 
-                                   /*NAVIGATION BAR STYLING*/
+/*NAVIGATION BAR STYLING*/
 
 hr.topNav {
     margin-top: 0px;
@@ -7,8 +7,8 @@ hr.topNav {
 }
 
 p.navbar {
-    justify-content:stretch;
-    text-align:center;
+    justify-content: stretch;
+    text-align: center;
 }
 
 hr.bottomNav {
@@ -16,11 +16,11 @@ hr.bottomNav {
 }
 
 ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 /*li {
@@ -39,7 +39,7 @@ li a {
 
 
 a:hover {
-  color: MintCream;
+    color: MintCream;
 }
 
 a.BUTTON {
@@ -51,57 +51,59 @@ a.BUTTON {
 
 
 
-                                       /*GENERAL STYLING*/
+/*GENERAL STYLING*/
 
 
 body {
-background-color: BurlyWood;
+    background-color: BurlyWood;
     background-image: url("images/old_paper_background.jpg");
-color: black;
-font-family: courier;
-/*display: flex;*/
+    color: black;
+    font-family: Courier, fixed, monospace;
+    /*display: flex;*/
 
 }
-ol {list-style-type: lower-alpha;
-padding: 5em;
-    
+ol {
+    list-style-type: lower-alpha;
+    padding: 5em;
+
 }
 h1 {
-    color:black;
-    text-align:center;
-    font-family:courier, fixed, monospace;
+    color: black;
+    text-align: center;
+    font-family: courier, fixed, monospace;
     /*text-shadow:2px 2px 5px black;*/
     /*display: flex;*/
 }
 h2 {
-    color:black;
-    text-align:left;
+    color: black;
+    text-align: left;
     font-family: courier, fixed, monospace;
     /*display: flex;*/
 }
 h3 {
-    color:black;
+    color: black;
     /*display: flex;*/
 }
 h4 {
-    color:black;
-    text-align:right;
+    color: black;
+    text-align: right;
     font-family: Courier, fixed, monospace;
     /*display: flex;*/
 }
 h5 {
-    color:black;
-   /* display: flex;*/
+    color: black;
+    /* display: flex;*/
 }
 h6 {
-    color:black;
+    color: black;
     /*display: flex;*/
 }
 
 div.note {
-    text-align:center;
+    text-align: center;
     /*display: flex;
-*/}
+*/
+}
 
 s {
     text-decoration: line-through;
@@ -115,24 +117,24 @@ hr {
 }
 
 hr.foot {
-    margin:0;
+    margin: 0;
 }
 
 div.foot {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
 
 
 
-                          /* INDEx (HOME) PAGE STYLING */
-                          
+/* INDEx (HOME) PAGE STYLING */
+
 
 h2#projTeam {
-    text-align:center;
+    text-align: center;
 }
 
 h4.team {
@@ -140,29 +142,41 @@ h4.team {
     padding-left: 250px;
 }
 
-p.bios {text-align:center;}
+p.bios {
+    text-align: center;
+}
 
 div.homeImg {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 div.introDex {
     text-align: left;
     line-height: 1.8em;
-    margin:15px;
-   
-    padding-left:20px;
-    padding-right:20px;
+    margin: 15px;
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 div.homeImgText {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 figcaption {
-    text-align:center;
+    text-align: center;
+}
+
+figure.index {
+    /*display:flex;*/
+}
+
+
+img#langston {
+    width: 60%;
+    align-self: center;
 }
 
 
@@ -172,9 +186,8 @@ figcaption {
 
 
 
+/* ANALYSIS PAGE DATA TABLE STYLING */
 
-                           /* ANALYSIS PAGE DATA TABLE STYLING */
-                           
 img#voteplea {
     max-width: 25%;
     height: auto;
@@ -185,35 +198,40 @@ img#voteplea {
 }
 
 img.character {
-    max-width: 100%;
+    /*max-width: 100%;*/
+    width:40%;
     margin: auto;
-    display:block;
+    display: block;
     padding-right: 50px;
     border-radius: 20px;
-    height: auto;
-    max-height: 100%;
+    /*height: auto;
+    max-height: 100%;*/
 }
+
 
 img.character:hover {
     transform: scaleX(-1);
 }
 
-img.characterTruth {
-    max-width: 120%;
+img.character1 {
+    width:70%;
     margin: auto;
-    display:block;
+    display: block;
     padding-right: 50px;
     border-radius: 20px;
-    height: auto;
-    max-height: 120%;
 }
+
+img.character1:hover {
+    transform: scaleX(-1);
+}
+
 
 img.characterTruth:hover {
     transform: scaleX(-1);
 }
 
 h2#dialFreq {
-    text-align:center;
+    text-align: center;
 }
 
 h2#spkParts {
@@ -228,7 +246,7 @@ h2#narref {
 
 aside#refDataNote {
     text-align: right;
-    margin-left:400px;
+    margin-left: 400px;
     margin-right: 15px;
 }
 
@@ -244,45 +262,54 @@ table#spkData {
     margin-bottom: 15px;
 }
 
-table#spkData, th, td.data, td.longData {
+table#spkData,
+th,
+td.data,
+td.longData {
     border: 1px solid black;
     border-style: inset;
 }
 
 td.data {
-    padding-left: 100px;
+   
     text-align: center;
     font-weight: bold;
+    vertical-align: middle;
+padding-left: 40px;
 }
 
 td.dataPhoto {
     padding-left: 0px;
-    
+
 }
 
 td.longData {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /\*padding-top: 20px;
+    padding-bottom: 20px;*\/
 }
 
+
+
 td.data:hover {
-    background-color:HoneyDew;
+    background-color: HoneyDew;
 }
 
 td.longData:hover {
-    background-color:HoneyDew;
+    background-color: HoneyDew;
 }
+
+
 
 span.wordCount {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 
 
-                           /* SETTING SECTION STYLING */
-                           
+/* SETTING SECTION STYLING */
+
 table.set {
     margin-bottom: 100px;
 }
@@ -298,7 +325,7 @@ td.set {
 }
 
 h2.setHead {
-    text-align:center;
+    text-align: center;
     /*display: flex;*/
 }
 
@@ -308,29 +335,30 @@ h3.setting {
 }
 
 p.setdesc {
-    text-align:right;
+    text-align: right;
     padding-left: 350px;
-   /* display: flex;*/
+    /* display: flex;*/
 }
 
 h3.setTime {
-    padding-left:300px;
+    padding-left: 300px;
     /*display: flex;*/
 }
 
 p.timedesc {
-    text-align:right;
+    text-align: right;
     /*padding-right: 350px;*/
     /*display: flex;
-*/}
+*/
+}
 
 h3.action {
-    padding-left:300px;
+    padding-left: 300px;
     /*display: flex;*/
 }
 
 p.actiondesc {
-    text-align:right;
+    text-align: right;
     margin-bottom: 100px;
     /*padding-right: 200px;*/
     /*display: flex;*/
@@ -339,24 +367,24 @@ p.actiondesc {
 
 
 p.intro {
-    text-align:center;
+    text-align: center;
     /*display: flex;*/
 }
 
 .clearfix {
     overflow: auto;
-   /* display: flex;*/
+    /* display: flex;*/
 }
 
-                                   /* SCRIPT SECTION STYLING */
+/* SCRIPT SECTION STYLING */
 
 div.dialogue {
-    font-family:courier, fixed, monospace;
-    color:black;
+    font-family: courier, fixed, monospace;
+    color: black;
     text-align: center;
     margin: auto;
     /*display: flex;*/
-    
+
 }
 
 div.speaker {
@@ -365,31 +393,33 @@ div.speaker {
 }
 
 span.insert {
-    font-family:'Bradley Hand', cursive;
+    font-family: 'Bradley Hand', cursive;
     /*display: flex;*/
-    
+
 }
 
-div.sp{
-    text-align:left;
+div.sp {
+    text-align: left;
     /*display: flex;*/
 }
 
 div.stage {
-    text-align:center;
+    text-align: center;
     /*display: flex;*/
 }
 
 
 a {
-    color:black;
+    color: black;
     /*display: flex;*/
 }
 
-figure {margin:3em}
+figure {
+    margin: 3em
+}
 
 aside.marginalia {
-    text-align:right;
+    text-align: right;
     font-family: 'Bradley Hand', cursive;
 }
 
@@ -401,10 +431,10 @@ s {
 
 p {
     font-family: Courier, fixed, monospace;
-    color:black;
+    color: black;
     line-height: 1.8;
     /*display: flex;*/
-   
+
 }
 
 p.cain {
@@ -422,12 +452,12 @@ p.cain {
 }*/
 
 td {
-    padding-left:250px;
+    padding-left: 250px;
     /*display: flex;*/
 }
 
 
-                                  /* CAST LIST SECTION STYLING */
+/* CAST LIST SECTION STYLING */
 
 td.castcontext {
     padding-left: 150px;
@@ -435,18 +465,18 @@ td.castcontext {
 }
 
 aside.castcontext {
-    text-align:center;
+    text-align: center;
     /*display: flex;*/
 }
 
 span.period {
-    text-align:center;
+    text-align: center;
     /*display: flex;*/
 }
 
 h2.castHead {
-    text-align:center;
-   /* display: flex;*/
+    text-align: center;
+    /* display: flex;*/
 }
 
 li {
@@ -458,179 +488,179 @@ a.castLink {
 }
 
 span.FRAUNCES {
-    background-color:Khaki;
+    background-color: Khaki;
     /*display: flex;*/
 }
 
 span.DOUGLASS {
-    background-color:MediumOrchid;
+    background-color: MediumOrchid;
     /*display: flex;*/
-    
+
 }
 
 span.SOJOURNER {
-    background-color:Gold;
+    background-color: Gold;
     /*display: flex;*/
 }
 
 span.LONG {
-    background-color:CadetBlue;
+    background-color: CadetBlue;
     /*color:white;*/
     /*display: flex;*/
 }
 
 span.RAINEY {
-    background-color:SteelBlue;
+    background-color: SteelBlue;
     /*color:white;*/
-   /* display: flex;*/
+    /* display: flex;*/
 }
 
 span.DELARGE {
-    background-color:LightSteelBlue;
+    background-color: LightSteelBlue;
     /*display: flex;*/
 }
 
 span.RAINER {
-    background-color:PowderBlue;
-   /* display: flex;*/
+    background-color: PowderBlue;
+    /* display: flex;*/
 }
 
 span.ELLIOTT {
-    background-color:SkyBlue;
-    color:black;
+    background-color: SkyBlue;
+    color: black;
     /*display: flex;*/
 }
 
 span.TURNER {
-    background-color:CornflowerBlue;
+    background-color: CornflowerBlue;
     /*display: flex;*/
 }
 
 span.LYNCH {
-    background-color:DeepSkyBlue;
-   /* display: flex;*/
+    background-color: DeepSkyBlue;
+    /* display: flex;*/
 }
 
 span.RAPIER {
-    background-color:DodgerBlue;
+    background-color: DodgerBlue;
     /*display: flex;*/
 }
 
 span.WALLS {
-    background-color:RoyalBlue;
+    background-color: RoyalBlue;
     color: white;
     /*display: flex;*/
 }
 
 span.CAIN {
     background-color: #75abbd;
-    color:white;
+    color: white;
     /*display: flex;*/
 }
 
 span.NASH {
-    background-color:LightBlue;
+    background-color: LightBlue;
     /*display: flex;*/
 }
 
 span.HYMAN {
-    background-color:Navy;
-    color:white;
+    background-color: Navy;
+    color: white;
     /*display: flex;*/
 }
 
 span.HARALSON {
-    background-color:MediumBlue;
-    color:white;
-   /* display: flex;*/
+    background-color: MediumBlue;
+    color: white;
+    /* display: flex;*/
 }
 
 span.SMALLS {
-    background-color:MidnightBlue;
-    color:white;
+    background-color: MidnightBlue;
+    color: white;
     /*display: flex;*/
 }
 
 span.REVELS {
-    background-color:PaleGreen;
-   /* display: flex;*/
+    background-color: PaleGreen;
+    /* display: flex;*/
 }
 
 span.BRUCE {
-    background-color:OliveDrab;
-    color:white;
+    background-color: OliveDrab;
+    color: white;
 }
 
 span.LANGSTON {
-    background-color:BurlyWood;
+    background-color: BurlyWood;
     /*display: flex;*/
 }
 
 span.MILLER {
-    background-color:SandyBrown;
-    color:black;
-   /* display: flex;*/
+    background-color: SandyBrown;
+    color: black;
+    /* display: flex;*/
 }
 
 span.MURRAY {
-    background-color:Peru;
-    color:black;
+    background-color: Peru;
+    color: black;
     /*display: flex;*/
 }
 
 span.OHARA {
-    background-color:Sienna;
-    color:white;
+    background-color: Sienna;
+    color: white;
     /*display: flex;*/
 }
 
 span.CHEATHAM {
-    background-color:Brown;
-    color:white;
+    background-color: Brown;
+    color: white;
     /*display: flex;*/
 }
 
-span.WHITE{
-    background-color:Maroon;
+span.WHITE {
+    background-color: Maroon;
     color: white;
     /*display: flex;*/
 }
 
 span.WASHINGTON {
-    background-color:RosyBrown;
+    background-color: RosyBrown;
     /*display: flex;*/
-    
+
 }
 
 
 
-                                                 /*CONCLUSION STYLING*/
+/*CONCLUSION STYLING*/
 div.conc {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
-p.conclusion{
+p.conclusion {
     padding-top: 10px;
-  padding-right: 5%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  text-indent:2em;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    text-indent: 2em;
 }
 
 
 div.codeTable {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 h3.gitLinks {
-    text-align:center;
+    text-align: center;
 }
 
 table#codeLinks {
     text-align: center;
-   /* margin-left: 170px;*/
+    /* margin-left: 170px;*/
 }
 
 td.codeLinks {
@@ -643,27 +673,26 @@ a.codeLink {
 }
 
 div.concImg {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 figure.POC figcaption {
-    text-align:center;
+    text-align: center;
 }
 
 figure.POC {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
 img#minority {
-    width:50%;
+    width: 50%;
     align-self: center;
 }
 
 div.note {
     /*padding:5%;*/
 }
-
 
